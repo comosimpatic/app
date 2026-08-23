@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #0e1b2a;
+    background: #ffffff;
+}
+
+:root {
+    --fuse-ink: #0e1b2a;
+    --fuse-green: #1fdd7a;
+    --fuse-green-dark: #10c968;
+    --fuse-gray: #6b7683;
+    --fuse-light: #f4f5f6;
+}
+
+/* Fuselab hero light gradient */
+.fuse-hero-bg {
+    background: linear-gradient(105deg, #e8e9eb 0%, #eeeeef 40%, #e4e4e6 70%, #ededee 100%);
+}
+
+/* thin vertical guideline lines like the source */
+.fuse-guides {
+    background-image: repeating-linear-gradient(
+        to right,
+        transparent 0,
+        transparent calc(12.5% - 1px),
+        rgba(0, 0, 0, 0.04) calc(12.5% - 1px),
+        rgba(0, 0, 0, 0.04) 12.5%
+    );
+}
+
+.fuse-link-underline {
+    position: relative;
+}
+.fuse-link-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1.5px;
+    background: var(--fuse-ink);
+    transition: width 0.3s ease;
+}
+.fuse-link-underline:hover::after {
+    width: 100%;
+}
+
+/* Marquee animation */
+@keyframes fuse-marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.fuse-marquee {
+    animation: fuse-marquee 40s linear infinite;
+}
+
+/* project card zoom */
+.fuse-card-img {
+    transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.fuse-card:hover .fuse-card-img {
+    transform: scale(1.05);
+}
+
+/* fade-up reveal */
+@keyframes fuse-fade-up {
+    from { opacity: 0; transform: translateY(28px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.fuse-reveal {
+    animation: fuse-fade-up 0.7s ease forwards;
+}
+
+::selection {
+    background: var(--fuse-green);
+    color: #05261a;
+}
+
+@layer base {
+  :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+        --primary: 0 0% 9%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 96.1%;
+        --secondary-foreground: 0 0% 9%;
+        --muted: 0 0% 96.1%;
+        --muted-foreground: 0 0% 45.1%;
+        --accent: 0 0% 96.1%;
+        --accent-foreground: 0 0% 9%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 89.8%;
+        --input: 0 0% 89.8%;
+        --ring: 0 0% 3.9%;
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    }
+}
