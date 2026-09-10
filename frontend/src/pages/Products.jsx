@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PageHero from "../components/PageHero";
 import CtaBand from "../components/CtaBand";
 import Seo from "../components/Seo";
+import ProductImagePlaceholder from "../components/ProductImagePlaceholder";
 import { categories, sampleProduct } from "../data/products";
 
 const Products = () => (
@@ -33,14 +34,10 @@ const Products = () => (
           <h2 className="font-serif text-[24px] sm:text-[30px] mb-8">Sample listing</h2>
           <Link
             to={`/products/${sampleProduct.slug}`}
-            className="grid sm:grid-cols-[220px_1fr] gap-8 border border-parchment-line p-7 hover:border-teal transition-colors"
+            className="grid sm:grid-cols-[220px_1fr] gap-8 border border-parchment-line p-7 hover:border-teal transition-colors items-start"
             data-testid="sample-product-link"
           >
-            <div className="aspect-square bg-parchment border border-parchment-line flex items-center justify-center">
-              <span className="font-serif text-[13px] text-ink-soft text-center px-4">
-                Product image placeholder
-              </span>
-            </div>
+            <ProductImagePlaceholder label="Product image coming soon" className="self-start w-full" />
             <div>
               <p className="text-[13px] font-semibold text-teal mb-1.5">{sampleProduct.category}</p>
               <h3 className="font-serif text-[21px] mb-2">{sampleProduct.name}</h3>

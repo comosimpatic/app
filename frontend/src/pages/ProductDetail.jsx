@@ -1,10 +1,11 @@
 import React from "react";
 import { Link, useParams, Navigate } from "react-router-dom";
 import Seo from "../components/Seo";
+import ProductImagePlaceholder from "../components/ProductImagePlaceholder";
 import { sampleProduct } from "../data/products";
 
 const Field = ({ label, children }) => (
-  <div className="py-4 border-b border-parchment-line grid grid-cols-2 gap-4">
+  <div className="py-4 border-b border-parchment-line grid grid-cols-[130px_1fr] sm:grid-cols-[160px_1fr] gap-4">
     <span className="text-[13px] font-semibold text-ink-soft uppercase tracking-wide">{label}</span>
     <span className="text-[14.5px] text-ink">{children}</span>
   </div>
@@ -26,12 +27,8 @@ const ProductDetail = () => {
         <Link to="/products" className="text-[13.5px] font-semibold text-teal mb-8 inline-block">
           &larr; Back to Products
         </Link>
-        <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12">
-          <div className="aspect-square bg-parchment border border-parchment-line flex items-center justify-center">
-            <span className="font-serif text-[14px] text-ink-soft text-center px-6">
-              Product image placeholder
-            </span>
-          </div>
+        <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
+          <ProductImagePlaceholder label="Product image coming soon" className="self-start w-full" />
           <div>
             <p className="text-[13px] font-semibold text-teal mb-2">{p.category}</p>
             <h1 className="font-serif text-[30px] sm:text-[36px] mb-4">{p.name}</h1>
