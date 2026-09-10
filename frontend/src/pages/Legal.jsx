@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, Navigate, Link } from "react-router-dom";
 import PageHero from "../components/PageHero";
 import Seo from "../components/Seo";
+import BackLink from "../components/BackLink";
 import { findLegalDoc } from "../data/legal";
 
 const Legal = () => {
@@ -12,7 +13,13 @@ const Legal = () => {
   return (
     <>
       <Seo title={doc.title} description={doc.intro} />
-      <PageHero eyebrow="Legal" title={doc.title} lede={`Last updated ${doc.lastUpdated}`} />
+      <PageHero eyebrow="Legal" title={doc.title} lede={`Last updated ${doc.lastUpdated}`}>
+        <BackLink
+          to="/"
+          label="Back"
+          className="mt-6 inline-block text-[13.5px] text-teal-light font-medium"
+        />
+      </PageHero>
 
       <section className="py-16 sm:py-20">
         <div className="max-w-[68ch] mx-auto px-5 sm:px-8 space-y-8 text-[15.5px] text-ink-soft leading-relaxed">

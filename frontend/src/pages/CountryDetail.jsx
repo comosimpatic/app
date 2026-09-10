@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useParams, Navigate } from "react-router-dom";
 import InquiryForm from "../components/InquiryForm";
 import Seo from "../components/Seo";
+import BackLink from "../components/BackLink";
 import { findMarket, coreMarkets } from "../data/countries";
 
 const CountryDetail = () => {
@@ -21,9 +22,7 @@ const CountryDetail = () => {
       />
       <section className="bg-gradient-to-b from-navy to-navy-deep text-cream pt-16 pb-14 sm:pt-20 sm:pb-16">
         <div className="max-w-wrap mx-auto px-5 sm:px-8">
-          <Link to="/network" className="text-[13.5px] text-teal-light font-medium mb-4 inline-block">
-            &larr; Our Caribbean Network
-          </Link>
+          <BackLink to="/network" label="Our Caribbean Network" className="text-[13.5px] text-teal-light font-medium mb-4 inline-block" />
           <h1 className="font-serif text-[32px] sm:text-[42px] mb-5">{market.name}</h1>
           <dl className="flex flex-wrap gap-x-10 gap-y-2 text-[14px] text-cream/75">
             <div><dt className="inline text-cream/50">Capital &middot; </dt><dd className="inline">{market.capital}</dd></div>

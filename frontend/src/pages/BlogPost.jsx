@@ -1,7 +1,8 @@
 import React from "react";
-import { Link, useParams, Navigate } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import CtaBand from "../components/CtaBand";
 import Seo from "../components/Seo";
+import BackLink from "../components/BackLink";
 import { blogPosts } from "../data/content";
 
 const BlogPost = () => {
@@ -15,9 +16,7 @@ const BlogPost = () => {
 
       <section className="bg-gradient-to-b from-navy to-navy-deep text-cream pt-16 pb-14 sm:pt-20 sm:pb-16">
         <div className="max-w-wrap mx-auto px-5 sm:px-8">
-          <Link to="/blog" className="text-[13.5px] text-teal-light font-medium mb-4 inline-block">
-            &larr; The Caribbean Business Exchange
-          </Link>
+          <BackLink to="/blog" label="The Caribbean Business Exchange" className="text-[13.5px] text-teal-light font-medium mb-4 inline-block" />
           <h1 className="font-serif text-[30px] sm:text-[40px] max-w-[24ch]">{post.title}</h1>
         </div>
       </section>

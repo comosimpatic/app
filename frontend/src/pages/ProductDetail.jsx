@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useParams, Navigate } from "react-router-dom";
 import Seo from "../components/Seo";
 import ProductImagePlaceholder from "../components/ProductImagePlaceholder";
+import BackLink from "../components/BackLink";
 import { sampleProduct } from "../data/products";
 
 const Field = ({ label, children }) => (
@@ -24,9 +25,7 @@ const ProductDetail = () => {
     />
     <section className="py-14 sm:py-20">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
-        <Link to="/products" className="text-[13.5px] font-semibold text-teal mb-8 inline-block">
-          &larr; Back to Products
-        </Link>
+        <BackLink to="/products" label="Back to Products" className="text-[13.5px] font-semibold text-teal mb-8 inline-block" />
         <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
           <ProductImagePlaceholder label="Product image coming soon" className="self-start w-full" />
           <div>
