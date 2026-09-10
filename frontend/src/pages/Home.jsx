@@ -58,13 +58,14 @@ const Home = () => (
           alt="Container ship and cargo at a Caribbean port"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/75 to-navy/35" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-navy-deep/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/95 via-navy-deep/85 to-navy-deep/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/85 via-transparent to-transparent" />
       </div>
 
       <div className="relative max-w-wrap mx-auto px-5 sm:px-8 pt-20 sm:pt-28 pb-12">
         <div className="max-w-[36ch]">
-          <p className="text-[14px] text-teal-light font-medium mb-4">
+          <p className="text-[14px] text-coral font-semibold mb-4 uppercase tracking-wide">
             Pan-Caribbean Trade &amp; Distribution Platform
           </p>
           <h1 className="font-serif text-cream text-[34px] sm:text-[46px] lg:text-[54px] max-w-[12.5ch] mb-5">
@@ -86,19 +87,19 @@ const Home = () => (
 
         <div className="relative border-t border-cream/20 py-7 grid grid-cols-2 sm:grid-cols-4 gap-6">
           <div>
-            <span className="font-serif text-[26px] text-teal-light block">15</span>
+            <span className="font-serif text-[26px] text-coral block">15</span>
             <span className="text-[13px] text-cream/70">Core Caribbean markets</span>
           </div>
           <div>
-            <span className="font-serif text-[26px] text-teal-light block">4</span>
+            <span className="font-serif text-[26px] text-coral block">4</span>
             <span className="text-[13px] text-cream/70">Pillars: Source, Move, Sell, Invest</span>
           </div>
           <div>
-            <span className="font-serif text-[26px] text-teal-light block">1</span>
+            <span className="font-serif text-[26px] text-coral block">1</span>
             <span className="text-[13px] text-cream/70">Regional commercial relationship</span>
           </div>
           <div>
-            <span className="font-serif text-[26px] text-teal-light block">3</span>
+            <span className="font-serif text-[26px] text-coral block">3</span>
             <span className="text-[13px] text-cream/70">Ways to do business with DFC</span>
           </div>
         </div>
