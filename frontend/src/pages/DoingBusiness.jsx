@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PageHero from "../components/PageHero";
 import InquiryForm from "../components/InquiryForm";
+import Seo from "../components/Seo";
 
 const pathways = [
   {
@@ -31,6 +32,10 @@ const DoingBusiness = () => {
 
   return (
     <>
+      <Seo
+        title="Doing Business with DFC — Sell, Buy or Partner"
+        description="Three ways to work with Distribution Factory Caribbean: sell through DFC's distribution network, buy through DFC's sourcing network, or partner with DFC across the Caribbean."
+      />
       <PageHero
         eyebrow="Doing Business with DFC"
         title="Ready to enter the Caribbean market?"

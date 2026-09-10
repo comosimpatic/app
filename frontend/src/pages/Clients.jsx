@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PageHero from "../components/PageHero";
 import CtaBand from "../components/CtaBand";
+import Seo from "../components/Seo";
 
 const segments = [
   { title: "Manufacturers", need: "Enter and expand across Caribbean markets.", link: "/doing-business" },
@@ -16,6 +17,10 @@ const segments = [
 
 const Clients = () => (
   <>
+    <Seo
+      title="Who We Serve — Manufacturers, Distributors & Investors"
+      description="Manufacturers, importers, distributors, retailers, hotels, governments, SMEs and investors — see how Distribution Factory Caribbean serves every side of Caribbean trade."
+    />
     <PageHero
       eyebrow="Clients"
       title="Built for every side of Caribbean trade"

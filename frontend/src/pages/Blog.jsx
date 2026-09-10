@@ -1,10 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PageHero from "../components/PageHero";
+import Seo from "../components/Seo";
 import { blogPosts } from "../data/content";
 
 const Blog = () => (
   <>
+    <Seo
+      title="The Caribbean Business Exchange — DFC Blog"
+      description="Practical writing on Caribbean market entry, distribution, logistics and investment — from Distribution Factory Caribbean's regional team."
+    />
     <PageHero
       eyebrow="Blog"
       title="The Caribbean Business Exchange"

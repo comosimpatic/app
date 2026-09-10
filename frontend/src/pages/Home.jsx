@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import HeroRouteMap from "../components/HeroRouteMap";
 import SectionHead from "../components/SectionHead";
 import CtaBand from "../components/CtaBand";
+import Seo from "../components/Seo";
+import { categories as productCategories } from "../data/products";
+import { newsItems } from "../data/content";
 
 const frictionPoints = [
   "Finding reliable buyers",
@@ -42,6 +45,10 @@ const whyDfc = [
 
 const Home = () => (
   <>
+    <Seo
+      title="Pan-Caribbean Trade, Distribution & Investment Platform"
+      description="Distribution Factory Caribbean connects suppliers, buyers, investors and logistics providers across 15 Caribbean markets — trade, distribution, logistics and investment through one regional platform."
+    />
     <section className="bg-gradient-to-b from-navy to-navy-deep text-cream pt-20 sm:pt-24 overflow-hidden">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 items-center">
@@ -175,6 +182,55 @@ const Home = () => (
             </div>
           ))}
         </div>
+      </div>
+    </section>
+
+    <section className="bg-parchment py-16 sm:py-24">
+      <div className="max-w-wrap mx-auto px-5 sm:px-8">
+        <div className="flex flex-wrap items-end justify-between gap-6 mb-10">
+          <SectionHead
+            kicker="Our Products"
+            title="Products moving through the DFC network"
+            className="mb-0"
+          />
+          <Link to="/products" className="text-teal text-[14.5px] font-semibold border-b border-teal/50 hover:border-teal shrink-0 mb-14">
+            View the full catalogue &rarr;
+          </Link>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-parchment-line border border-parchment-line">
+          {productCategories.slice(0, 8).map((c) => (
+            <Link key={c.slug} to="/products" className="bg-white p-6 hover:bg-parchment transition-colors">
+              <h3 className="text-[15.5px] mb-1.5">{c.name}</h3>
+              <p className="text-[13.5px] text-ink-soft">{c.desc}</p>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section className="py-16 sm:py-24">
+      <div className="max-w-wrap mx-auto px-5 sm:px-8">
+        <div className="flex flex-wrap items-end justify-between gap-6 mb-10">
+          <SectionHead
+            kicker="News & Insights"
+            title="What's moving across the network"
+            className="mb-0"
+          />
+          <Link to="/news" className="text-teal text-[14.5px] font-semibold border-b border-teal/50 hover:border-teal shrink-0 mb-14">
+            Read all news &amp; insights &rarr;
+          </Link>
+        </div>
+        <ul className="border-t border-parchment-line">
+          {newsItems.slice(0, 4).map((item) => (
+            <li key={item.title} className="py-5 border-b border-parchment-line flex flex-wrap items-baseline justify-between gap-2">
+              <div>
+                <p className="text-[12.5px] font-semibold text-teal mb-1.5">{item.category}</p>
+                <h3 className="text-[16.5px] font-serif">{item.title}</h3>
+              </div>
+              <span className="text-[13px] text-ink-soft">{item.date}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
 

@@ -3,11 +3,16 @@ import { Link } from "react-router-dom";
 import PageHero from "../components/PageHero";
 import SectionHead from "../components/SectionHead";
 import InquiryForm from "../components/InquiryForm";
+import Seo from "../components/Seo";
 import { investmentOpportunities, regionalProjects } from "../data/content";
 import { coreMarkets } from "../data/countries";
 
 const TradeInvestment = () => (
   <>
+    <Seo
+      title="Caribbean Trade & Investment Opportunities"
+      description="Explore Caribbean trade opportunities, investment opportunities and regional infrastructure projects tracked across DFC's network of 15 core markets."
+    />
     <PageHero
       eyebrow="Trade & Investment"
       title="Where Caribbean trade meets Caribbean capital"

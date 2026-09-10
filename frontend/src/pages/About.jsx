@@ -2,6 +2,7 @@ import React from "react";
 import PageHero from "../components/PageHero";
 import SectionHead from "../components/SectionHead";
 import CtaBand from "../components/CtaBand";
+import Seo from "../components/Seo";
 
 const pillars = [
   { title: "Regional, not local", desc: "DFC is built around the Caribbean as one commercial region — not a collection of markets to be entered one at a time." },
@@ -11,6 +12,10 @@ const pillars = [
 
 const About = () => (
   <>
+    <Seo
+      title="About DFC — Pan-Caribbean Trade & Distribution Company"
+      description="Distribution Factory Caribbean is a Pan-Caribbean trade, distribution and investment platform built as the private-sector execution layer for regional commerce."
+    />
     <PageHero
       eyebrow="About DFC"
       title="A private-sector execution layer for Caribbean trade"

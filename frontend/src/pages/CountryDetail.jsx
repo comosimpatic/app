@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useParams, Navigate } from "react-router-dom";
 import InquiryForm from "../components/InquiryForm";
+import Seo from "../components/Seo";
 import { findMarket, coreMarkets } from "../data/countries";
 
 const CountryDetail = () => {
@@ -14,6 +15,10 @@ const CountryDetail = () => {
 
   return (
     <>
+      <Seo
+        title={`${market.name} — Caribbean Trade & Distribution`}
+        description={`${market.name} is one of DFC's 15 core Caribbean markets. Explore market overview, products, suppliers, buyers, distribution, logistics and investment opportunities.`}
+      />
       <section className="bg-gradient-to-b from-navy to-navy-deep text-cream pt-16 pb-14 sm:pt-20 sm:pb-16">
         <div className="max-w-wrap mx-auto px-5 sm:px-8">
           <Link to="/network" className="text-[13.5px] text-teal-light font-medium mb-4 inline-block">

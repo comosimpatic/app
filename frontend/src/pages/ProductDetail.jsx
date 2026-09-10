@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useParams, Navigate } from "react-router-dom";
+import Seo from "../components/Seo";
 import { sampleProduct } from "../data/products";
 
 const Field = ({ label, children }) => (
@@ -15,6 +16,11 @@ const ProductDetail = () => {
   const p = sampleProduct;
 
   return (
+    <>
+    <Seo
+      title={`${p.name} — ${p.category}`}
+      description={p.description}
+    />
     <section className="py-14 sm:py-20">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <Link to="/products" className="text-[13.5px] font-semibold text-teal mb-8 inline-block">
@@ -51,6 +57,7 @@ const ProductDetail = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

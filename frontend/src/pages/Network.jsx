@@ -3,10 +3,15 @@ import { Link } from "react-router-dom";
 import PageHero from "../components/PageHero";
 import SectionHead from "../components/SectionHead";
 import CtaBand from "../components/CtaBand";
+import Seo from "../components/Seo";
 import { coreMarkets, phase2Markets } from "../data/countries";
 
 const Network = () => (
   <>
+    <Seo
+      title="Our Caribbean Network — 15 Core Markets"
+      description="DFC's regional network spans 15 core Caribbean markets, with a phase-2 expansion list covering the wider Caribbean. Explore market overviews, contacts and opportunities."
+    />
     <PageHero
       eyebrow="Our Caribbean Network"
       title="15 core markets. One regional manifest."

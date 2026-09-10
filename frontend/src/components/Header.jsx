@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { label: "Trade & Invest", to: "/trade-investment" },
   { label: "Network", to: "/network" },
   { label: "Insights", to: "/news" },
+  { label: "Contact", to: "/contact" },
 ];
 
 const Header = () => {
@@ -56,6 +57,9 @@ const Header = () => {
         </ul>
 
         <div className="hidden xl:flex items-center gap-3 shrink-0">
+          <Link to="/doing-business" className="btn btn-outline-light" data-testid="nav-cta-partner">
+            Become a Partner
+          </Link>
           <Link to="/doing-business" className="btn btn-coral" data-testid="nav-cta">
             Do Business With DFC
           </Link>
@@ -81,11 +85,6 @@ const Header = () => {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link to="/contact" className="text-cream/85 text-[15px] font-medium">
-                Contact
-              </Link>
-            </li>
           </ul>
           <Link to="/doing-business" className="btn btn-coral w-full mt-6 justify-center">
             Do Business With DFC

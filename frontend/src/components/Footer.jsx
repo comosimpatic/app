@@ -45,9 +45,15 @@ const Footer = () => (
           </ul>
         </div>
       </div>
-      <div className="border-t border-white/10 pt-6 flex flex-wrap justify-between gap-3 text-[12.5px]">
+      <div className="border-t border-white/10 pt-6 flex flex-wrap justify-between gap-x-6 gap-y-3 text-[12.5px]">
         <span>&copy; {new Date().getFullYear()} Distribution Factory Caribbean. All rights reserved.</span>
-        <span>Privacy &middot; Terms</span>
+        <div className="flex flex-wrap gap-x-5 gap-y-2">
+          <Link to="/legal/privacy-policy" className="hover:text-cream">Privacy Policy</Link>
+          <Link to="/legal/terms-conditions" className="hover:text-cream">Terms &amp; Conditions</Link>
+          <Link to="/legal/cookie-policy" className="hover:text-cream">Cookie Policy</Link>
+          <Link to="/legal/supplier-terms" className="hover:text-cream">Supplier Terms</Link>
+          <Link to="/legal/partner-terms" className="hover:text-cream">Partner Terms</Link>
+        </div>
       </div>
     </div>
   </footer>

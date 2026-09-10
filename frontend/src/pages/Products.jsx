@@ -2,10 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PageHero from "../components/PageHero";
 import CtaBand from "../components/CtaBand";
+import Seo from "../components/Seo";
 import { categories, sampleProduct } from "../data/products";
 
 const Products = () => (
   <>
+    <Seo
+      title="Caribbean Product Distribution — Browse the Catalogue"
+      description="Browse products moving through the DFC network across the Caribbean — food & beverage, hospitality, construction, energy, technology and more, organized by category."
+    />
     <PageHero
       eyebrow="Products"
       title="The DFC product catalogue"

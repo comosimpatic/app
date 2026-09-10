@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import PageHero from "../components/PageHero";
+import Seo from "../components/Seo";
 import { newsCategories, newsItems } from "../data/content";
 
 const News = () => {
@@ -9,6 +10,10 @@ const News = () => {
 
   return (
     <>
+      <Seo
+        title="News & Insights — Caribbean Trade, Logistics & Investment"
+        description="Company news and Caribbean trade insight from across the DFC network — trade, logistics, investment, market expansion and new products."
+      />
       <PageHero
         eyebrow="News & Insights"
         title="Company news and Caribbean trade insight"

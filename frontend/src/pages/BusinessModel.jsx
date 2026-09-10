@@ -2,6 +2,7 @@ import React from "react";
 import PageHero from "../components/PageHero";
 import SectionHead from "../components/SectionHead";
 import CtaBand from "../components/CtaBand";
+import Seo from "../components/Seo";
 
 const pillars = [
   {
@@ -32,8 +33,26 @@ const pillars = [
 
 const ecosystem = ["Investors", "DFC Platform", "Suppliers, Buyers & Partners", "Distribution", "Logistics", "Caribbean Markets"];
 
+const revenueStreams = [
+  { title: "Distribution margins", desc: "Margin earned moving supplier product through DFC's distribution network." },
+  { title: "Logistics coordination fees", desc: "Fees for freight, consolidation, warehousing and last-mile coordination." },
+  { title: "Product sourcing fees", desc: "Fees for identifying and qualifying suppliers on behalf of buyers." },
+  { title: "Market-entry services", desc: "Fixed or retained fees for market assessment and entry planning." },
+  { title: "Commercial representation", desc: "Ongoing fees for acting as a supplier's local sales and market presence." },
+  { title: "Warehouse & fulfillment fees", desc: "Storage, pick-and-pack and fulfillment charges across regional facilities." },
+  { title: "Subscription / membership", desc: "Recurring revenue from DFC Business, Distributor, Exporter and Partner tiers." },
+  { title: "Transaction fees", desc: "Per-transaction fees on sourcing requests, quotes and completed orders." },
+  { title: "Marketplace commissions", desc: "Commission on transactions completed through the DFC product marketplace." },
+  { title: "Investment facilitation fees", desc: "Fees for structuring and introducing investment opportunities to capital." },
+  { title: "Data & market intelligence", desc: "Revenue from regional trade, tariff and market-demand reporting." },
+];
+
 const BusinessModel = () => (
   <>
+    <Seo
+      title="Our Business Model — Source, Move, Sell, Invest"
+      description="How Distribution Factory Caribbean's regional commercial platform works, and the revenue streams behind a Pan-Caribbean trade, distribution and investment business."
+    />
     <PageHero
       eyebrow="Our Business Model"
       title="Source. Move. Sell. Invest."
@@ -86,6 +105,24 @@ const BusinessModel = () => (
               </div>
               {i < ecosystem.length - 1 && <span className="text-teal-light">&rarr;</span>}
             </React.Fragment>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section className="py-16 sm:py-24">
+      <div className="max-w-wrap mx-auto px-5 sm:px-8">
+        <SectionHead
+          kicker="Revenue Model"
+          title="Multiple revenue streams, not just freight margins"
+          lede="DFC's economics are built across the full Source–Move–Sell–Invest chain rather than depending on any single line of business."
+        />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8">
+          {revenueStreams.map((r) => (
+            <div key={r.title} className="border-t-2 border-teal pt-[18px]">
+              <h3 className="text-[16px] mb-2">{r.title}</h3>
+              <p className="text-[14px] text-ink-soft">{r.desc}</p>
+            </div>
           ))}
         </div>
       </div>

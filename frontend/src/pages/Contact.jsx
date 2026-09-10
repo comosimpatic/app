@@ -1,6 +1,7 @@
 import React from "react";
 import PageHero from "../components/PageHero";
 import InquiryForm from "../components/InquiryForm";
+import Seo from "../components/Seo";
 
 const offices = [
   { city: "Miami, USA", role: "Regional trade gateway" },
@@ -19,6 +20,10 @@ const routing = [
 
 const Contact = () => (
   <>
+    <Seo
+      title="Contact Distribution Factory Caribbean"
+      description="Reach Distribution Factory Caribbean's regional office directory or route your inquiry directly to the sell, buy, partner, invest or press desk."
+    />
     <PageHero
       eyebrow="Contact"
       title="Talk to DFC"

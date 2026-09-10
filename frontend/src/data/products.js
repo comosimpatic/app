@@ -10,6 +10,7 @@ export const categories = [
   { slug: "automotive", name: "Automotive", desc: "Parts, fluids, accessories and fleet supplies." },
   { slug: "agriculture", name: "Agriculture", desc: "Inputs, equipment and processed agricultural products." },
   { slug: "packaging", name: "Packaging", desc: "Packaging materials, containers and labeling supply." },
+  { slug: "business-supplies", name: "Business Supplies", desc: "Office, retail and commercial operating supplies for businesses across the network." },
 ];
 
 export const sampleProduct = {
