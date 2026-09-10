@@ -38,7 +38,7 @@ const Products = () => (
             data-testid="sample-product-link"
           >
             {sampleProduct.image ? (
-              <div className="aspect-square bg-parchment border border-parchment-line self-start w-full overflow-hidden">
+              <div className="aspect-square bg-white border border-parchment-line self-start w-full overflow-hidden">
                 <img
                   src={sampleProduct.image}
                   alt={sampleProduct.name}

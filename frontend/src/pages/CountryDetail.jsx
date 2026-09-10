@@ -20,15 +20,15 @@ const CountryDetail = () => {
         title={`${market.name} — Caribbean Trade & Distribution`}
         description={`${market.name} is one of DFC's 15 core Caribbean markets. Explore market overview, products, suppliers, buyers, distribution, logistics and investment opportunities.`}
       />
-      <section className="bg-gradient-to-b from-navy to-navy-deep text-cream pt-16 pb-14 sm:pt-20 sm:pb-16">
+      <section className="bg-white text-ink pt-16 pb-14 sm:pt-20 sm:pb-16 border-b border-parchment-line">
         <div className="max-w-wrap mx-auto px-5 sm:px-8">
-          <BackLink to="/network" label="Our Caribbean Network" className="text-[13.5px] text-teal-light font-medium mb-4 inline-block" />
+          <BackLink to="/network" label="Our Caribbean Network" className="text-[13.5px] text-teal font-medium mb-4 inline-block" />
           <h1 className="font-serif text-[32px] sm:text-[42px] mb-5">{market.name}</h1>
-          <dl className="flex flex-wrap gap-x-10 gap-y-2 text-[14px] text-cream/75">
-            <div><dt className="inline text-cream/50">Capital &middot; </dt><dd className="inline">{market.capital}</dd></div>
-            <div><dt className="inline text-cream/50">Currency &middot; </dt><dd className="inline">{market.currency}</dd></div>
-            <div><dt className="inline text-cream/50">Language &middot; </dt><dd className="inline">{market.language}</dd></div>
-            <div><dt className="inline text-cream/50">Subregion &middot; </dt><dd className="inline">{market.subregion}</dd></div>
+          <dl className="flex flex-wrap gap-x-10 gap-y-2 text-[14px] text-ink-soft">
+            <div><dt className="inline text-ink-soft/60">Capital &middot; </dt><dd className="inline">{market.capital}</dd></div>
+            <div><dt className="inline text-ink-soft/60">Currency &middot; </dt><dd className="inline">{market.currency}</dd></div>
+            <div><dt className="inline text-ink-soft/60">Language &middot; </dt><dd className="inline">{market.language}</dd></div>
+            <div><dt className="inline text-ink-soft/60">Subregion &middot; </dt><dd className="inline">{market.subregion}</dd></div>
           </dl>
         </div>
       </section>
@@ -62,7 +62,7 @@ const CountryDetail = () => {
             </div>
           </div>
 
-          <div className="bg-parchment border border-parchment-line p-8 h-fit">
+          <div className="bg-white border border-parchment-line p-8 h-fit">
             <p className="text-[13px] font-semibold text-teal mb-2">DFC Local Contact</p>
             <h2 className="font-serif text-[21px] mb-5">Reach the {market.name} desk</h2>
             <InquiryForm pathway="general" submitLabel="Contact This Market" testIdPrefix="country-contact" />

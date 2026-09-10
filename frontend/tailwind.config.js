@@ -30,7 +30,7 @@ module.exports = {
         'parchment-line': '#E2D6BC',
         ink: '#16232E',
         'ink-soft': '#4A5A66',
-        cream: '#FBF9F4',
+        cream: '#FFFFFF',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

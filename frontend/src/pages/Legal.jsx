@@ -17,7 +17,7 @@ const Legal = () => {
         <BackLink
           to="/"
           label="Back"
-          className="mt-6 inline-block text-[13.5px] text-teal-light font-medium"
+          className="mt-6 inline-block text-[13.5px] text-teal font-medium"
         />
       </PageHero>
 

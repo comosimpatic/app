@@ -28,7 +28,7 @@ const ProductDetail = () => {
         <BackLink to="/products" label="Back to Products" className="text-[13.5px] font-semibold text-teal mb-8 inline-block" />
         <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
           {p.image ? (
-            <div className="bg-parchment border border-parchment-line p-8 flex items-center justify-center self-start w-full">
+            <div className="bg-white border border-parchment-line p-8 flex items-center justify-center self-start w-full">
               <img
                 src={p.image}
                 alt={p.name}

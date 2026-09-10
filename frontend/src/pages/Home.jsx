@@ -49,17 +49,17 @@ const Home = () => (
       title="Pan-Caribbean Trade, Distribution & Investment Platform"
       description="Distribution Factory Caribbean connects suppliers, buyers, investors and logistics providers across 15 Caribbean markets — trade, distribution, logistics and investment through one regional platform."
     />
-    <section className="bg-gradient-to-b from-navy to-navy-deep text-cream pt-20 sm:pt-24 overflow-hidden">
+    <section className="bg-white text-ink pt-20 sm:pt-24 overflow-hidden border-b border-parchment-line">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 items-center">
           <div>
-            <p className="text-[14px] text-teal-light font-medium mb-4">
+            <p className="text-[14px] text-teal font-medium mb-4">
               Pan-Caribbean Trade &amp; Distribution Platform
             </p>
             <h1 className="font-serif text-[34px] sm:text-[46px] lg:text-[54px] max-w-[12.5ch] mb-5">
               Connecting Caribbean markets. Moving Caribbean business.
             </h1>
-            <p className="text-[17.5px] text-cream/82 max-w-[46ch] mb-8">
+            <p className="text-[17.5px] text-ink-soft max-w-[46ch] mb-8">
               DFC links suppliers, buyers, investors and logistics providers across the region — so
               businesses can move from local opportunity to regional scale.
             </p>
@@ -67,7 +67,7 @@ const Home = () => (
               <Link to="/doing-business" className="btn btn-coral" data-testid="home-hero-cta-primary">
                 Do Business with DFC
               </Link>
-              <Link to="/network" className="btn btn-outline-light" data-testid="home-hero-cta-secondary">
+              <Link to="/network" className="btn btn-outline-dark" data-testid="home-hero-cta-secondary">
                 Explore Our Network
               </Link>
             </div>
@@ -75,22 +75,22 @@ const Home = () => (
           <HeroRouteMap />
         </div>
 
-        <div className="border-t border-white/10 py-7 grid grid-cols-2 sm:grid-cols-4 gap-6">
+        <div className="border-t border-parchment-line py-7 grid grid-cols-2 sm:grid-cols-4 gap-6">
           <div>
-            <span className="font-serif text-[26px] text-teal-light block">15</span>
-            <span className="text-[13px] text-cream/62">Core Caribbean markets</span>
+            <span className="font-serif text-[26px] text-teal block">15</span>
+            <span className="text-[13px] text-ink-soft">Core Caribbean markets</span>
           </div>
           <div>
-            <span className="font-serif text-[26px] text-teal-light block">4</span>
-            <span className="text-[13px] text-cream/62">Pillars: Source, Move, Sell, Invest</span>
+            <span className="font-serif text-[26px] text-teal block">4</span>
+            <span className="text-[13px] text-ink-soft">Pillars: Source, Move, Sell, Invest</span>
           </div>
           <div>
-            <span className="font-serif text-[26px] text-teal-light block">1</span>
-            <span className="text-[13px] text-cream/62">Regional commercial relationship</span>
+            <span className="font-serif text-[26px] text-teal block">1</span>
+            <span className="text-[13px] text-ink-soft">Regional commercial relationship</span>
           </div>
           <div>
-            <span className="font-serif text-[26px] text-teal-light block">3</span>
-            <span className="text-[13px] text-cream/62">Ways to do business with DFC</span>
+            <span className="font-serif text-[26px] text-teal block">3</span>
+            <span className="text-[13px] text-ink-soft">Ways to do business with DFC</span>
           </div>
         </div>
       </div>
@@ -123,7 +123,7 @@ const Home = () => (
       </div>
     </section>
 
-    <section className="bg-parchment py-16 sm:py-24">
+    <section className="bg-white py-16 sm:py-24 border-t border-parchment-line">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <SectionHead
           kicker="What We Do"
@@ -145,27 +145,26 @@ const Home = () => (
       </div>
     </section>
 
-    <section className="bg-navy text-cream py-16 sm:py-24">
+    <section className="bg-white text-ink py-16 sm:py-24 border-t border-parchment-line">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <SectionHead
-          dark
           kicker="Our Business Model"
           title="A regional commercial platform"
           lede="DFC operates across four interconnected pillars — from finding a product to putting capital behind it."
         />
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12 relative">
-          <div className="hidden lg:block absolute top-[38px] left-0 right-0 h-px bg-white/15" />
+          <div className="hidden lg:block absolute top-[38px] left-0 right-0 h-px bg-parchment-line" />
           {modelSteps.map((step) => (
             <div key={step.num} className="relative pt-20 pr-6">
-              <div className="absolute top-0 left-0 w-[70px] h-[70px] rounded-full border border-white/25 flex items-center justify-center font-serif text-[14px] text-teal-light bg-navy">
+              <div className="absolute top-0 left-0 w-[70px] h-[70px] rounded-full border border-parchment-line flex items-center justify-center font-serif text-[14px] text-teal bg-white">
                 {step.num}
               </div>
               <h3 className="text-[20px] mb-2.5">{step.title}</h3>
-              <p className="text-[14.5px] text-cream/70">{step.desc}</p>
+              <p className="text-[14.5px] text-ink-soft">{step.desc}</p>
             </div>
           ))}
         </div>
-        <Link to="/business-model" className="inline-block mt-12 text-teal-light text-[14.5px] font-semibold border-b border-teal-light/50 hover:border-teal-light">
+        <Link to="/business-model" className="inline-block mt-12 text-teal text-[14.5px] font-semibold border-b border-teal/50 hover:border-teal">
           See the full business model &rarr;
         </Link>
       </div>
@@ -185,7 +184,7 @@ const Home = () => (
       </div>
     </section>
 
-    <section className="bg-parchment py-16 sm:py-24">
+    <section className="bg-white py-16 sm:py-24 border-t border-parchment-line">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <div className="flex flex-wrap items-start justify-between gap-6">
           <SectionHead

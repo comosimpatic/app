@@ -49,7 +49,7 @@ const InquiryForm = ({
 
   if (status === "done") {
     return (
-      <div className={`border border-parchment-line bg-parchment px-6 py-8 ${className}`} data-testid={`${testIdPrefix}-success`}>
+      <div className={`border border-parchment-line bg-white px-6 py-8 ${className}`} data-testid={`${testIdPrefix}-success`}>
         <p className="font-serif text-[20px] text-ink mb-2">Inquiry received.</p>
         <p className="text-ink-soft text-[15px]">
           A member of the DFC team will follow up on your {PATHWAY_LABELS[form.pathway] || "inquiry"} shortly.

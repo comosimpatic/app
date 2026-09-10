@@ -23,7 +23,7 @@ const Header = () => {
   }, [location.pathname]);
 
   return (
-    <header className="sticky top-0 z-50 bg-navy/95 backdrop-blur border-b border-white/10">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-parchment-line">
       <nav className="flex items-center justify-between gap-6 px-5 sm:px-8 py-4 max-w-[1340px] mx-auto">
         <Link
           to="/"
@@ -46,7 +46,7 @@ const Header = () => {
                 data-testid={`nav-link-${item.to.replace("/", "")}`}
                 className={({ isActive }) =>
                   `text-[13.5px] font-medium transition-colors ${
-                    isActive ? "text-cream" : "text-cream/75 hover:text-cream"
+                    isActive ? "text-ink" : "text-ink-soft hover:text-ink"
                   }`
                 }
               >
@@ -59,7 +59,7 @@ const Header = () => {
         <div className="hidden xl:flex items-center gap-3 shrink-0">
           <Link
             to="/doing-business"
-            className="hidden 2xl:inline-flex btn btn-outline-light"
+            className="hidden 2xl:inline-flex btn btn-outline-dark"
             data-testid="nav-cta-partner"
           >
             Become a Partner
@@ -70,7 +70,7 @@ const Header = () => {
         </div>
 
         <button
-          className="xl:hidden text-cream"
+          className="xl:hidden text-ink"
           aria-label="Open menu"
           onClick={() => setOpen((v) => !v)}
           data-testid="nav-toggle"
@@ -80,11 +80,11 @@ const Header = () => {
       </nav>
 
       {open && (
-        <div className="xl:hidden border-t border-white/10 bg-navy-deep px-5 sm:px-8 py-6">
+        <div className="xl:hidden border-t border-parchment-line bg-white px-5 sm:px-8 py-6">
           <ul className="flex flex-col gap-4">
             {NAV_ITEMS.map((item) => (
               <li key={item.to}>
-                <Link to={item.to} className="text-cream/85 text-[15px] font-medium">
+                <Link to={item.to} className="text-ink text-[15px] font-medium">
                   {item.label}
                 </Link>
               </li>

@@ -40,7 +40,7 @@ const TradeInvestment = () => (
       </div>
     </section>
 
-    <section className="bg-parchment py-16 sm:py-24">
+    <section className="bg-white py-16 sm:py-24 border-t border-parchment-line">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <SectionHead
           kicker="Investment Portal"
@@ -96,7 +96,7 @@ const TradeInvestment = () => (
             phase 2 trade intelligence offering.
           </p>
         </div>
-        <div className="bg-parchment border border-parchment-line p-8">
+        <div className="bg-white border border-parchment-line p-8">
           <h2 className="font-serif text-[22px] mb-2">Request Investment Information</h2>
           <p className="text-ink-soft text-[14.5px] mb-6">
             Tell us about your investment interest and a member of the DFC investment team will follow up.

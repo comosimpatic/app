@@ -72,7 +72,7 @@ const About = () => (
       </div>
     </section>
 
-    <section className="bg-parchment py-16 sm:py-24">
+    <section className="bg-white py-16 sm:py-24 border-t border-parchment-line">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <SectionHead
           kicker="Leadership & Team"

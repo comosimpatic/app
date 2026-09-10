@@ -11,11 +11,11 @@ const HeroRouteMap = () => (
       aria-label="Route map connecting Caribbean trade markets"
     >
       <defs>
-        <style>{`.port-label{font-family:'IBM Plex Sans',sans-serif; font-size:11px; fill:rgba(251,249,244,0.65);}`}</style>
+        <style>{`.port-label{font-family:'IBM Plex Sans',sans-serif; font-size:11px; fill:rgba(74,90,102,0.8);}`}</style>
       </defs>
 
       {/* faint chart grid */}
-      <g opacity="0.08" stroke="#FBF9F4">
+      <g opacity="0.12" stroke="#16232E">
         {[0, 76, 152, 228, 304, 380].map((y) => (
           <line key={`h-${y}`} x1="0" y1={y} x2="460" y2={y} strokeWidth="1" />
         ))}
@@ -37,35 +37,35 @@ const HeroRouteMap = () => (
         <text className="port-label" x="50" y="304">Miami</text>
       </g>
       <g className="route-dot" style={{ animationDelay: "1s" }}>
-        <circle cx="150" cy="190" r="4" fill="#F1E9D8" />
+        <circle cx="150" cy="190" r="4" fill="#2C6E6B" />
         <text className="port-label" x="158" y="188">Jamaica</text>
       </g>
       <g className="route-dot" style={{ animationDelay: "1.2s" }}>
-        <circle cx="230" cy="120" r="4" fill="#F1E9D8" />
+        <circle cx="230" cy="120" r="4" fill="#2C6E6B" />
         <text className="port-label" x="238" y="118">Puerto Rico</text>
       </g>
       <g className="route-dot" style={{ animationDelay: "1.4s" }}>
-        <circle cx="220" cy="40" r="4" fill="#F1E9D8" />
+        <circle cx="220" cy="40" r="4" fill="#2C6E6B" />
         <text className="port-label" x="228" y="38">Bahamas</text>
       </g>
       <g className="route-dot" style={{ animationDelay: "1.6s" }}>
-        <circle cx="345" cy="120" r="4" fill="#F1E9D8" />
+        <circle cx="345" cy="120" r="4" fill="#2C6E6B" />
         <text className="port-label" x="322" y="105">Antigua</text>
       </g>
       <g className="route-dot" style={{ animationDelay: "1.8s" }}>
-        <circle cx="300" cy="200" r="4" fill="#F1E9D8" />
+        <circle cx="300" cy="200" r="4" fill="#2C6E6B" />
         <text className="port-label" x="308" y="198">Barbados</text>
       </g>
       <g className="route-dot" style={{ animationDelay: "2s" }}>
-        <circle cx="400" cy="250" r="4" fill="#F1E9D8" />
+        <circle cx="400" cy="250" r="4" fill="#2C6E6B" />
         <text className="port-label" x="352" y="266">Trinidad &amp; Tobago</text>
       </g>
       <g className="route-dot" style={{ animationDelay: "2.2s" }}>
-        <circle cx="235" cy="340" r="4" fill="#F1E9D8" />
+        <circle cx="235" cy="340" r="4" fill="#2C6E6B" />
         <text className="port-label" x="243" y="345">Guyana</text>
       </g>
     </svg>
-    <p className="text-[12.5px] text-cream/45 mt-2.5">
+    <p className="text-[12.5px] text-ink-soft/70 mt-2.5">
       Illustrative trade route network — 15 core Caribbean markets at launch
     </p>
   </div>

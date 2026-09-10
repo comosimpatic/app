@@ -83,10 +83,9 @@ const BusinessModel = () => (
       </div>
     </section>
 
-    <section className="bg-navy text-cream py-16 sm:py-24">
+    <section className="bg-white text-ink py-16 sm:py-24 border-t border-parchment-line">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <SectionHead
-          dark
           kicker="Ecosystem"
           title="How capital, products and markets connect through DFC"
           lede="The DFC platform sits at the center of a regional flow — bringing capital, supply and demand together across Caribbean markets."
@@ -98,12 +97,12 @@ const BusinessModel = () => (
                 className={`px-5 py-4 border text-[14px] font-medium ${
                   node === "DFC Platform"
                     ? "bg-teal border-teal text-cream"
-                    : "border-white/25 text-cream/85"
+                    : "border-parchment-line text-ink-soft"
                 }`}
               >
                 {node}
               </div>
-              {i < ecosystem.length - 1 && <span className="text-teal-light">&rarr;</span>}
+              {i < ecosystem.length - 1 && <span className="text-teal">&rarr;</span>}
             </React.Fragment>
           ))}
         </div>

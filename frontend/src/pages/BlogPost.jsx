@@ -14,9 +14,9 @@ const BlogPost = () => {
     <>
       <Seo title={post.title} description={post.excerpt} />
 
-      <section className="bg-gradient-to-b from-navy to-navy-deep text-cream pt-16 pb-14 sm:pt-20 sm:pb-16">
+      <section className="bg-white text-ink pt-16 pb-14 sm:pt-20 sm:pb-16 border-b border-parchment-line">
         <div className="max-w-wrap mx-auto px-5 sm:px-8">
-          <BackLink to="/blog" label="The Caribbean Business Exchange" className="text-[13.5px] text-teal-light font-medium mb-4 inline-block" />
+          <BackLink to="/blog" label="The Caribbean Business Exchange" className="text-[13.5px] text-teal font-medium mb-4 inline-block" />
           <h1 className="font-serif text-[30px] sm:text-[40px] max-w-[24ch]">{post.title}</h1>
         </div>
       </section>
