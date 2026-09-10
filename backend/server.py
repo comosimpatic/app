@@ -1,14 +1,17 @@
-from fastapi import FastAPI, APIRouter
+from fastapi import FastAPI, APIRouter, Depends, HTTPException
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
+import secrets
 import logging
 from pathlib import Path
 from pydantic import BaseModel, Field, ConfigDict, EmailStr
 from typing import List, Literal, Optional
 import uuid
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+import jwt
 
 
 ROOT_DIR = Path(__file__).parent
@@ -98,6 +101,47 @@ async def create_inquiry(input: InquiryCreate):
     doc['created_at'] = doc['created_at'].isoformat()
     await db.inquiries.insert_one(doc)
     return inquiry
+
+
+# ---------- Admin auth (single shared password, JWT session) ----------
+
+JWT_SECRET = os.environ['JWT_SECRET']
+JWT_ALGORITHM = 'HS256'
+JWT_EXPIRY_HOURS = 24
+ADMIN_PASSWORD = os.environ['ADMIN_PASSWORD']
+
+bearer_scheme = HTTPBearer()
+
+class AdminLoginRequest(BaseModel):
+    password: str
+
+class AdminLoginResponse(BaseModel):
+    token: str
+
+@api_router.post("/admin/login", response_model=AdminLoginResponse)
+async def admin_login(input: AdminLoginRequest):
+    if not secrets.compare_digest(input.password, ADMIN_PASSWORD):
+        raise HTTPException(status_code=401, detail="Incorrect password")
+    payload = {
+        'sub': 'admin',
+        'exp': datetime.now(timezone.utc) + timedelta(hours=JWT_EXPIRY_HOURS),
+    }
+    token = jwt.encode(payload, JWT_SECRET, algorithm=JWT_ALGORITHM)
+    return AdminLoginResponse(token=token)
+
+async def require_admin(credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme)):
+    try:
+        jwt.decode(credentials.credentials, JWT_SECRET, algorithms=[JWT_ALGORITHM])
+    except jwt.PyJWTError:
+        raise HTTPException(status_code=401, detail="Invalid or expired session")
+
+@api_router.get("/inquiries", response_model=List[Inquiry], dependencies=[Depends(require_admin)])
+async def list_inquiries():
+    docs = await db.inquiries.find({}, {"_id": 0}).sort("created_at", -1).to_list(1000)
+    for doc in docs:
+        if isinstance(doc['created_at'], str):
+            doc['created_at'] = datetime.fromisoformat(doc['created_at'])
+    return docs
 
 
 # Include the router in the main app

@@ -15,16 +15,25 @@ const setMeta = (name, content) => {
   tag.setAttribute("content", content);
 };
 
-const Seo = ({ title, description }) => {
+const Seo = ({ title, description, noIndex = false }) => {
   useEffect(() => {
     document.title = title ? `${title} | ${SITE_NAME}` : DEFAULT_TITLE;
     setMeta("description", description || DEFAULT_DESCRIPTION);
 
+    let robotsTag;
+    if (noIndex) {
+      robotsTag = document.createElement("meta");
+      robotsTag.setAttribute("name", "robots");
+      robotsTag.setAttribute("content", "noindex, nofollow");
+      document.head.appendChild(robotsTag);
+    }
+
     return () => {
       document.title = DEFAULT_TITLE;
       setMeta("description", DEFAULT_DESCRIPTION);
+      if (robotsTag) robotsTag.remove();
     };
-  }, [title, description]);
+  }, [title, description, noIndex]);
 
   return null;
 };
