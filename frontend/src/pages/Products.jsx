@@ -5,6 +5,7 @@ import CtaBand from "../components/CtaBand";
 import Seo from "../components/Seo";
 import ProductImagePlaceholder from "../components/ProductImagePlaceholder";
 import { categories, sampleProduct } from "../data/products";
+import { categoryPhotos } from "../data/categoryPhotos";
 
 const Products = () => (
   <>
@@ -20,11 +21,18 @@ const Products = () => (
 
     <section className="py-16 sm:py-24">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-parchment-line border border-parchment-line mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {categories.map((c) => (
-            <div key={c.slug} className="bg-white p-7" data-testid={`category-${c.slug}`}>
-              <h3 className="text-[16.5px] mb-2">{c.name}</h3>
-              <p className="text-[14px] text-ink-soft">{c.desc}</p>
+            <div key={c.slug} className="border border-parchment-line" data-testid={`category-${c.slug}`}>
+              {categoryPhotos[c.slug] && (
+                <div className="aspect-[16/9] overflow-hidden border-b border-parchment-line">
+                  <img src={categoryPhotos[c.slug]} alt={c.name} className="w-full h-full object-cover" />
+                </div>
+              )}
+              <div className="p-6">
+                <h3 className="text-[16.5px] mb-2">{c.name}</h3>
+                <p className="text-[14px] text-ink-soft">{c.desc}</p>
+              </div>
             </div>
           ))}
         </div>

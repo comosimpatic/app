@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HeroRouteMap from "../components/HeroRouteMap";
+import {
+  Handshake, Package, Ship, MapPinned, Users, TrendingUp,
+} from "lucide-react";
 import SectionHead from "../components/SectionHead";
-import CtaBand from "../components/CtaBand";
 import Seo from "../components/Seo";
 import { categories as productCategories } from "../data/products";
+import { categoryPhotos } from "../data/categoryPhotos";
 import { newsItems } from "../data/content";
 
 const frictionPoints = [
@@ -19,12 +21,12 @@ const frictionPoints = [
 ];
 
 const functions = [
-  { code: "01", title: "Trade", desc: "Connecting buyers and sellers across Caribbean markets." },
-  { code: "02", title: "Distribution", desc: "Getting products into the right markets through local and regional distribution networks." },
-  { code: "03", title: "Logistics", desc: "Coordinating freight, warehousing, consolidation, last-mile delivery and supply-chain services." },
-  { code: "04", title: "Market Entry", desc: "Helping businesses establish commercial presence in new Caribbean territories." },
-  { code: "05", title: "Commercial Representation", desc: "Providing local market support, sales development and partner relationships." },
-  { code: "06", title: "Investment", desc: "Connecting investment capital with commercially viable Caribbean opportunities." },
+  { code: "01", icon: Handshake, title: "Trade", desc: "Connecting buyers and sellers across Caribbean markets." },
+  { code: "02", icon: Package, title: "Distribution", desc: "Getting products into the right markets through local and regional distribution networks." },
+  { code: "03", icon: Ship, title: "Logistics", desc: "Coordinating freight, warehousing, consolidation, last-mile delivery and supply-chain services." },
+  { code: "04", icon: MapPinned, title: "Market Entry", desc: "Helping businesses establish commercial presence in new Caribbean territories." },
+  { code: "05", icon: Users, title: "Commercial Representation", desc: "Providing local market support, sales development and partner relationships." },
+  { code: "06", icon: TrendingUp, title: "Investment", desc: "Connecting investment capital with commercially viable Caribbean opportunities." },
 ];
 
 const modelSteps = [
@@ -49,48 +51,55 @@ const Home = () => (
       title="Pan-Caribbean Trade, Distribution & Investment Platform"
       description="Distribution Factory Caribbean connects suppliers, buyers, investors and logistics providers across 15 Caribbean markets — trade, distribution, logistics and investment through one regional platform."
     />
-    <section className="bg-white text-ink pt-20 sm:pt-24 overflow-hidden border-b border-parchment-line">
-      <div className="max-w-wrap mx-auto px-5 sm:px-8">
-        <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 items-center">
-          <div>
-            <p className="text-[14px] text-teal font-medium mb-4">
-              Pan-Caribbean Trade &amp; Distribution Platform
-            </p>
-            <h1 className="font-serif text-[34px] sm:text-[46px] lg:text-[54px] max-w-[12.5ch] mb-5">
-              Connecting Caribbean markets. Moving Caribbean business.
-            </h1>
-            <p className="text-[17.5px] text-ink-soft max-w-[46ch] mb-8">
-              DFC links suppliers, buyers, investors and logistics providers across the region — so
-              businesses can move from local opportunity to regional scale.
-            </p>
-            <div className="flex flex-wrap gap-3.5 mb-12">
-              <Link to="/doing-business" className="btn btn-coral" data-testid="home-hero-cta-primary">
-                Do Business with DFC
-              </Link>
-              <Link to="/network" className="btn btn-outline-dark" data-testid="home-hero-cta-secondary">
-                Explore Our Network
-              </Link>
-            </div>
+    <section className="relative overflow-hidden">
+      <div className="absolute inset-0">
+        <img
+          src="/photos/hero-port.jpg"
+          alt="Container ship and cargo at a Caribbean port"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/75 to-navy/35" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-transparent to-transparent" />
+      </div>
+
+      <div className="relative max-w-wrap mx-auto px-5 sm:px-8 pt-20 sm:pt-28 pb-12">
+        <div className="max-w-[36ch]">
+          <p className="text-[14px] text-teal-light font-medium mb-4">
+            Pan-Caribbean Trade &amp; Distribution Platform
+          </p>
+          <h1 className="font-serif text-cream text-[34px] sm:text-[46px] lg:text-[54px] max-w-[12.5ch] mb-5">
+            Connecting Caribbean markets. Moving Caribbean business.
+          </h1>
+          <p className="text-[17.5px] text-cream/85 max-w-[46ch] mb-8">
+            DFC links suppliers, buyers, investors and logistics providers across the region — so
+            businesses can move from local opportunity to regional scale.
+          </p>
+          <div className="flex flex-wrap gap-3.5 mb-16">
+            <Link to="/doing-business" className="btn btn-coral" data-testid="home-hero-cta-primary">
+              Do Business with DFC
+            </Link>
+            <Link to="/network" className="btn btn-outline-light" data-testid="home-hero-cta-secondary">
+              Explore Our Network
+            </Link>
           </div>
-          <HeroRouteMap />
         </div>
 
-        <div className="border-t border-parchment-line py-7 grid grid-cols-2 sm:grid-cols-4 gap-6">
+        <div className="relative border-t border-cream/20 py-7 grid grid-cols-2 sm:grid-cols-4 gap-6">
           <div>
-            <span className="font-serif text-[26px] text-teal block">15</span>
-            <span className="text-[13px] text-ink-soft">Core Caribbean markets</span>
+            <span className="font-serif text-[26px] text-teal-light block">15</span>
+            <span className="text-[13px] text-cream/70">Core Caribbean markets</span>
           </div>
           <div>
-            <span className="font-serif text-[26px] text-teal block">4</span>
-            <span className="text-[13px] text-ink-soft">Pillars: Source, Move, Sell, Invest</span>
+            <span className="font-serif text-[26px] text-teal-light block">4</span>
+            <span className="text-[13px] text-cream/70">Pillars: Source, Move, Sell, Invest</span>
           </div>
           <div>
-            <span className="font-serif text-[26px] text-teal block">1</span>
-            <span className="text-[13px] text-ink-soft">Regional commercial relationship</span>
+            <span className="font-serif text-[26px] text-teal-light block">1</span>
+            <span className="text-[13px] text-cream/70">Regional commercial relationship</span>
           </div>
           <div>
-            <span className="font-serif text-[26px] text-teal block">3</span>
-            <span className="text-[13px] text-ink-soft">Ways to do business with DFC</span>
+            <span className="font-serif text-[26px] text-teal-light block">3</span>
+            <span className="text-[13px] text-cream/70">Ways to do business with DFC</span>
           </div>
         </div>
       </div>
@@ -130,15 +139,14 @@ const Home = () => (
           title="Six functions, one platform"
           lede="DFC connects the commercial functions that Caribbean trade actually depends on — rather than treating them as separate vendors."
         />
-        <div className="border-t border-parchment-line">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 border-t border-parchment-line pt-10">
           {functions.map((fn) => (
-            <div
-              key={fn.code}
-              className="grid grid-cols-[50px_1fr] sm:grid-cols-[80px_200px_1fr] gap-2 sm:gap-7 items-baseline py-6 border-b border-parchment-line"
-            >
-              <span className="font-serif text-[14px] text-teal">{fn.code}</span>
-              <h3 className="text-[19px] col-span-2 sm:col-span-1">{fn.title}</h3>
-              <p className="text-[15px] text-ink-soft col-span-2 sm:col-span-1">{fn.desc}</p>
+            <div key={fn.code}>
+              <div className="w-11 h-11 rounded-full bg-teal/10 flex items-center justify-center mb-4">
+                <fn.icon size={20} strokeWidth={1.75} className="text-teal" />
+              </div>
+              <h3 className="text-[17px] sm:text-[19px] mb-1.5">{fn.title}</h3>
+              <p className="text-[14px] sm:text-[15px] text-ink-soft">{fn.desc}</p>
             </div>
           ))}
         </div>
@@ -195,13 +203,21 @@ const Home = () => (
             View the full catalogue &rarr;
           </Link>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-parchment-line border border-parchment-line">
-          {productCategories.slice(0, 8).map((c) => (
-            <Link key={c.slug} to="/products" className="bg-white p-6 hover:bg-parchment transition-colors">
-              <h3 className="text-[15.5px] mb-1.5">{c.name}</h3>
-              <p className="text-[13.5px] text-ink-soft">{c.desc}</p>
-            </Link>
-          ))}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+          {productCategories
+            .filter((c) => categoryPhotos[c.slug])
+            .map((c) => (
+              <Link key={c.slug} to="/products" className="group">
+                <div className="aspect-[4/3] overflow-hidden border border-parchment-line mb-3">
+                  <img
+                    src={categoryPhotos[c.slug]}
+                    alt={c.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="text-[14.5px] font-medium group-hover:text-teal transition-colors">{c.name}</h3>
+              </Link>
+            ))}
         </div>
       </div>
     </section>
@@ -231,11 +247,29 @@ const Home = () => (
       </div>
     </section>
 
-    <CtaBand
-      title="Explore the DFC Caribbean network"
-      primary={{ label: "View Country Network", to: "/network" }}
-      secondary={{ label: "Contact DFC", to: "/contact" }}
-    />
+    <section className="relative py-24 sm:py-32 overflow-hidden">
+      <div className="absolute inset-0">
+        <img
+          src="/photos/cta-coastline.jpg"
+          alt="Caribbean coastline"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-deep/70" />
+      </div>
+      <div className="relative max-w-wrap mx-auto px-5 sm:px-8 text-center">
+        <h2 className="font-serif text-cream text-[26px] sm:text-[36px] max-w-[22ch] mx-auto mb-8">
+          Let's build a stronger Caribbean, together
+        </h2>
+        <div className="flex flex-wrap items-center justify-center gap-3.5">
+          <Link to="/network" className="btn btn-coral" data-testid="home-cta-network">
+            View Country Network
+          </Link>
+          <Link to="/contact" className="btn btn-outline-light" data-testid="home-cta-contact">
+            Contact DFC
+          </Link>
+        </div>
+      </div>
+    </section>
   </>
 );
 

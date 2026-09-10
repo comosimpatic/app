@@ -53,6 +53,7 @@ const Footer = () => (
           <Link to="/legal/cookie-policy" className="hover:text-teal">Cookie Policy</Link>
           <Link to="/legal/supplier-terms" className="hover:text-teal">Supplier Terms</Link>
           <Link to="/legal/partner-terms" className="hover:text-teal">Partner Terms</Link>
+          <Link to="/legal/photo-credits" className="hover:text-teal">Photo Credits</Link>
         </div>
       </div>
     </div>
