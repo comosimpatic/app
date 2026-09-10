@@ -7,12 +7,30 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        serif: ['Fraunces', 'serif'],
+        sans: ['"IBM Plex Sans"', 'sans-serif'],
+      },
+      maxWidth: {
+        wrap: '1240px',
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)'
       },
       colors: {
+        navy: '#0F2438',
+        'navy-deep': '#0A1A29',
+        teal: '#2C6E6B',
+        'teal-light': '#4C948F',
+        coral: '#D9643A',
+        'coral-dark': '#C1552F',
+        parchment: '#F1E9D8',
+        'parchment-line': '#E2D6BC',
+        ink: '#16232E',
+        'ink-soft': '#4A5A66',
+        cream: '#FBF9F4',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
