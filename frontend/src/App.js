@@ -1,37 +1,58 @@
 import "./App.css";
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Sidebar from "./components/Sidebar";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import Services from "./components/Services";
-import Clients from "./components/Clients";
-import Testimonials from "./components/Testimonials";
-import Blog from "./components/Blog";
+import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { Toaster } from "sonner";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import BusinessModel from "./pages/BusinessModel";
+import Clients from "./pages/Clients";
+import DoingBusiness from "./pages/DoingBusiness";
+import Products from "./pages/Products";
+import ProductDetail from "./pages/ProductDetail";
+import TradeInvestment from "./pages/TradeInvestment";
+import Network from "./pages/Network";
+import CountryDetail from "./pages/CountryDetail";
+import News from "./pages/News";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import Contact from "./pages/Contact";
 
-const Home = () => (
-  <>
-    <Sidebar />
-    <main className="lg:ml-[220px] pt-16 lg:pt-0">
-      <Hero />
-      <Projects />
-      <Services />
-      <Clients />
-      <Testimonials />
-      <Blog />
-      <Footer />
-    </main>
-  </>
-);
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+        <ScrollToTop />
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/business-model" element={<BusinessModel />} />
+            <Route path="/clients" element={<Clients />} />
+            <Route path="/doing-business" element={<DoingBusiness />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/products/:slug" element={<ProductDetail />} />
+            <Route path="/trade-investment" element={<TradeInvestment />} />
+            <Route path="/network" element={<Network />} />
+            <Route path="/network/:slug" element={<CountryDetail />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+        <Toaster position="bottom-right" richColors />
       </BrowserRouter>
     </div>
   );

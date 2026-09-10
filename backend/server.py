@@ -5,8 +5,8 @@ from motor.motor_asyncio import AsyncIOMotorClient
 import os
 import logging
 from pathlib import Path
-from pydantic import BaseModel, Field, ConfigDict
-from typing import List
+from pydantic import BaseModel, Field, ConfigDict, EmailStr
+from typing import List, Literal, Optional
 import uuid
 from datetime import datetime, timezone
 
@@ -58,13 +58,47 @@ async def create_status_check(input: StatusCheckCreate):
 async def get_status_checks():
     # Exclude MongoDB's _id field from the query results
     status_checks = await db.status_checks.find({}, {"_id": 0}).to_list(1000)
-    
+
     # Convert ISO string timestamps back to datetime objects
     for check in status_checks:
         if isinstance(check['timestamp'], str):
             check['timestamp'] = datetime.fromisoformat(check['timestamp'])
-    
+
     return status_checks
+
+
+# ---------- Inquiries (Doing Business / Contact / Trade & Investment forms) ----------
+
+InquiryPathway = Literal["sell", "buy", "partner", "invest", "press", "general"]
+
+class Inquiry(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    pathway: InquiryPathway
+    name: str
+    email: EmailStr
+    company: Optional[str] = None
+    country: Optional[str] = None
+    message: str
+    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+class InquiryCreate(BaseModel):
+    pathway: InquiryPathway
+    name: str
+    email: EmailStr
+    company: Optional[str] = None
+    country: Optional[str] = None
+    message: str
+
+@api_router.post("/inquiries", response_model=Inquiry)
+async def create_inquiry(input: InquiryCreate):
+    inquiry = Inquiry(**input.model_dump())
+    doc = inquiry.model_dump()
+    doc['created_at'] = doc['created_at'].isoformat()
+    await db.inquiries.insert_one(doc)
+    return inquiry
+
 
 # Include the router in the main app
 app.include_router(api_router)
