@@ -37,7 +37,17 @@ const Products = () => (
             className="grid sm:grid-cols-[220px_1fr] gap-8 border border-parchment-line p-7 hover:border-teal transition-colors items-start"
             data-testid="sample-product-link"
           >
-            <ProductImagePlaceholder label="Product image coming soon" className="self-start w-full" />
+            {sampleProduct.image ? (
+              <div className="aspect-square bg-parchment border border-parchment-line self-start w-full overflow-hidden">
+                <img
+                  src={sampleProduct.image}
+                  alt={sampleProduct.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ) : (
+              <ProductImagePlaceholder label="Product image coming soon" className="self-start w-full" />
+            )}
             <div>
               <p className="text-[13px] font-semibold text-teal mb-1.5">{sampleProduct.category}</p>
               <h3 className="font-serif text-[21px] mb-2">{sampleProduct.name}</h3>

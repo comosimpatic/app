@@ -27,7 +27,17 @@ const ProductDetail = () => {
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <BackLink to="/products" label="Back to Products" className="text-[13.5px] font-semibold text-teal mb-8 inline-block" />
         <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
-          <ProductImagePlaceholder label="Product image coming soon" className="self-start w-full" />
+          {p.image ? (
+            <div className="bg-parchment border border-parchment-line p-8 flex items-center justify-center self-start w-full">
+              <img
+                src={p.image}
+                alt={p.name}
+                className="w-full h-auto max-h-[520px] object-contain"
+              />
+            </div>
+          ) : (
+            <ProductImagePlaceholder label="Product image coming soon" className="self-start w-full" />
+          )}
           <div>
             <p className="text-[13px] font-semibold text-teal mb-2">{p.category}</p>
             <h1 className="font-serif text-[30px] sm:text-[36px] mb-4">{p.name}</h1>

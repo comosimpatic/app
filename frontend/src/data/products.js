@@ -16,6 +16,7 @@ export const categories = [
 export const sampleProduct = {
   slug: "example-coconut-water",
   name: "Premium Coconut Water — 330ml Can",
+  image: "/products/example-coconut-water.jpg",
   manufacturer: "Island Harvest Beverage Co.",
   countryOfOrigin: "Dominican Republic",
   category: "Food & Beverage",
