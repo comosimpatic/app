@@ -26,12 +26,14 @@ const Header = () => {
       <nav className="flex items-center justify-between gap-6 px-5 sm:px-8 py-4 max-w-[1340px] mx-auto">
         <Link
           to="/"
-          className="flex items-baseline gap-2 font-serif text-[18px] text-cream shrink-0"
+          className="flex items-center shrink-0"
           data-testid="nav-logo"
         >
-          <span className="text-teal-light text-[19px]">&#9670;</span>
-          <span className="hidden sm:inline">Distribution Factory Caribbean</span>
-          <span className="sm:hidden">DFC</span>
+          <img
+            src="/logo.png"
+            alt="Distribution Factory Caribbean"
+            className="h-9 sm:h-10 w-auto"
+          />
         </Link>
 
         <ul className="hidden xl:flex items-center gap-5">

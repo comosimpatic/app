@@ -6,9 +6,11 @@ const Footer = () => (
     <div className="max-w-wrap mx-auto px-5 sm:px-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10 mb-12">
         <div>
-          <p className="font-serif text-cream text-[19px] mb-3">
-            &#9670; Distribution Factory Caribbean
-          </p>
+          <img
+            src="/logo.png"
+            alt="Distribution Factory Caribbean"
+            className="h-10 w-auto mb-3"
+          />
           <p className="text-[14px] max-w-[32ch]">
             A pan-Caribbean trade, distribution and investment platform.
           </p>
