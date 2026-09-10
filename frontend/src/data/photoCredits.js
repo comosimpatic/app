@@ -4,10 +4,10 @@
 export const photoCredits = [
   {
     file: "/photos/hero-port.jpg",
-    title: "Container Vessel, Coastal, St Maarten",
-    author: "Paul Harrison",
-    license: "CC BY-SA 4.0",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Container_Vessel,_Coastal,_St_Maarten_2011_04.jpg",
+    title: "Freeport Harbor, Bahamas",
+    author: "ArnoldReinhold",
+    license: "CC BY 4.0",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Freeport_Harbor.agr.jpg",
   },
   {
     file: "/photos/cta-coastline.jpg",

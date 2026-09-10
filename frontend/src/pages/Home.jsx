@@ -55,7 +55,7 @@ const Home = () => (
       <div className="absolute inset-0">
         <img
           src="/photos/hero-port.jpg"
-          alt="Container ship and cargo at a Caribbean port"
+          alt="Aerial view of Freeport Harbour, Bahamas, with cargo vessels and container cranes"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-navy-deep/70" />
@@ -64,14 +64,14 @@ const Home = () => (
       </div>
 
       <div className="relative max-w-wrap mx-auto px-5 sm:px-8 pt-20 sm:pt-28 pb-12">
-        <div className="max-w-[36ch]">
-          <p className="text-[14px] text-coral font-semibold mb-4 uppercase tracking-wide">
+        <div className="max-w-[52ch]">
+          <p className="text-[14px] text-coral font-semibold mb-5 uppercase tracking-wide">
             Pan-Caribbean Trade &amp; Distribution Platform
           </p>
-          <h1 className="font-serif text-cream text-[34px] sm:text-[46px] lg:text-[54px] max-w-[12.5ch] mb-5">
+          <h1 className="font-serif text-cream text-[34px] sm:text-[46px] lg:text-[54px] max-w-[19ch] mb-6 leading-[1.15]">
             Connecting Caribbean markets. Moving Caribbean business.
           </h1>
-          <p className="text-[17.5px] text-cream/85 max-w-[46ch] mb-8">
+          <p className="text-[17.5px] text-cream/85 max-w-[46ch] mb-9">
             DFC links suppliers, buyers, investors and logistics providers across the region — so
             businesses can move from local opportunity to regional scale.
           </p>
