@@ -1,7 +1,8 @@
 import React from "react";
+import { cn } from "../lib/utils";
 
 const SectionHead = ({ kicker, title, lede, dark = false, className = "" }) => (
-  <div className={`max-w-[640px] mb-14 ${className}`}>
+  <div className={cn("max-w-[640px] mb-14", className)}>
     {kicker && (
       <p className={`text-[14px] font-semibold mb-3 ${dark ? "text-teal-light" : "text-coral"}`}>
         {kicker}

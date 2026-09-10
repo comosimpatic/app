@@ -187,13 +187,12 @@ const Home = () => (
 
     <section className="bg-parchment py-16 sm:py-24">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
-        <div className="flex flex-wrap items-end justify-between gap-6 mb-10">
+        <div className="flex flex-wrap items-start justify-between gap-6">
           <SectionHead
             kicker="Our Products"
             title="Products moving through the DFC network"
-            className="mb-0"
           />
-          <Link to="/products" className="text-teal text-[14.5px] font-semibold border-b border-teal/50 hover:border-teal shrink-0 mb-14">
+          <Link to="/products" className="text-teal text-[14.5px] font-semibold border-b border-teal/50 hover:border-teal shrink-0">
             View the full catalogue &rarr;
           </Link>
         </div>
@@ -210,13 +209,12 @@ const Home = () => (
 
     <section className="py-16 sm:py-24">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
-        <div className="flex flex-wrap items-end justify-between gap-6 mb-10">
+        <div className="flex flex-wrap items-start justify-between gap-6">
           <SectionHead
             kicker="News & Insights"
             title="What's moving across the network"
-            className="mb-0"
           />
-          <Link to="/news" className="text-teal text-[14.5px] font-semibold border-b border-teal/50 hover:border-teal shrink-0 mb-14">
+          <Link to="/news" className="text-teal text-[14.5px] font-semibold border-b border-teal/50 hover:border-teal shrink-0">
             Read all news &amp; insights &rarr;
           </Link>
         </div>

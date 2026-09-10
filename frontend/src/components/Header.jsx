@@ -57,7 +57,11 @@ const Header = () => {
         </ul>
 
         <div className="hidden xl:flex items-center gap-3 shrink-0">
-          <Link to="/doing-business" className="btn btn-outline-light" data-testid="nav-cta-partner">
+          <Link
+            to="/doing-business"
+            className="hidden 2xl:inline-flex btn btn-outline-light"
+            data-testid="nav-cta-partner"
+          >
             Become a Partner
           </Link>
           <Link to="/doing-business" className="btn btn-coral" data-testid="nav-cta">
