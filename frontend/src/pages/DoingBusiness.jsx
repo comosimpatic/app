@@ -7,23 +7,23 @@ const pathways = [
   {
     key: "sell",
     for: "For manufacturers & suppliers",
-    title: "Sell Through DFC",
+    title: "Sell Through DFX",
     services: ["Product onboarding", "Market assessment", "Distributor identification", "Sales representation", "Regional distribution & warehousing", "Market reporting"],
     cta: "Submit Your Product",
   },
   {
     key: "buy",
     for: "For Caribbean businesses",
-    title: "Buy Through DFC",
+    title: "Buy Through DFX",
     services: ["Supplier sourcing", "Product procurement", "Quotation management", "Consolidation & freight", "Customs coordination", "Distribution"],
     cta: "Submit a Sourcing Request",
   },
   {
     key: "partner",
     for: "For institutions & investors",
-    title: "Partner With DFC",
+    title: "Partner With DFX",
     services: ["Logistics companies & distributors", "Manufacturers & retailers", "Financial institutions", "Investment companies", "Governments & development agencies"],
-    cta: "Become a DFC Partner",
+    cta: "Become a DFX Partner",
   },
 ];
 
@@ -33,13 +33,13 @@ const DoingBusiness = () => {
   return (
     <>
       <Seo
-        title="Doing Business with DFC — Sell, Buy or Partner"
-        description="Three ways to work with Distribution Factory Caribbean: sell through DFC's distribution network, buy through DFC's sourcing network, or partner with DFC across the Caribbean."
+        title="Doing Business with DFX — Sell, Buy or Partner"
+        description="Three ways to work with DFX Caribbean: sell through DFX's distribution network, buy through DFX's sourcing network, or partner with DFX across the Caribbean."
       />
       <PageHero
-        eyebrow="Doing Business with DFC"
+        eyebrow="Doing Business with DFX"
         title="Ready to enter the Caribbean market?"
-        lede="DFC can become your regional commercial partner through three entry pathways."
+        lede="DFX can become your regional commercial partner through three entry pathways."
       />
 
       <section className="py-16 sm:py-24">

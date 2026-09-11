@@ -12,19 +12,19 @@ const segments = [
   { title: "Government & Public Sector", need: "Support procurement and regional commercial initiatives.", link: "/trade-investment" },
   { title: "SMEs & Entrepreneurs", need: "Turn local products into regional businesses.", link: "/doing-business" },
   { title: "Investors", need: "Discover businesses and projects requiring capital.", link: "/trade-investment" },
-  { title: "International Companies", need: "Use DFC as a gateway into Caribbean markets.", link: "/network" },
+  { title: "International Companies", need: "Use DFX as a gateway into Caribbean markets.", link: "/network" },
 ];
 
 const Clients = () => (
   <>
     <Seo
       title="Who We Serve — Manufacturers, Distributors & Investors"
-      description="Manufacturers, importers, distributors, retailers, hotels, governments, SMEs and investors — see how Distribution Factory Caribbean serves every side of Caribbean trade."
+      description="Manufacturers, importers, distributors, retailers, hotels, governments, SMEs and investors — see how DFX Caribbean serves every side of Caribbean trade."
     />
     <PageHero
       eyebrow="Clients"
       title="Built for every side of Caribbean trade"
-      lede="Whatever side of a transaction you sit on, DFC gives you one regional relationship instead of fourteen local ones."
+      lede="Whatever side of a transaction you sit on, DFX gives you one regional relationship instead of fourteen local ones."
     />
 
     <section className="py-16 sm:py-24">

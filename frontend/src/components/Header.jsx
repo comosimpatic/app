@@ -32,7 +32,7 @@ const Header = () => {
         >
           <img
             src="/logo.png"
-            alt="Distribution Factory Caribbean"
+            alt="DFX Caribbean"
             className="h-9 sm:h-10 w-auto"
           />
         </Link>
@@ -65,7 +65,7 @@ const Header = () => {
             Become a Partner
           </Link>
           <Link to="/doing-business" className="btn btn-coral" data-testid="nav-cta">
-            Do Business With DFC
+            Do Business With DFX
           </Link>
         </div>
 
@@ -91,7 +91,7 @@ const Header = () => {
             ))}
           </ul>
           <Link to="/doing-business" className="btn btn-coral w-full mt-6 justify-center">
-            Do Business With DFC
+            Do Business With DFX
           </Link>
         </div>
       )}

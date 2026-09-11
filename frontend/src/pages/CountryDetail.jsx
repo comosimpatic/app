@@ -18,7 +18,7 @@ const CountryDetail = () => {
     <>
       <Seo
         title={`${market.name} — Caribbean Trade & Distribution`}
-        description={`${market.name} is one of DFC's 15 core Caribbean markets. Explore market overview, products, suppliers, buyers, distribution, logistics and investment opportunities.`}
+        description={`${market.name} is one of DFX's 15 core Caribbean markets. Explore market overview, products, suppliers, buyers, distribution, logistics and investment opportunities.`}
       />
       <section className="bg-white text-ink pt-16 pb-14 sm:pt-20 sm:pb-16 border-b border-parchment-line">
         <div className="max-w-wrap mx-auto px-5 sm:px-8">
@@ -39,7 +39,7 @@ const CountryDetail = () => {
             <div>
               <p className="text-[13px] font-semibold text-coral mb-2.5">Market Overview</p>
               <p className="text-ink-soft text-[15.5px] max-w-[56ch]">
-                {market.name} is one of DFC's 15 core launch markets. DFC's regional platform gives
+                {market.name} is one of DFX's 15 core launch markets. DFX's regional platform gives
                 businesses operating here access to sourcing, distribution, logistics, market entry
                 and investment services across the full Caribbean network — coordinated through a
                 single local point of contact.
@@ -47,12 +47,12 @@ const CountryDetail = () => {
             </div>
             <div className="grid sm:grid-cols-2 gap-8">
               {[
-                { title: "Products", body: `Regional and international products available for distribution into ${market.name} across DFC's core categories.` },
-                { title: "Suppliers", body: `Local suppliers in ${market.name} can be onboarded to DFC's network for regional distribution.` },
-                { title: "Buyers", body: `DFC maintains relationships with retailers, distributors and institutional buyers in ${market.name}.` },
-                { title: "Distribution", body: `Local and regional distribution coverage, coordinated with DFC's logistics partners serving ${market.name}.` },
+                { title: "Products", body: `Regional and international products available for distribution into ${market.name} across DFX's core categories.` },
+                { title: "Suppliers", body: `Local suppliers in ${market.name} can be onboarded to DFX's network for regional distribution.` },
+                { title: "Buyers", body: `DFX maintains relationships with retailers, distributors and institutional buyers in ${market.name}.` },
+                { title: "Distribution", body: `Local and regional distribution coverage, coordinated with DFX's logistics partners serving ${market.name}.` },
                 { title: "Logistics", body: `Freight, warehousing and customs coordination for shipments into and out of ${market.name}.` },
-                { title: "Investment Opportunities", body: `Businesses and projects in ${market.name} seeking capital are tracked through DFC's investment portal.` },
+                { title: "Investment Opportunities", body: `Businesses and projects in ${market.name} seeking capital are tracked through DFX's investment portal.` },
               ].map((block) => (
                 <div key={block.title} className="border-t-2 border-teal pt-4">
                   <h3 className="text-[16px] mb-1.5">{block.title}</h3>
@@ -63,7 +63,7 @@ const CountryDetail = () => {
           </div>
 
           <div className="bg-white border border-parchment-line p-8 h-fit">
-            <p className="text-[13px] font-semibold text-teal mb-2">DFC Local Contact</p>
+            <p className="text-[13px] font-semibold text-teal mb-2">DFX Local Contact</p>
             <h2 className="font-serif text-[21px] mb-5">Reach the {market.name} desk</h2>
             <InquiryForm pathway="general" submitLabel="Contact This Market" testIdPrefix="country-contact" />
           </div>

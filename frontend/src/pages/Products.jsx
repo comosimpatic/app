@@ -11,12 +11,12 @@ const Products = () => (
   <>
     <Seo
       title="Caribbean Product Distribution — Browse the Catalogue"
-      description="Browse products moving through the DFC network across the Caribbean — food & beverage, hospitality, construction, energy, technology and more, organized by category."
+      description="Browse products moving through the DFX network across the Caribbean — food & beverage, hospitality, construction, energy, technology and more, organized by category."
     />
     <PageHero
       eyebrow="Products"
-      title="The DFC product catalogue"
-      lede="Products moving through the DFC network today, organized by category. Each listing links to sourcing, distribution and quote requests."
+      title="The DFX product catalogue"
+      lede="Products moving through the DFX network today, organized by category. Each listing links to sourcing, distribution and quote requests."
     />
 
     <section className="py-16 sm:py-24">
@@ -71,7 +71,7 @@ const Products = () => (
 
     <CtaBand
       title="Have a product to place across the region?"
-      primary={{ label: "Sell Through DFC", to: "/doing-business" }}
+      primary={{ label: "Sell Through DFX", to: "/doing-business" }}
     />
   </>
 );

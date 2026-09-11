@@ -6,9 +6,9 @@ import { adminLogin, fetchInquiries } from "../lib/api";
 const TOKEN_KEY = "dfc_admin_token";
 
 const PATHWAY_LABELS = {
-  sell: "Sell Through DFC",
-  buy: "Buy Through DFC",
-  partner: "Partner With DFC",
+  sell: "Sell Through DFX",
+  buy: "Buy Through DFX",
+  partner: "Partner With DFX",
   invest: "Investment Inquiry",
   press: "Press Inquiry",
   general: "General Inquiry",
@@ -55,7 +55,7 @@ const LoginForm = ({ onLoggedIn }) => {
   return (
     <section className="min-h-[70vh] flex items-center justify-center px-5">
       <form onSubmit={handleSubmit} className="w-full max-w-sm border border-parchment-line p-8">
-        <h1 className="font-serif text-[22px] mb-1">DFC Admin</h1>
+        <h1 className="font-serif text-[22px] mb-1">DFX Admin</h1>
         <p className="text-ink-soft text-[14px] mb-6">Enter the admin password to view submitted inquiries.</p>
         <label className="block text-[13px] font-semibold text-ink-soft mb-1.5">Password</label>
         <input
@@ -85,7 +85,7 @@ const InquiriesTable = ({ inquiries, onLogout, onRefresh, loading }) => {
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <div className="flex flex-wrap items-start justify-between gap-6 mb-10">
           <div>
-            <p className="text-[13px] font-semibold text-coral mb-2">DFC Admin</p>
+            <p className="text-[13px] font-semibold text-coral mb-2">DFX Admin</p>
             <h1 className="font-serif text-[26px] sm:text-[32px]">Submitted inquiries</h1>
           </div>
           <div className="flex gap-3">

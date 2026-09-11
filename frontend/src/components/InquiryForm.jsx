@@ -3,9 +3,9 @@ import { toast } from "sonner";
 import { submitInquiry } from "../lib/api";
 
 const PATHWAY_LABELS = {
-  sell: "Sell Through DFC",
-  buy: "Buy Through DFC",
-  partner: "Partner With DFC",
+  sell: "Sell Through DFX",
+  buy: "Buy Through DFX",
+  partner: "Partner With DFX",
   invest: "Investment Inquiry",
   press: "Press Inquiry",
   general: "General Inquiry",
@@ -40,7 +40,7 @@ const InquiryForm = ({
     try {
       await submitInquiry(form);
       setStatus("done");
-      toast.success("Thank you — DFC will be in touch shortly.");
+      toast.success("Thank you — DFX will be in touch shortly.");
     } catch (err) {
       setStatus("idle");
       toast.error("Something went wrong submitting your inquiry. Please try again.");
@@ -52,7 +52,7 @@ const InquiryForm = ({
       <div className={`border border-parchment-line bg-white px-6 py-8 ${className}`} data-testid={`${testIdPrefix}-success`}>
         <p className="font-serif text-[20px] text-ink mb-2">Inquiry received.</p>
         <p className="text-ink-soft text-[15px]">
-          A member of the DFC team will follow up on your {PATHWAY_LABELS[form.pathway] || "inquiry"} shortly.
+          A member of the DFX team will follow up on your {PATHWAY_LABELS[form.pathway] || "inquiry"} shortly.
         </p>
       </div>
     );

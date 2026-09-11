@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 
-const SITE_NAME = "Distribution Factory Caribbean";
+const SITE_NAME = "DFX Caribbean";
 const DEFAULT_TITLE = `${SITE_NAME} — Connecting Caribbean Markets`;
 const DEFAULT_DESCRIPTION =
-  "Distribution Factory Caribbean is a Pan-Caribbean trade, distribution and investment platform connecting suppliers, buyers, investors and logistics providers across 15 core markets.";
+  "DFX Caribbean is a Pan-Caribbean trade, distribution and investment platform connecting suppliers, buyers, investors and logistics providers across 15 core markets.";
 
 const setMeta = (name, content) => {
   let tag = document.querySelector(`meta[name="${name}"]`);

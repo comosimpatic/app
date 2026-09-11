@@ -7,8 +7,8 @@ import { blogPosts } from "../data/content";
 const Blog = () => (
   <>
     <Seo
-      title="The Caribbean Business Exchange — DFC Blog"
-      description="Practical writing on Caribbean market entry, distribution, logistics and investment — from Distribution Factory Caribbean's regional team."
+      title="The Caribbean Business Exchange — DFX Blog"
+      description="Practical writing on Caribbean market entry, distribution, logistics and investment — from DFX Caribbean's regional team."
     />
     <PageHero
       eyebrow="Blog"

@@ -4,11 +4,11 @@ export const newsCategories = [
 ];
 
 export const newsItems = [
-  { title: "DFC opens regional distribution hub in Jamaica", category: "Company News", date: "Aug 2026" },
+  { title: "DFX opens regional distribution hub in Jamaica", category: "Company News", date: "Aug 2026" },
   { title: "Understanding CARICOM rules of origin for regional traders", category: "Trade", date: "Jul 2026" },
   { title: "Consolidated freight lanes cut lead times across the Eastern Caribbean", category: "Logistics", date: "Jun 2026" },
   { title: "Three sectors attracting new capital into Caribbean markets", category: "Investment", date: "May 2026" },
-  { title: "DFC adds Guyana and Suriname to its regional network", category: "Market Expansion", date: "Apr 2026" },
+  { title: "DFX adds Guyana and Suriname to its regional network", category: "Market Expansion", date: "Apr 2026" },
   { title: "New F&B suppliers onboarded for Q2 distribution", category: "New Products", date: "Mar 2026" },
 ];
 
@@ -27,7 +27,7 @@ export const blogPosts = [
       { h2: "Let trade success surface investment opportunities" },
       { p: "The most efficient regional operators treat trade and investment as connected, not separate tracks. A distribution relationship that proves out in one market is also the strongest evidence for an investment case in adjacent markets — infrastructure, local manufacturing, or a joint venture with a regional partner. Sequencing trade first gives you the operating data an investment case actually needs." },
       { h2: "The one-relationship model" },
-      { p: "This is the thesis DFC is built on: rather than a brand rebuilding sourcing, freight, customs and distributor relationships in every market it enters, one regional relationship can carry all of it — sourcing, movement, sales and, eventually, investment — across the full network. It doesn't remove the need for market-specific work. It removes the need to rebuild the infrastructure underneath it every time." },
+      { p: "This is the thesis DFX is built on: rather than a brand rebuilding sourcing, freight, customs and distributor relationships in every market it enters, one regional relationship can carry all of it — sourcing, movement, sales and, eventually, investment — across the full network. It doesn't remove the need for market-specific work. It removes the need to rebuild the infrastructure underneath it every time." },
     ],
   },
   {
@@ -42,9 +42,9 @@ export const blogPosts = [
       { h2: "Match the market to your product category" },
       { p: "Hospitality-heavy economies absorb F&B, amenities and equipment differently than markets with larger retail and consumer bases. A product built for hotel and resort procurement will find faster traction in a tourism-dependent market; a shelf-stable consumer product will move faster somewhere with a deeper retail and distribution network already in place." },
       { h2: "Check regulatory friction, not just tariffs" },
-      { p: "Tariff schedules get most of the attention, but non-tariff friction — labeling requirements, certification recognition, registration timelines — is usually what actually slows a first shipment down. DFC's network maintains current market-entry requirements by country as part of onboarding a new supplier, so this homework doesn't have to be done from scratch for every product line." },
+      { p: "Tariff schedules get most of the attention, but non-tariff friction — labeling requirements, certification recognition, registration timelines — is usually what actually slows a first shipment down. DFX's network maintains current market-entry requirements by country as part of onboarding a new supplier, so this homework doesn't have to be done from scratch for every product line." },
       { h2: "Use the first market as a template, not a one-off" },
-      { p: "The goal of a first Caribbean market isn't just revenue — it's a repeatable playbook: the distributor terms, the pricing structure, the packaging adjustments, the documentation trail. Get that right once, with DFC's regional team, and expanding to the next market is a fraction of the effort the first one took." },
+      { p: "The goal of a first Caribbean market isn't just revenue — it's a repeatable playbook: the distributor terms, the pricing structure, the packaging adjustments, the documentation trail. Get that right once, with DFX's regional team, and expanding to the next market is a fraction of the effort the first one took." },
     ],
   },
   {
@@ -57,7 +57,7 @@ export const blogPosts = [
       { h2: "The fragmentation tax" },
       { p: "Each additional distributor relationship carries fixed overhead that has nothing to do with sales volume: contract negotiation, credit terms, inventory visibility, marketing coordination, dispute resolution. In a region of small individual markets, that overhead can exceed the margin the relationship generates, especially in the first one to two years." },
       { h2: "What consolidation actually buys you" },
-      { p: "Routing distribution through a single regional relationship doesn't eliminate local market knowledge — DFC's network partners still operate locally in each territory. What it eliminates is the duplicated administrative layer above them: one contract instead of fourteen, one reporting format, one point of commercial accountability for performance across the network." },
+      { p: "Routing distribution through a single regional relationship doesn't eliminate local market knowledge — DFX's network partners still operate locally in each territory. What it eliminates is the duplicated administrative layer above them: one contract instead of fourteen, one reporting format, one point of commercial accountability for performance across the network." },
       { h2: "When direct relationships still make sense" },
       { p: "This isn't an argument against ever holding a direct distributor relationship — for a brand's single largest market, a direct relationship can still make sense. The case for consolidation is strongest for the long tail: the ten or eleven smaller markets where the volume doesn't justify the overhead of managing a bespoke relationship, but where regional presence still matters." },
     ],
@@ -73,8 +73,8 @@ export const blogPosts = [
       { p: "Retail and distribution in Barbados run through a relatively concentrated set of established players, particularly in food, beverage and hospitality supply — a reflection of the island's mature tourism sector. That concentration cuts both ways: fewer relationships to build, but higher expectations around service levels, documentation and reliability once you're in." },
       { h2: "Regulatory and currency notes" },
       { p: "The Barbadian dollar (BBD) is pegged to the US dollar, which simplifies pricing and forecasting relative to markets with floating or more volatile currencies. Import documentation follows CARICOM's common external tariff framework, with the usual category-specific requirements for food, health and beverage products." },
-      { h2: "Where DFC fits" },
-      { p: "Barbados sits in DFC's Eastern Caribbean desk, alongside Saint Lucia, St. Vincent & the Grenadines, Grenada, Dominica, St. Kitts & Nevis and Antigua & Barbuda. For suppliers entering Barbados as an anchor market, that regional desk structure means the distributor relationships, freight lanes and customs processes built there carry over directly into the neighboring Eastern Caribbean markets." },
+      { h2: "Where DFX fits" },
+      { p: "Barbados sits in DFX's Eastern Caribbean desk, alongside Saint Lucia, St. Vincent & the Grenadines, Grenada, Dominica, St. Kitts & Nevis and Antigua & Barbuda. For suppliers entering Barbados as an anchor market, that regional desk structure means the distributor relationships, freight lanes and customs processes built there carry over directly into the neighboring Eastern Caribbean markets." },
     ],
   },
   {
@@ -89,7 +89,7 @@ export const blogPosts = [
       { h2: "Regional hubs, not just point-to-point" },
       { p: "Rather than shipping direct from origin to every individual island, more freight now moves through regional consolidation hubs — Jamaica, Trinidad, Barbados — with onward inter-island transshipment from there. It adds a leg to the journey, but it dramatically increases how often sailings run, which usually nets out faster, not slower." },
       { h2: "What to expect next" },
-      { p: "The next visible shift is in the last mile — warehousing and fulfillment infrastructure closer to end customers, rather than long dwell times at port. DFC's logistics network is built on this orchestration model deliberately: coordinating freight forwarders, customs brokers, warehousing and last-mile partners across the region rather than owning that infrastructure directly, which keeps the network able to add capacity in a new market quickly." },
+      { p: "The next visible shift is in the last mile — warehousing and fulfillment infrastructure closer to end customers, rather than long dwell times at port. DFX's logistics network is built on this orchestration model deliberately: coordinating freight forwarders, customs brokers, warehousing and last-mile partners across the region rather than owning that infrastructure directly, which keeps the network able to add capacity in a new market quickly." },
     ],
   },
   {
@@ -98,7 +98,7 @@ export const blogPosts = [
     excerpt: "Caribbean food and beverage demand is shaped by tourism, import dependence and a growing regional retail sector — where the openings are.",
     published: true,
     body: [
-      { p: "Food and beverage is consistently one of the busiest categories moving through DFC's network, for a structural reason: most Caribbean markets import a significant share of what they consume, and demand is shaped by two large, steady forces — tourism and retail." },
+      { p: "Food and beverage is consistently one of the busiest categories moving through DFX's network, for a structural reason: most Caribbean markets import a significant share of what they consume, and demand is shaped by two large, steady forces — tourism and retail." },
       { h2: "Hospitality demand is a distinct channel" },
       { p: "Hotels, resorts and foodservice operators buy differently than retail — larger volumes, tighter specification requirements, and a premium on consistency of supply over the lowest unit price. Markets with large tourism sectors represent a genuine second channel alongside retail, and suppliers who can serve both tend to build more resilient regional positions." },
       { h2: "Retail is consolidating" },
@@ -117,9 +117,9 @@ export const blogPosts = [
       { h2: "Why cold searches underperform" },
       { p: "A distributor's public profile — website, trade show presence, LinkedIn — tells you almost nothing about how they'll actually perform: payment discipline, warehouse conditions, sales team quality, how they handle a damaged shipment. That information only exists inside relationships that are already operating in the market." },
       { h2: "What a regional network actually provides" },
-      { p: "This is the practical value of an existing regional network: DFC's local partners in each of its 15 core markets have already been through that vetting process, often over multiple product categories and several years. A new supplier isn't starting a distributor search from zero — they're plugging into relationships that already have a track record." },
+      { p: "This is the practical value of an existing regional network: DFX's local partners in each of its 15 core markets have already been through that vetting process, often over multiple product categories and several years. A new supplier isn't starting a distributor search from zero — they're plugging into relationships that already have a track record." },
       { h2: "Structuring the first agreement" },
-      { p: "Even with a known-good distributor, the first agreement should be structured to be easy to unwind — a defined trial period, clear performance benchmarks, and inventory commitments that don't lock either side in before the relationship has proven itself. DFC's onboarding process for new suppliers is built around exactly that kind of staged commitment." },
+      { p: "Even with a known-good distributor, the first agreement should be structured to be easy to unwind — a defined trial period, clear performance benchmarks, and inventory commitments that don't lock either side in before the relationship has proven itself. DFX's onboarding process for new suppliers is built around exactly that kind of staged commitment." },
     ],
   },
   {
@@ -143,9 +143,9 @@ export const blogPosts = [
     excerpt: "Cold-chain logistics, agro-processing and renewable energy are where trade activity is currently pointing toward capital opportunity.",
     published: true,
     body: [
-      { p: "Investment opportunities in the Caribbean tend to surface in the same place trade activity does — wherever a real, operating commercial relationship reveals a gap that capital could close. That's a more reliable signal than a top-down sector thesis, and it's why DFC treats trade and investment as connected rather than separate functions." },
+      { p: "Investment opportunities in the Caribbean tend to surface in the same place trade activity does — wherever a real, operating commercial relationship reveals a gap that capital could close. That's a more reliable signal than a top-down sector thesis, and it's why DFX treats trade and investment as connected rather than separate functions." },
       { h2: "Cold-chain and logistics infrastructure" },
-      { p: "As food and pharmaceutical distribution volumes grow, cold-chain capacity — refrigerated warehousing, reefer container availability, temperature-controlled last-mile — is consistently under-built relative to demand in several core markets. It's one of the more visible infrastructure gaps DFC's network surfaces regularly." },
+      { p: "As food and pharmaceutical distribution volumes grow, cold-chain capacity — refrigerated warehousing, reefer container availability, temperature-controlled last-mile — is consistently under-built relative to demand in several core markets. It's one of the more visible infrastructure gaps DFX's network surfaces regularly." },
       { h2: "Agro-processing" },
       { p: "Markets with strong agricultural production but limited local processing capacity export raw commodities at low margin, then re-import processed versions of the same product. Closing that gap locally — even partially — tends to produce strong unit economics once a reliable regional distribution channel already exists to sell into." },
       { h2: "Renewable and resilient energy" },
@@ -164,7 +164,7 @@ export const blogPosts = [
       { h2: "Production capacity is usually the real constraint" },
       { p: "Distribution deals are easy to sign and hard to walk back from once a distributor has built shelf space and marketing around your brand. Before saying yes to a second or third market, the honest question is whether production can actually support it without compromising the home market that built the brand's reputation in the first place." },
       { h2: "Let the regional relationship carry the overhead" },
-      { p: "A local brand doesn't need to build a Barbados sales team, a Trinidad freight relationship and a Jamaica distributor contract independently to go regional — that's exactly the overhead a single regional relationship like DFC's is built to absorb, so the brand's own team can stay focused on production and quality while the network handles market-by-market execution." },
+      { p: "A local brand doesn't need to build a Barbados sales team, a Trinidad freight relationship and a Jamaica distributor contract independently to go regional — that's exactly the overhead a single regional relationship like DFX's is built to absorb, so the brand's own team can stay focused on production and quality while the network handles market-by-market execution." },
     ],
   },
 ];

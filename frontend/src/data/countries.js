@@ -1,4 +1,4 @@
-// Core launch markets and phase-2 expansion markets for the DFC network.
+// Core launch markets and phase-2 expansion markets for the DFX network.
 
 export const coreMarkets = [
   { slug: "antigua-and-barbuda", name: "Antigua & Barbuda", capital: "St. John's", currency: "East Caribbean Dollar (XCD)", language: "English", subregion: "Eastern Caribbean" },

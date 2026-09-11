@@ -37,7 +37,7 @@ const Legal = () => {
           <p className="text-[13px] text-ink-soft/70 pt-6 border-t border-parchment-line">
             This document is a general template and does not constitute legal advice. It should be
             reviewed by qualified legal counsel before being relied on as a binding policy.{" "}
-            <Link to="/contact" className="text-teal font-semibold">Contact DFC</Link> with any questions.
+            <Link to="/contact" className="text-teal font-semibold">Contact DFX</Link> with any questions.
           </p>
         </div>
       </section>

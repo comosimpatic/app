@@ -5,21 +5,21 @@ import CtaBand from "../components/CtaBand";
 import Seo from "../components/Seo";
 
 const pillars = [
-  { title: "Regional, not local", desc: "DFC is built around the Caribbean as one commercial region — not a collection of markets to be entered one at a time." },
-  { title: "Private-sector execution", desc: "Where regional institutions set policy and facilitate dialogue, DFC executes: it moves products, closes distribution deals and puts capital to work." },
-  { title: "One relationship", desc: "A business works with DFC once — and gains access to sourcing, distribution, logistics, market entry and investment across the network." },
+  { title: "Regional, not local", desc: "DFX is built around the Caribbean as one commercial region — not a collection of markets to be entered one at a time." },
+  { title: "Private-sector execution", desc: "Where regional institutions set policy and facilitate dialogue, DFX executes: it moves products, closes distribution deals and puts capital to work." },
+  { title: "One relationship", desc: "A business works with DFX once — and gains access to sourcing, distribution, logistics, market entry and investment across the network." },
 ];
 
 const About = () => (
   <>
     <Seo
-      title="About DFC — Pan-Caribbean Trade & Distribution Company"
-      description="Distribution Factory Caribbean is a Pan-Caribbean trade, distribution and investment platform built as the private-sector execution layer for regional commerce."
+      title="About DFX — Pan-Caribbean Trade & Distribution Company"
+      description="DFX Caribbean is a Pan-Caribbean trade, distribution and investment platform built as the private-sector execution layer for regional commerce."
     />
     <PageHero
-      eyebrow="About DFC"
+      eyebrow="About DFX"
       title="A private-sector execution layer for Caribbean trade"
-      lede="Distribution Factory Caribbean exists because Caribbean businesses spend too much time solving the same regional problems market by market."
+      lede="DFX Caribbean exists because Caribbean businesses spend too much time solving the same regional problems market by market."
     />
 
     <section className="py-16 sm:py-24">
@@ -31,15 +31,15 @@ const About = () => (
           </h2>
           <div className="space-y-4 text-ink-soft text-[15.5px] max-w-[52ch]">
             <p>
-              The 15 core markets DFC operates in are geographically fragmented but commercially
+              The 15 core markets DFX operates in are geographically fragmented but commercially
               connected — shared languages of trade, overlapping supply chains, and businesses that
               routinely need the same thing: a way to move products, capital and commercial
               relationships across borders without rebuilding infrastructure in every territory.
             </p>
             <p>
-              DFC was formed to be that infrastructure. Instead of asking a manufacturer to find a
+              DFX was formed to be that infrastructure. Instead of asking a manufacturer to find a
               distributor in Jamaica, a freight partner in Trinidad, and a sales agent in Barbados
-              separately, DFC brings sourcing, distribution, logistics, market entry, commercial
+              separately, DFX brings sourcing, distribution, logistics, market entry, commercial
               representation and investment together under a single regional platform.
             </p>
             <p>
@@ -52,11 +52,11 @@ const About = () => (
         <div>
           <p className="text-[14px] font-semibold text-coral mb-3.5">Positioning</p>
           <h2 className="font-serif text-[26px] sm:text-[32px] mb-5">
-            Where DFC sits in the regional ecosystem
+            Where DFX sits in the regional ecosystem
           </h2>
           <p className="text-ink-soft text-[15.5px] max-w-[52ch] mb-6">
             Regional institutions like CARICOM and Caribbean Export set trade policy, coordinate
-            standards and facilitate regional dialogue between governments and industry. DFC operates
+            standards and facilitate regional dialogue between governments and industry. DFX operates
             one layer down — as the commercial and operational execution partner businesses use to
             actually act on that regional access.
           </p>
@@ -77,7 +77,7 @@ const About = () => (
         <SectionHead
           kicker="Leadership & Team"
           title="A regional team, built for execution"
-          lede="DFC's team combines regional trade, logistics and commercial development experience with on-the-ground representation in core markets. A full leadership profile is in development as the platform scales."
+          lede="DFX's team combines regional trade, logistics and commercial development experience with on-the-ground representation in core markets. A full leadership profile is in development as the platform scales."
         />
         <div className="grid sm:grid-cols-3 gap-8">
           {["Trade & Distribution", "Logistics & Operations", "Investment & Market Entry"].map((role) => (
@@ -90,7 +90,7 @@ const About = () => (
       </div>
     </section>
 
-    <CtaBand title="See how DFC's business model works" primary={{ label: "Our Business Model", to: "/business-model" }} />
+    <CtaBand title="See how DFX's business model works" primary={{ label: "Our Business Model", to: "/business-model" }} />
   </>
 );
 

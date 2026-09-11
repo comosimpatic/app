@@ -11,12 +11,12 @@ const TradeInvestment = () => (
   <>
     <Seo
       title="Caribbean Trade & Investment Opportunities"
-      description="Explore Caribbean trade opportunities, investment opportunities and regional infrastructure projects tracked across DFC's network of 15 core markets."
+      description="Explore Caribbean trade opportunities, investment opportunities and regional infrastructure projects tracked across DFX's network of 15 core markets."
     />
     <PageHero
       eyebrow="Trade & Investment"
       title="Where Caribbean trade meets Caribbean capital"
-      lede="Market opportunities, investment opportunities and regional projects — tracked in one place across the DFC network."
+      lede="Market opportunities, investment opportunities and regional projects — tracked in one place across the DFX network."
     />
 
     <section className="py-16 sm:py-24">
@@ -79,7 +79,7 @@ const TradeInvestment = () => (
           <SectionHead
             kicker="Regional Projects"
             title="Infrastructure, energy & agriculture"
-            lede="Regional-scale projects DFC is tracking or involved in across core markets."
+            lede="Regional-scale projects DFX is tracking or involved in across core markets."
             className="mb-8"
           />
           <ul className="border-t border-parchment-line">
@@ -92,14 +92,14 @@ const TradeInvestment = () => (
           </ul>
           <p className="text-[13.5px] text-ink-soft mt-8">
             <span className="font-semibold text-ink">Trade Intelligence: </span>
-            Reports on tariffs, regulations and market conditions are in development as part of DFC's
+            Reports on tariffs, regulations and market conditions are in development as part of DFX's
             phase 2 trade intelligence offering.
           </p>
         </div>
         <div className="bg-white border border-parchment-line p-8">
           <h2 className="font-serif text-[22px] mb-2">Request Investment Information</h2>
           <p className="text-ink-soft text-[14.5px] mb-6">
-            Tell us about your investment interest and a member of the DFC investment team will follow up.
+            Tell us about your investment interest and a member of the DFX investment team will follow up.
           </p>
           <InquiryForm pathway="invest" submitLabel="Request Investment Information" testIdPrefix="invest" />
         </div>

@@ -10,20 +10,20 @@ const Network = () => (
   <>
     <Seo
       title="Our Caribbean Network — 15 Core Markets"
-      description="DFC's regional network spans 15 core Caribbean markets, with a phase-2 expansion list covering the wider Caribbean. Explore market overviews, contacts and opportunities."
+      description="DFX's regional network spans 15 core Caribbean markets, with a phase-2 expansion list covering the wider Caribbean. Explore market overviews, contacts and opportunities."
     />
     <PageHero
       eyebrow="Our Caribbean Network"
       title="15 core markets. One regional manifest."
-      lede="DFC's network is structured like a shipping manifest — each market carries its own overview, products, suppliers, buyers, distribution, logistics and investment opportunities."
+      lede="DFX's network is structured like a shipping manifest — each market carries its own overview, products, suppliers, buyers, distribution, logistics and investment opportunities."
     />
 
     <section className="py-16 sm:py-24">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <SectionHead
           kicker="Core Markets — Launch"
-          title="The DFC network"
-          lede="Select a market to view its overview and local DFC contact."
+          title="The DFX network"
+          lede="Select a market to view its overview and local DFX contact."
         />
         <ol className="border-t border-parchment-line relative">
           <div className="absolute left-[18px] top-0 bottom-0 w-px bg-parchment-line hidden sm:block" aria-hidden="true" />
@@ -54,7 +54,7 @@ const Network = () => (
         <SectionHead
           kicker="Phase 2"
           title="Expanding the network"
-          lede="Additional markets planned for the next phase of DFC's regional expansion."
+          lede="Additional markets planned for the next phase of DFX's regional expansion."
         />
         <div className="flex flex-wrap gap-2.5">
           {phase2Markets.map((m) => (
@@ -66,7 +66,7 @@ const Network = () => (
       </div>
     </section>
 
-    <CtaBand title="Not seeing your market yet?" primary={{ label: "Contact DFC", to: "/contact" }} secondary={{ label: "Partner With DFC", to: "/doing-business" }} />
+    <CtaBand title="Not seeing your market yet?" primary={{ label: "Contact DFX", to: "/contact" }} secondary={{ label: "Partner With DFX", to: "/doing-business" }} />
   </>
 );
 

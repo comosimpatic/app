@@ -31,18 +31,18 @@ const pillars = [
   },
 ];
 
-const ecosystem = ["Investors", "DFC Platform", "Suppliers, Buyers & Partners", "Distribution", "Logistics", "Caribbean Markets"];
+const ecosystem = ["Investors", "DFX Platform", "Suppliers, Buyers & Partners", "Distribution", "Logistics", "Caribbean Markets"];
 
 const revenueStreams = [
-  { title: "Distribution margins", desc: "Margin earned moving supplier product through DFC's distribution network." },
+  { title: "Distribution margins", desc: "Margin earned moving supplier product through DFX's distribution network." },
   { title: "Logistics coordination fees", desc: "Fees for freight, consolidation, warehousing and last-mile coordination." },
   { title: "Product sourcing fees", desc: "Fees for identifying and qualifying suppliers on behalf of buyers." },
   { title: "Market-entry services", desc: "Fixed or retained fees for market assessment and entry planning." },
   { title: "Commercial representation", desc: "Ongoing fees for acting as a supplier's local sales and market presence." },
   { title: "Warehouse & fulfillment fees", desc: "Storage, pick-and-pack and fulfillment charges across regional facilities." },
-  { title: "Subscription / membership", desc: "Recurring revenue from DFC Business, Distributor, Exporter and Partner tiers." },
+  { title: "Subscription / membership", desc: "Recurring revenue from DFX Business, Distributor, Exporter and Partner tiers." },
   { title: "Transaction fees", desc: "Per-transaction fees on sourcing requests, quotes and completed orders." },
-  { title: "Marketplace commissions", desc: "Commission on transactions completed through the DFC product marketplace." },
+  { title: "Marketplace commissions", desc: "Commission on transactions completed through the DFX product marketplace." },
   { title: "Investment facilitation fees", desc: "Fees for structuring and introducing investment opportunities to capital." },
   { title: "Data & market intelligence", desc: "Revenue from regional trade, tariff and market-demand reporting." },
 ];
@@ -51,12 +51,12 @@ const BusinessModel = () => (
   <>
     <Seo
       title="Our Business Model — Source, Move, Sell, Invest"
-      description="How Distribution Factory Caribbean's regional commercial platform works, and the revenue streams behind a Pan-Caribbean trade, distribution and investment business."
+      description="How DFX Caribbean's regional commercial platform works, and the revenue streams behind a Pan-Caribbean trade, distribution and investment business."
     />
     <PageHero
       eyebrow="Our Business Model"
       title="Source. Move. Sell. Invest."
-      lede="DFC operates across four interconnected pillars — from finding a product to putting capital behind it — so a single relationship can cover the full commercial journey."
+      lede="DFX operates across four interconnected pillars — from finding a product to putting capital behind it — so a single relationship can cover the full commercial journey."
     />
 
     <section className="py-16 sm:py-24">
@@ -87,15 +87,15 @@ const BusinessModel = () => (
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <SectionHead
           kicker="Ecosystem"
-          title="How capital, products and markets connect through DFC"
-          lede="The DFC platform sits at the center of a regional flow — bringing capital, supply and demand together across Caribbean markets."
+          title="How capital, products and markets connect through DFX"
+          lede="The DFX platform sits at the center of a regional flow — bringing capital, supply and demand together across Caribbean markets."
         />
         <div className="flex flex-wrap items-center gap-3">
           {ecosystem.map((node, i) => (
             <React.Fragment key={node}>
               <div
                 className={`px-5 py-4 border text-[14px] font-medium ${
-                  node === "DFC Platform"
+                  node === "DFX Platform"
                     ? "bg-teal border-teal text-cream"
                     : "border-parchment-line text-ink-soft"
                 }`}
@@ -114,7 +114,7 @@ const BusinessModel = () => (
         <SectionHead
           kicker="Revenue Model"
           title="Multiple revenue streams, not just freight margins"
-          lede="DFC's economics are built across the full Source–Move–Sell–Invest chain rather than depending on any single line of business."
+          lede="DFX's economics are built across the full Source–Move–Sell–Invest chain rather than depending on any single line of business."
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8">
           {revenueStreams.map((r) => (
@@ -127,7 +127,7 @@ const BusinessModel = () => (
       </div>
     </section>
 
-    <CtaBand title="Find your entry pathway" primary={{ label: "Doing Business with DFC", to: "/doing-business" }} />
+    <CtaBand title="Find your entry pathway" primary={{ label: "Doing Business with DFX", to: "/doing-business" }} />
   </>
 );
 

@@ -1,4 +1,4 @@
-// Template legal content for Distribution Factory Caribbean. Placeholder policies
+// Template legal content for DFX Caribbean. Placeholder policies
 // intended to be reviewed by qualified legal counsel before the business relies on
 // them — jurisdictions, entity names and specific terms should be confirmed first.
 
@@ -9,7 +9,7 @@ export const legalDocs = {
     title: "Privacy Policy",
     lastUpdated,
     intro:
-      "This Privacy Policy explains how Distribution Factory Caribbean (“DFC,” “we,” “us”) collects, uses and protects information submitted through this website, including inquiry forms, sourcing requests and investment information requests.",
+      "This Privacy Policy explains how DFX Caribbean (“DFX,” “we,” “us”) collects, uses and protects information submitted through this website, including inquiry forms, sourcing requests and investment information requests.",
     sections: [
       {
         heading: "Information we collect",
@@ -21,7 +21,7 @@ export const legalDocs = {
       {
         heading: "How we use your information",
         paragraphs: [
-          "We use submitted information to respond to your inquiry, route it to the appropriate DFC pathway or regional desk, and maintain records of our commercial relationships.",
+          "We use submitted information to respond to your inquiry, route it to the appropriate DFX pathway or regional desk, and maintain records of our commercial relationships.",
           "We do not sell your personal information to third parties. We may share information with logistics, distribution or financial partners where necessary to fulfill a specific request you've made — for example, connecting a sourcing request with a relevant supplier in our network.",
         ],
       },
@@ -40,7 +40,7 @@ export const legalDocs = {
       {
         heading: "Contact",
         paragraphs: [
-          "Questions about this Privacy Policy can be directed to info@dfccaribbean.com.",
+          "Questions about this Privacy Policy can be directed to info@dfxcaribbean.com.",
         ],
       },
     ],
@@ -50,36 +50,36 @@ export const legalDocs = {
     title: "Terms & Conditions",
     lastUpdated,
     intro:
-      "These Terms & Conditions govern your use of the Distribution Factory Caribbean website and the submission of inquiries, sourcing requests and other information through it.",
+      "These Terms & Conditions govern your use of the DFX Caribbean website and the submission of inquiries, sourcing requests and other information through it.",
     sections: [
       {
         heading: "Use of this website",
         paragraphs: [
-          "This website is provided for informational purposes and to facilitate trade, distribution, logistics and investment inquiries across DFC's Caribbean network. You agree to use it only for lawful purposes and to provide accurate information in any form you submit.",
+          "This website is provided for informational purposes and to facilitate trade, distribution, logistics and investment inquiries across DFX's Caribbean network. You agree to use it only for lawful purposes and to provide accurate information in any form you submit.",
         ],
       },
       {
         heading: "No binding commercial agreement",
         paragraphs: [
-          "Submitting a form on this site (including a product listing, sourcing request, partnership or investment inquiry) does not, by itself, create a binding commercial or contractual relationship between you and DFC. Commercial terms are established separately, in writing, once a specific opportunity is progressed.",
+          "Submitting a form on this site (including a product listing, sourcing request, partnership or investment inquiry) does not, by itself, create a binding commercial or contractual relationship between you and DFX. Commercial terms are established separately, in writing, once a specific opportunity is progressed.",
         ],
       },
       {
         heading: "Intellectual property",
         paragraphs: [
-          "The content, design and branding of this website belong to Distribution Factory Caribbean or its licensors and may not be reproduced without permission, other than for personal, non-commercial reference.",
+          "The content, design and branding of this website belong to DFX Caribbean or its licensors and may not be reproduced without permission, other than for personal, non-commercial reference.",
         ],
       },
       {
         heading: "Limitation of liability",
         paragraphs: [
-          "Information on this website, including market, product and investment information, is provided in good faith but without warranty of completeness or accuracy. DFC is not liable for decisions made based solely on information published on this site.",
+          "Information on this website, including market, product and investment information, is provided in good faith but without warranty of completeness or accuracy. DFX is not liable for decisions made based solely on information published on this site.",
         ],
       },
       {
         heading: "Governing law",
         paragraphs: [
-          "These terms are governed by the laws applicable to DFC's principal place of business, without regard to conflict-of-law principles. Specific engagements may be subject to additional terms agreed separately.",
+          "These terms are governed by the laws applicable to DFX's principal place of business, without regard to conflict-of-law principles. Specific engagements may be subject to additional terms agreed separately.",
         ],
       },
     ],
@@ -89,7 +89,7 @@ export const legalDocs = {
     title: "Cookie Policy",
     lastUpdated,
     intro:
-      "This Cookie Policy explains how Distribution Factory Caribbean uses cookies and similar technologies on this website.",
+      "This Cookie Policy explains how DFX Caribbean uses cookies and similar technologies on this website.",
     sections: [
       {
         heading: "What cookies we use",
@@ -111,12 +111,12 @@ export const legalDocs = {
     title: "Supplier Terms",
     lastUpdated,
     intro:
-      "These Supplier Terms outline the general basis on which manufacturers and suppliers work with Distribution Factory Caribbean through the “Sell Through DFC” pathway. Specific onboarding agreements supersede these general terms.",
+      "These Supplier Terms outline the general basis on which manufacturers and suppliers work with DFX Caribbean through the “Sell Through DFX” pathway. Specific onboarding agreements supersede these general terms.",
     sections: [
       {
         heading: "Onboarding",
         paragraphs: [
-          "Suppliers submitting products for distribution through DFC agree to provide accurate product, pricing, certification and compliance information for the markets they intend to enter.",
+          "Suppliers submitting products for distribution through DFX agree to provide accurate product, pricing, certification and compliance information for the markets they intend to enter.",
         ],
       },
       {
@@ -128,7 +128,7 @@ export const legalDocs = {
       {
         heading: "Product compliance",
         paragraphs: [
-          "Suppliers are responsible for ensuring their products meet the regulatory, labeling and certification requirements of the Caribbean markets into which DFC distributes them, and for promptly disclosing any changes that affect compliance.",
+          "Suppliers are responsible for ensuring their products meet the regulatory, labeling and certification requirements of the Caribbean markets into which DFX distributes them, and for promptly disclosing any changes that affect compliance.",
         ],
       },
       {
@@ -144,24 +144,24 @@ export const legalDocs = {
     title: "Partner Terms",
     lastUpdated,
     intro:
-      "These Partner Terms outline the general basis on which logistics companies, distributors, financial institutions and other organizations work with Distribution Factory Caribbean through the “Partner With DFC” pathway. Specific partnership agreements supersede these general terms.",
+      "These Partner Terms outline the general basis on which logistics companies, distributors, financial institutions and other organizations work with DFX Caribbean through the “Partner With DFX” pathway. Specific partnership agreements supersede these general terms.",
     sections: [
       {
         heading: "Partnership scope",
         paragraphs: [
-          "Partnership arrangements with DFC vary by partner type and may cover logistics services, distribution coverage, referral arrangements, or joint commercial initiatives across one or more Caribbean markets.",
+          "Partnership arrangements with DFX vary by partner type and may cover logistics services, distribution coverage, referral arrangements, or joint commercial initiatives across one or more Caribbean markets.",
         ],
       },
       {
         heading: "Representations",
         paragraphs: [
-          "Partners agree to represent DFC and its network accurately in their own commercial dealings, and to promptly disclose any conflicts of interest relevant to a shared opportunity.",
+          "Partners agree to represent DFX and its network accurately in their own commercial dealings, and to promptly disclose any conflicts of interest relevant to a shared opportunity.",
         ],
       },
       {
         heading: "Confidentiality",
         paragraphs: [
-          "Commercial, pricing and opportunity information shared between DFC and a partner in the course of a partnership is treated as confidential and used only for the purposes of that partnership, unless otherwise agreed in writing.",
+          "Commercial, pricing and opportunity information shared between DFX and a partner in the course of a partnership is treated as confidential and used only for the purposes of that partnership, unless otherwise agreed in writing.",
         ],
       },
       {

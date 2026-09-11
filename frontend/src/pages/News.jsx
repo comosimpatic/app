@@ -12,12 +12,12 @@ const News = () => {
     <>
       <Seo
         title="News & Insights — Caribbean Trade, Logistics & Investment"
-        description="Company news and Caribbean trade insight from across the DFC network — trade, logistics, investment, market expansion and new products."
+        description="Company news and Caribbean trade insight from across the DFX network — trade, logistics, investment, market expansion and new products."
       />
       <PageHero
         eyebrow="News & Insights"
         title="Company news and Caribbean trade insight"
-        lede="Updates from across the DFC network, plus analysis on trade, logistics, investment and market expansion."
+        lede="Updates from across the DFX network, plus analysis on trade, logistics, investment and market expansion."
       />
 
       <section className="py-16 sm:py-24">

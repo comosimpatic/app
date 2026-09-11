@@ -40,7 +40,7 @@ const whyDfc = [
   { title: "One Regional Network", desc: "Access multiple Caribbean markets through one commercial relationship." },
   { title: "Local Market Knowledge", desc: "Regional partners who understand local commercial environments." },
   { title: "Integrated Logistics", desc: "Trade and logistics connected, not treated as separate activities." },
-  { title: "Commercial Execution", desc: "DFC doesn't just provide information — it helps businesses execute." },
+  { title: "Commercial Execution", desc: "DFX doesn't just provide information — it helps businesses execute." },
   { title: "Scalable", desc: "Start in one market and expand across the region on your timeline." },
   { title: "Investment Connected", desc: "Trade opportunities can become investment opportunities." },
 ];
@@ -49,7 +49,7 @@ const Home = () => (
   <>
     <Seo
       title="Pan-Caribbean Trade, Distribution & Investment Platform"
-      description="Distribution Factory Caribbean connects suppliers, buyers, investors and logistics providers across 15 Caribbean markets — trade, distribution, logistics and investment through one regional platform."
+      description="DFX Caribbean connects suppliers, buyers, investors and logistics providers across 15 Caribbean markets — trade, distribution, logistics and investment through one regional platform."
     />
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
@@ -70,12 +70,12 @@ const Home = () => (
             Connecting Caribbean markets. Moving Caribbean business.
           </h1>
           <p className="text-[17.5px] text-cream/85 max-w-[46ch] mb-9">
-            DFC links suppliers, buyers, investors and logistics providers across the region — so
+            DFX links suppliers, buyers, investors and logistics providers across the region — so
             businesses can move from local opportunity to regional scale.
           </p>
           <div className="flex flex-wrap gap-3.5 mb-16">
             <Link to="/doing-business" className="btn btn-coral" data-testid="home-hero-cta-primary">
-              Do Business with DFC
+              Do Business with DFX
             </Link>
             <Link to="/network" className="btn btn-outline-light" data-testid="home-hero-cta-secondary">
               Explore Our Network
@@ -98,7 +98,7 @@ const Home = () => (
           </div>
           <div>
             <span className="font-serif text-[26px] text-coral block">3</span>
-            <span className="text-[13px] text-cream/70">Ways to do business with DFC</span>
+            <span className="text-[13px] text-cream/70">Ways to do business with DFX</span>
           </div>
         </div>
       </div>
@@ -113,7 +113,7 @@ const Home = () => (
           </h2>
           <p className="text-ink-soft max-w-[42ch]">
             Businesses trying to move products, capital or services across the region usually solve
-            the same problems over and over, market by market. DFC brings those functions together
+            the same problems over and over, market by market. DFX brings those functions together
             through a single regional relationship.
           </p>
         </div>
@@ -136,7 +136,7 @@ const Home = () => (
         <SectionHead
           kicker="What We Do"
           title="Six functions, one platform"
-          lede="DFC connects the commercial functions that Caribbean trade actually depends on — rather than treating them as separate vendors."
+          lede="DFX connects the commercial functions that Caribbean trade actually depends on — rather than treating them as separate vendors."
         />
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 border-t border-parchment-line pt-10">
           {functions.map((fn) => (
@@ -157,7 +157,7 @@ const Home = () => (
         <SectionHead
           kicker="Our Business Model"
           title="A regional commercial platform"
-          lede="DFC operates across four interconnected pillars — from finding a product to putting capital behind it."
+          lede="DFX operates across four interconnected pillars — from finding a product to putting capital behind it."
         />
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12 relative">
           <div className="hidden lg:block absolute top-[38px] left-0 right-0 h-px bg-parchment-line" />
@@ -179,7 +179,7 @@ const Home = () => (
 
     <section className="py-16 sm:py-24">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
-        <SectionHead kicker="Why DFC" title="One relationship, a full region" />
+        <SectionHead kicker="Why DFX" title="One relationship, a full region" />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">
           {whyDfc.map((item) => (
             <div key={item.title} className="border-t-2 border-teal pt-[18px]">
@@ -196,7 +196,7 @@ const Home = () => (
         <div className="flex flex-wrap items-start justify-between gap-6">
           <SectionHead
             kicker="Our Products"
-            title="Products moving through the DFC network"
+            title="Products moving through the DFX network"
           />
           <Link to="/products" className="text-teal text-[14.5px] font-semibold border-b border-teal/50 hover:border-teal shrink-0">
             View the full catalogue &rarr;
@@ -264,7 +264,7 @@ const Home = () => (
             View Country Network
           </Link>
           <Link to="/contact" className="btn btn-outline-light" data-testid="home-cta-contact">
-            Contact DFC
+            Contact DFX
           </Link>
         </div>
       </div>

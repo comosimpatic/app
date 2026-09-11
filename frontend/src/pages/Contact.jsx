@@ -11,22 +11,22 @@ const offices = [
 ];
 
 const routing = [
-  { label: "Sell", email: "sell@dfccaribbean.com" },
-  { label: "Buy", email: "buy@dfccaribbean.com" },
-  { label: "Partner", email: "partner@dfccaribbean.com" },
-  { label: "Invest", email: "invest@dfccaribbean.com" },
-  { label: "Press", email: "press@dfccaribbean.com" },
+  { label: "Sell", email: "sell@dfxcaribbean.com" },
+  { label: "Buy", email: "buy@dfxcaribbean.com" },
+  { label: "Partner", email: "partner@dfxcaribbean.com" },
+  { label: "Invest", email: "invest@dfxcaribbean.com" },
+  { label: "Press", email: "press@dfxcaribbean.com" },
 ];
 
 const Contact = () => (
   <>
     <Seo
-      title="Contact Distribution Factory Caribbean"
-      description="Reach Distribution Factory Caribbean's regional office directory or route your inquiry directly to the sell, buy, partner, invest or press desk."
+      title="Contact DFX Caribbean"
+      description="Reach DFX Caribbean's regional office directory or route your inquiry directly to the sell, buy, partner, invest or press desk."
     />
     <PageHero
       eyebrow="Contact"
-      title="Talk to DFC"
+      title="Talk to DFX"
       lede="Send a general inquiry below, or reach the desk closest to your pathway."
     />
 
