@@ -66,7 +66,7 @@ const Network = () => (
       </div>
     </section>
 
-    <CtaBand title="Not seeing your market yet?" primary={{ label: "Contact DFX", to: "/contact" }} secondary={{ label: "Partner With DFX", to: "/doing-business" }} />
+    <CtaBand title="Not seeing your market yet?" primary={{ label: "Contact DFX", to: "/contact" }} secondary={{ label: "Partner With DFX", to: "/business-model" }} />
   </>
 );
 

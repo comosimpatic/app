@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CtaBand = ({
   title = "Ready to do business with DFX?",
-  primary = { label: "Do Business With DFX", to: "/doing-business" },
+  primary = { label: "Do Business With DFX", to: "/business-model" },
   secondary = { label: "Contact DFX", to: "/contact" },
 }) => (
   <section className="bg-coral text-cream py-14 sm:py-16">

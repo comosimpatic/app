@@ -37,7 +37,7 @@ const BlogPost = () => {
         </div>
       </article>
 
-      <CtaBand title="Ready to plan your regional expansion?" primary={{ label: "Doing Business with DFX", to: "/doing-business" }} />
+      <CtaBand title="Ready to plan your regional expansion?" primary={{ label: "Doing Business with DFX", to: "/business-model" }} />
     </>
   );
 };

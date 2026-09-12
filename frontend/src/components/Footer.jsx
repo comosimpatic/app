@@ -21,16 +21,16 @@ const Footer = () => (
             <li><Link to="/about" className="hover:text-teal">About DFX</Link></li>
             <li><Link to="/business-model" className="hover:text-teal">Business Model</Link></li>
             <li><Link to="/clients" className="hover:text-teal">Clients</Link></li>
-            <li><Link to="/news" className="hover:text-teal">News &amp; Insights</Link></li>
+            <li><Link to="/news" className="hover:text-teal">DFX Caribbean Pulse</Link></li>
             <li><Link to="/blog" className="hover:text-teal">Blog</Link></li>
           </ul>
         </div>
         <div>
           <h4 className="text-ink text-[14px] font-semibold mb-4">Do Business</h4>
           <ul className="space-y-2 text-[14px]">
-            <li><Link to="/doing-business" className="hover:text-teal">Sell Through DFX</Link></li>
-            <li><Link to="/doing-business" className="hover:text-teal">Buy Through DFX</Link></li>
-            <li><Link to="/doing-business" className="hover:text-teal">Partner With DFX</Link></li>
+            <li><Link to="/business-model" className="hover:text-teal">Sell Through DFX</Link></li>
+            <li><Link to="/business-model" className="hover:text-teal">Buy Through DFX</Link></li>
+            <li><Link to="/business-model" className="hover:text-teal">Partner With DFX</Link></li>
             <li><Link to="/trade-investment" className="hover:text-teal">Trade &amp; Investment</Link></li>
             <li><Link to="/products" className="hover:text-teal">Products</Link></li>
           </ul>

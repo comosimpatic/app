@@ -19,7 +19,7 @@ const About = () => (
     <PageHero
       eyebrow="About DFX"
       title="A private-sector execution layer for Caribbean trade"
-      lede="DFX Caribbean exists because Caribbean businesses spend too much time solving the same regional problems market by market."
+      lede="DFX Caribbean was developed to assist Caribbean businesses, which spend too much time solving the same regional problems market by market."
     />
 
     <section className="py-16 sm:py-24">
@@ -27,25 +27,26 @@ const About = () => (
         <div>
           <p className="text-[14px] font-semibold text-coral mb-3.5">The company story</p>
           <h2 className="font-serif text-[26px] sm:text-[32px] mb-5">
-            Built on a simple regional thesis
+            Built on a simple Caribbean principle
           </h2>
           <div className="space-y-4 text-ink-soft text-[15.5px] max-w-[52ch]">
             <p>
-              The 15 core markets DFX operates in are geographically fragmented but commercially
+              DFX Caribbean's 15 core markets are geographically fragmented but commercially
               connected — shared languages of trade, overlapping supply chains, and businesses that
               routinely need the same thing: a way to move products, capital and commercial
               relationships across borders without rebuilding infrastructure in every territory.
             </p>
             <p>
-              DFX was formed to be that infrastructure. Instead of asking a manufacturer to find a
-              distributor in Jamaica, a freight partner in Trinidad, and a sales agent in Barbados
-              separately, DFX brings sourcing, distribution, logistics, market entry, commercial
-              representation and investment together under a single regional platform.
+              Distribution Factory Caribbean Inc. (DFX Caribbean) was created to be that
+              infrastructure. Instead of asking a manufacturer to find a distributor in Jamaica, a
+              freight partner in Trinidad, and a sales agent in Barbados separately, DFX Caribbean
+              brings sourcing, distribution, logistics, market entry, commercial representation and
+              investment together under a single regional platform.
             </p>
             <p>
               The result is a company that behaves less like a single-market service provider and
-              more like a regional trade and distribution utility — one companies plug into once,
-              and scale through over time.
+              more like a regional trade and distribution utility — one a business plugs into once,
+              and scales through over time.
             </p>
           </div>
         </div>

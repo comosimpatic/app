@@ -6,11 +6,10 @@ const NAV_ITEMS = [
   { label: "About", to: "/about" },
   { label: "Business Model", to: "/business-model" },
   { label: "Clients", to: "/clients" },
-  { label: "Doing Business", to: "/doing-business" },
   { label: "Products", to: "/products" },
   { label: "Trade & Invest", to: "/trade-investment" },
   { label: "Network", to: "/network" },
-  { label: "Insights", to: "/news" },
+  { label: "Pulse", to: "/news" },
   { label: "Contact", to: "/contact" },
 ];
 
@@ -58,13 +57,13 @@ const Header = () => {
 
         <div className="hidden xl:flex items-center gap-3 shrink-0">
           <Link
-            to="/doing-business"
+            to="/business-model"
             className="hidden 2xl:inline-flex btn btn-outline-dark"
             data-testid="nav-cta-partner"
           >
             Become a Partner
           </Link>
-          <Link to="/doing-business" className="btn btn-coral" data-testid="nav-cta">
+          <Link to="/business-model" className="btn btn-coral" data-testid="nav-cta">
             Do Business With DFX
           </Link>
         </div>
@@ -90,7 +89,7 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <Link to="/doing-business" className="btn btn-coral w-full mt-6 justify-center">
+          <Link to="/business-model" className="btn btn-coral w-full mt-6 justify-center">
             Do Business With DFX
           </Link>
         </div>

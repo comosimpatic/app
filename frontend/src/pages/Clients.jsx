@@ -5,12 +5,12 @@ import CtaBand from "../components/CtaBand";
 import Seo from "../components/Seo";
 
 const segments = [
-  { title: "Manufacturers", need: "Enter and expand across Caribbean markets.", link: "/doing-business" },
-  { title: "Importers & Distributors", need: "Find products and new supply relationships.", link: "/doing-business" },
+  { title: "Manufacturers", need: "Enter and expand across Caribbean markets.", link: "/business-model" },
+  { title: "Importers & Distributors", need: "Find products and new supply relationships.", link: "/business-model" },
   { title: "Retailers", need: "Access regional and international products.", link: "/products" },
   { title: "Hotels & Hospitality", need: "Source food, beverage, amenities and equipment.", link: "/products" },
   { title: "Government & Public Sector", need: "Support procurement and regional commercial initiatives.", link: "/trade-investment" },
-  { title: "SMEs & Entrepreneurs", need: "Turn local products into regional businesses.", link: "/doing-business" },
+  { title: "SMEs & Entrepreneurs", need: "Turn local products into regional businesses.", link: "/business-model" },
   { title: "Investors", need: "Discover businesses and projects requiring capital.", link: "/trade-investment" },
   { title: "International Companies", need: "Use DFX as a gateway into Caribbean markets.", link: "/network" },
 ];

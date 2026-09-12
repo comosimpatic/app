@@ -71,7 +71,7 @@ const Products = () => (
 
     <CtaBand
       title="Have a product to place across the region?"
-      primary={{ label: "Sell Through DFX", to: "/doing-business" }}
+      primary={{ label: "Sell Through DFX", to: "/business-model" }}
     />
   </>
 );

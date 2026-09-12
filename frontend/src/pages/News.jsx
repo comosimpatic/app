@@ -11,11 +11,11 @@ const News = () => {
   return (
     <>
       <Seo
-        title="News & Insights — Caribbean Trade, Logistics & Investment"
+        title="DFX Caribbean Pulse — Caribbean Trade, Logistics & Investment News"
         description="Company news and Caribbean trade insight from across the DFX network — trade, logistics, investment, market expansion and new products."
       />
       <PageHero
-        eyebrow="News & Insights"
+        eyebrow="DFX Caribbean Pulse"
         title="Company news and Caribbean trade insight"
         lede="Updates from across the DFX network, plus analysis on trade, logistics, investment and market expansion."
       />

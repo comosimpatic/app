@@ -74,7 +74,7 @@ const Home = () => (
             businesses can move from local opportunity to regional scale.
           </p>
           <div className="flex flex-wrap gap-3.5 mb-16">
-            <Link to="/doing-business" className="btn btn-coral" data-testid="home-hero-cta-primary">
+            <Link to="/business-model" className="btn btn-coral" data-testid="home-hero-cta-primary">
               Do Business with DFX
             </Link>
             <Link to="/network" className="btn btn-outline-light" data-testid="home-hero-cta-secondary">
@@ -107,14 +107,20 @@ const Home = () => (
     <section className="py-16 sm:py-24">
       <div className="max-w-wrap mx-auto px-5 sm:px-8 grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 items-start">
         <div>
-          <p className="text-[14px] font-semibold text-coral mb-3.5">Why a regional platform</p>
+          <p className="text-[14px] font-semibold text-coral mb-3.5">Why a Caribbean platform</p>
           <h2 className="font-serif text-[24px] sm:text-[32px] mb-5">
             The Caribbean is not 14 separate opportunities. It is one interconnected commercial region.
           </h2>
-          <p className="text-ink-soft max-w-[42ch]">
-            Businesses trying to move products, capital or services across the region usually solve
-            the same problems over and over, market by market. DFX brings those functions together
-            through a single regional relationship.
+          <p className="text-ink-soft max-w-[46ch] mb-4">
+            The Caribbean groups a number of independent countries, two French departments and a
+            number of non-independent territories that touch the Caribbean Sea — which itself covers
+            about 1,063,000 square miles (2,754,000 square kilometers), making it one of the largest
+            regional seas in the world.
+          </p>
+          <p className="text-ink-soft max-w-[46ch]">
+            Businesses trying to move products, capital or services across this region usually solve
+            the same problem repeatedly, market by market. Distribution Factory Caribbean Inc. (DFX
+            Caribbean) brings those functions together through a single regional relationship.
           </p>
         </div>
         <ul className="border-t border-parchment-line">
@@ -136,7 +142,7 @@ const Home = () => (
         <SectionHead
           kicker="What We Do"
           title="Six functions, one platform"
-          lede="DFX connects the commercial functions that Caribbean trade actually depends on — rather than treating them as separate vendors."
+          lede="Distribution Factory Caribbean Inc. (DFX Caribbean) brings six functions under one platform — connecting the commercial functions that Caribbean trade depends on, rather than treating them as separate vendors."
         />
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 border-t border-parchment-line pt-10">
           {functions.map((fn) => (
@@ -157,7 +163,7 @@ const Home = () => (
         <SectionHead
           kicker="Our Business Model"
           title="A regional commercial platform"
-          lede="DFX operates across four interconnected pillars — from finding a product to putting capital behind it."
+          lede="DFX Caribbean operates across four interconnected pillars — from finding a product to putting capital behind it and developing markets."
         />
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12 relative">
           <div className="hidden lg:block absolute top-[38px] left-0 right-0 h-px bg-parchment-line" />
@@ -179,7 +185,11 @@ const Home = () => (
 
     <section className="py-16 sm:py-24">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
-        <SectionHead kicker="Why DFX" title="One relationship, a full region" />
+        <SectionHead
+          kicker="Why Choose DFX Caribbean"
+          title="One relationship, a full region"
+          lede="DFX Caribbean understands and uses the Caribbean's identity as one relationship across a full region."
+        />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">
           {whyDfc.map((item) => (
             <div key={item.title} className="border-t-2 border-teal pt-[18px]">
@@ -225,11 +235,11 @@ const Home = () => (
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <div className="flex flex-wrap items-start justify-between gap-6">
           <SectionHead
-            kicker="News & Insights"
+            kicker="DFX Caribbean Pulse"
             title="What's moving across the network"
           />
           <Link to="/news" className="text-teal text-[14.5px] font-semibold border-b border-teal/50 hover:border-teal shrink-0">
-            Read all news &amp; insights &rarr;
+            Read the full Pulse &rarr;
           </Link>
         </div>
         <ul className="border-t border-parchment-line">

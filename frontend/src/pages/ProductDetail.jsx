@@ -56,8 +56,8 @@ const ProductDetail = () => {
 
             <div className="flex flex-wrap gap-3">
               <Link to="/contact" className="btn btn-coral" data-testid="product-request-quote">Request a Quote</Link>
-              <Link to="/doing-business" className="btn btn-teal">Become a Distributor</Link>
-              <Link to="/doing-business" className="btn btn-outline-dark">Request Distribution</Link>
+              <Link to="/business-model" className="btn btn-teal">Become a Distributor</Link>
+              <Link to="/business-model" className="btn btn-outline-dark">Request Distribution</Link>
             </div>
           </div>
         </div>
