@@ -60,6 +60,9 @@ const TradeInvestment = () => (
                   {op.status}
                 </span>
               </div>
+              {op.synopsis && (
+                <p className="text-[14px] text-ink-soft mb-5">{op.synopsis}</p>
+              )}
               <dl className="text-[14px] space-y-1.5 text-ink-soft">
                 <div className="flex justify-between"><dt>Location</dt><dd className="text-ink">{op.location}</dd></div>
                 <div className="flex justify-between"><dt>Investment requirement</dt><dd className="text-ink">{op.requirement}</dd></div>

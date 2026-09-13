@@ -170,10 +170,46 @@ export const blogPosts = [
 ];
 
 export const investmentOpportunities = [
-  { sector: "Agro-processing", location: "Belize", requirement: "US$1.2M", status: "Open", returns: "14–18% projected IRR", structure: "Equity + working capital facility", sponsor: "Regional agro-processor" },
-  { sector: "Cold-chain logistics", location: "Trinidad & Tobago", requirement: "US$3.5M", status: "Open", returns: "Sponsor-disclosed on request", structure: "Debt / equity blend", sponsor: "Established distribution operator" },
-  { sector: "Renewable energy", location: "Dominican Republic", requirement: "US$8M", status: "Structuring", returns: "Sponsor-disclosed on request", structure: "Project finance", sponsor: "Independent power producer" },
-  { sector: "Hospitality supply", location: "Bahamas", requirement: "US$650K", status: "Open", returns: "10–13% projected IRR", structure: "Growth equity", sponsor: "Regional hospitality supplier" },
+  {
+    sector: "Logistics",
+    location: "Caribbean",
+    requirement: "US$1M",
+    status: "Open",
+    returns: "15–25% projected IRR",
+    structure: "Equity and working capital facility",
+    sponsor: "Regional logistics operator",
+    synopsis: "Logistics remain the lifeblood of the Caribbean economy, ensuring that food, medicine, fuel, goods and products are where they are needed, when they are needed, every second of every day. Hospitals cannot wait for supplies, fuel stations require consistent deliveries, supermarkets must remain stocked, and personal items must be available on demand. Digital logistics is the evolving face of the industry, and we intend to be at the forefront of that innovation.",
+  },
+  {
+    sector: "Medicinal Cannabis",
+    location: "Caribbean",
+    requirement: "US$250K",
+    status: "Open",
+    returns: "15–25% projected IRR",
+    structure: "Equity and working capital facility",
+    sponsor: "Regional cannabis exchange operator",
+    synopsis: "Caribbean countries are moving to manage cannabis under a medicinal framework, but in the rush to establish the industry, the usual regional fragmentation is evident again — each island now runs its own framework governing use and cultivation. Our platform is designed to provide a single exchange for medicinal cannabis across the region.",
+  },
+  {
+    sector: "Renewable Energy",
+    location: "Barbados",
+    requirement: "US$1M",
+    status: "Open",
+    returns: "10–18% projected IRR",
+    structure: "Equity and working capital facility",
+    sponsor: "Regional energy developer",
+    synopsis: "The Caribbean is moving rapidly toward renewable energy across every part of its economy, but many islands have overlooked the risk of adopting costly technologies that become obsolete soon after implementation, making the transition counterproductive. Our model matches needs with technologies and balances investment against long-term returns.",
+  },
+  {
+    sector: "Agro Processing",
+    location: "Barbados",
+    requirement: "US$1M",
+    status: "Open",
+    returns: "10–18% projected IRR",
+    structure: "Equity and working capital facility",
+    sponsor: "Regional agro-processing exchange",
+    synopsis: "The Caribbean produces more than enough food to meet its own needs, with significant opportunity for international export. This primary production remains the deciding factor in every discussion — without the corresponding agro-processing into secondary, longer-life products, that potential goes untapped. We have developed an exchange that will build the infrastructure for a viable agro-processing industry across the Caribbean.",
+  },
 ];
 
 export const regionalProjects = [

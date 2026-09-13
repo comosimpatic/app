@@ -32,7 +32,7 @@ const Header = () => {
           <img
             src="/logo.png"
             alt="DFX Caribbean"
-            className="h-9 sm:h-10 w-auto"
+            className="h-11 sm:h-14 w-auto"
           />
         </Link>
 

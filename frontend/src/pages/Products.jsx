@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import PageHero from "../components/PageHero";
 import CtaBand from "../components/CtaBand";
 import Seo from "../components/Seo";
-import ProductImagePlaceholder from "../components/ProductImagePlaceholder";
-import { categories, sampleProduct } from "../data/products";
+import { categories, products } from "../data/products";
 import { categoryPhotos } from "../data/categoryPhotos";
 
 const Products = () => (
@@ -21,7 +20,7 @@ const Products = () => (
 
     <section className="py-16 sm:py-24">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
           {categories.map((c) => (
             <div key={c.slug} className="border border-parchment-line" data-testid={`category-${c.slug}`}>
               {categoryPhotos[c.slug] && (
@@ -38,33 +37,34 @@ const Products = () => (
         </div>
 
         <div className="border-t border-parchment-line pt-14">
-          <p className="text-[14px] font-semibold text-coral mb-3.5">Product Detail Template</p>
-          <h2 className="font-serif text-[24px] sm:text-[30px] mb-8">Sample listing</h2>
-          <Link
-            to={`/products/${sampleProduct.slug}`}
-            className="grid sm:grid-cols-[220px_1fr] gap-8 border border-parchment-line p-7 hover:border-teal transition-colors items-start"
-            data-testid="sample-product-link"
-          >
-            {sampleProduct.image ? (
-              <div className="aspect-square bg-white border border-parchment-line self-start w-full overflow-hidden">
-                <img
-                  src={sampleProduct.image}
-                  alt={sampleProduct.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ) : (
-              <ProductImagePlaceholder label="Product image coming soon" className="self-start w-full" />
-            )}
-            <div>
-              <p className="text-[13px] font-semibold text-teal mb-1.5">{sampleProduct.category}</p>
-              <h3 className="font-serif text-[21px] mb-2">{sampleProduct.name}</h3>
-              <p className="text-[14.5px] text-ink-soft mb-4">
-                {sampleProduct.manufacturer} &middot; {sampleProduct.countryOfOrigin}
-              </p>
-              <span className="text-[13px] font-semibold text-coral">View product detail &rarr;</span>
-            </div>
-          </Link>
+          <p className="text-[14px] font-semibold text-coral mb-3.5">Featured Listings</p>
+          <h2 className="font-serif text-[24px] sm:text-[30px] mb-8">Products moving through the network now</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {products.map((p) => (
+              <Link
+                key={p.slug}
+                to={`/products/${p.slug}`}
+                className="border border-parchment-line hover:border-teal transition-colors"
+                data-testid={`product-link-${p.slug}`}
+              >
+                <div className="aspect-[5/2] overflow-hidden border-b border-parchment-line bg-white">
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <p className="text-[13px] font-semibold text-teal mb-1.5">{p.category}</p>
+                  <h3 className="font-serif text-[19px] mb-1.5">{p.name}</h3>
+                  <p className="text-[13.5px] text-ink-soft mb-3">
+                    {p.brand}{p.packSize ? ` · ${p.packSize}` : ""}
+                  </p>
+                  <span className="text-[13px] font-semibold text-coral">View product detail &rarr;</span>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>
