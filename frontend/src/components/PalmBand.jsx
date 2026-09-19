@@ -1,7 +1,8 @@
 import React from "react";
 
-// Decorative Caribbean band shown above the footer: swaying white coconut palms,
-// drifting clouds and rolling waves. Pure SVG + CSS (see index.css), no images.
+// Caribbean scene used behind the footer: sky that fades in from the page
+// background, swaying white coconut palms, drifting clouds and rolling waves.
+// Pure SVG + CSS (keyframes in index.css), no images.
 
 const LEAF = "M0 0 C 18 -26 60 -34 104 -6 C 66 -18 30 -14 0 0 Z";
 const LEAF_ANGLES = [-84, -50, -16, 20, 52];
@@ -47,50 +48,38 @@ export const Cluster = ({ className = "", sizeClass = "h-[135px] sm:h-[215px] lg
 const WAVE =
   "M0 40 Q 180 0 360 40 T 720 40 T 1080 40 T 1440 40 T 1800 40 T 2160 40 T 2520 40 T 2880 40 V 80 H 0 Z";
 
-const PalmBand = () => {
-  return (
-  <section
-    className="relative overflow-hidden h-[260px] sm:h-[380px] select-none"
-    aria-hidden="true"
-    data-testid="palm-band"
-  >
-    {/* sky: fades in from the page background so the band blends in */}
+const WaveLayer = ({ className, height, opacity, bottom }) => (
+  <div className={`absolute left-0 w-[200%] ${className}`} style={{ bottom }}>
+    <svg viewBox="0 0 2880 80" preserveAspectRatio="none" className="block w-full" style={{ height }}>
+      <path d={WAVE} fill="#fff" fillOpacity={opacity} />
+    </svg>
+  </div>
+);
+
+// Absolutely-positioned background: place inside a `relative overflow-hidden` parent.
+const PalmScene = () => (
+  <div className="absolute inset-0 select-none pointer-events-none" aria-hidden="true" data-testid="palm-scene">
+    {/* sky: fades in from the page background so the scene blends in */}
     <div
       className="absolute inset-0"
       style={{
-        background: "linear-gradient(180deg, #0B2A5B 0%, #0A5BC0 55%, #4DA6FF 100%)",
-        WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, #000 42%)",
-        maskImage: "linear-gradient(to bottom, transparent 0%, #000 42%)",
+        background: "linear-gradient(180deg, #4DA6FF 0%, #0A5BC0 32%, #0B2A5B 100%)",
+        WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, #000 30%)",
+        maskImage: "linear-gradient(to bottom, transparent 0%, #000 30%)",
       }}
     />
 
-    {/* sun glow */}
-    <div className="absolute left-1/2 -translate-x-1/2 bottom-[18px] w-[260px] h-[260px] sm:w-[360px] sm:h-[360px] rounded-full bg-white/15 blur-2xl" />
+    <div className="absolute left-1/2 -translate-x-1/2 top-[30%] w-[320px] h-[320px] sm:w-[520px] sm:h-[520px] rounded-full bg-white/10 blur-3xl" />
 
-    {/* drifting clouds */}
-    <div className="cloud absolute top-[48%] left-0 w-28 h-6 rounded-full bg-white/25 blur-md" style={{ animationDuration: "70s" }} />
-    <div className="cloud absolute top-[64%] left-0 w-40 h-7 rounded-full bg-white/20 blur-md" style={{ animationDuration: "95s", animationDelay: "-40s" }} />
+    <div className="cloud absolute top-[34%] left-0 w-28 h-6 rounded-full bg-white/20 blur-md" style={{ animationDuration: "70s" }} />
+    <div className="cloud absolute top-[52%] left-0 w-40 h-7 rounded-full bg-white/15 blur-md" style={{ animationDuration: "95s", animationDelay: "-40s" }} />
 
-    <p className="absolute top-[44%] inset-x-0 text-center px-6 font-serif text-white text-[19px] sm:text-[28px] leading-tight">
-      Connecting the Caribbean to do more business.
-    </p>
+    <Cluster sizeClass="h-[240px] sm:h-[340px] lg:h-[400px]" className="left-[-8%] sm:left-[2%] opacity-40" />
+    <Cluster sizeClass="h-[240px] sm:h-[340px] lg:h-[400px]" className="right-[-8%] sm:right-[2%] -scale-x-100 opacity-40" />
 
-    <Cluster className="left-0 sm:left-[4%]" />
-    <Cluster className="right-0 sm:right-[4%] -scale-x-100" />
+    <WaveLayer className="wave-a" height="clamp(44px, 7vw, 80px)" opacity={0.1} bottom="24px" />
+    <WaveLayer className="wave-b" height="clamp(38px, 6vw, 66px)" opacity={0.16} bottom="-8px" />
+  </div>
+);
 
-    {/* waves: back layer translucent, front layer white to meet the footer */}
-    <div className="absolute bottom-[10px] left-0 w-[200%] wave-a">
-      <svg viewBox="0 0 2880 80" preserveAspectRatio="none" className="block w-full h-[44px] sm:h-[60px]">
-        <path d={WAVE} fill="#fff" fillOpacity="0.35" />
-      </svg>
-    </div>
-    <div className="absolute bottom-[-8px] left-0 w-[200%] wave-b">
-      <svg viewBox="0 0 2880 80" preserveAspectRatio="none" className="block w-full h-[40px] sm:h-[54px]">
-        <path d={WAVE} fill="#fff" />
-      </svg>
-    </div>
-  </section>
-  );
-};
-
-export default PalmBand;
+export default PalmScene;
