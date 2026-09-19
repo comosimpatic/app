@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,8 +11,10 @@
   --coral: #D9643A;
   --parchment: #EAF2FC;
   --parchment-line: #D8E2F0;
-  --ink: #050B14;
-  --ink-soft: #1C2935;
+  --ink: #000028;
+  --ink-soft: #10194A;
+  --petrol: #009999;
+  --petrol-dark: #007A7A;
   --cream: #FFFFFF;
 }
 
@@ -22,21 +24,23 @@ html {
 
 body {
   margin: 0;
-  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--ink);
   background: var(--cream);
-  line-height: 1.55;
+  line-height: 1.5;
   font-weight: 500;
 }
 
 h1, h2, h3 {
-  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: 700;
-  line-height: 1.08;
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.1;
   letter-spacing: -0.025em;
 }
+h1 { font-size: 3rem; font-weight: 700; line-height: 1.1; }
+h2 { font-size: 2rem; font-weight: 700; }
+h3 { font-size: 1.25rem; font-weight: 600; }
 
 img, svg {
   max-width: 100%;
@@ -66,20 +70,20 @@ img, svg {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 14px;
   padding: 12px 24px;
-  border-radius: 2px;
+  border-radius: 4px;
   transition: all .15s ease;
   border: 1px solid transparent;
   white-space: nowrap;
   cursor: pointer;
 }
-.btn-coral { background: var(--coral); color: var(--cream); }
-.btn-coral:hover { background: #C1552F; }
-.btn-teal { background: var(--teal); color: var(--cream); }
-.btn-teal:hover { background: #084A9C; }
+.btn-coral { background: var(--petrol); color: var(--cream); }
+.btn-coral:hover { background: var(--petrol-dark); }
+.btn-teal { background: var(--petrol); color: var(--cream); }
+.btn-teal:hover { background: var(--petrol-dark); }
 .btn-outline-light { border-color: rgba(251,249,244,0.4); color: var(--cream); }
 .btn-outline-light:hover { border-color: var(--cream); background: rgba(255,255,255,0.06); }
 .btn-outline-dark { border-color: rgba(22,35,46,0.3); color: var(--ink); }
@@ -102,7 +106,7 @@ img, svg {
   background: var(--cream);
   border: 1px solid var(--parchment-line);
   color: var(--ink);
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14.5px;
   padding: 12px 14px;
   border-radius: 2px;
@@ -160,3 +164,6 @@ h4 { font-weight: 600; }
 .cloud { animation: cloudDrift linear infinite; }
 @keyframes cloudDrift { from { transform: translateX(-20vw); } to { transform: translateX(110vw); } }
 .wave-c { animation: waveMove 21s linear infinite; }
+
+/* Small uppercase kicker/label style */
+.label { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }

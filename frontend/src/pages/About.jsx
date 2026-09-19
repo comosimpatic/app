@@ -41,7 +41,7 @@ const About = () => (
     <section className="py-16 sm:py-24">
       <div className="max-w-wrap mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14">
         <div>
-          <p className="text-[14px] font-semibold text-coral mb-3.5">The company story</p>
+          <p className="label text-coral mb-3.5">The company story</p>
           <h2 className="font-serif text-[26px] sm:text-[32px] mb-5">
             Built on a simple Caribbean principle
           </h2>
@@ -67,7 +67,7 @@ const About = () => (
           </div>
         </div>
         <div>
-          <p className="text-[14px] font-semibold text-coral mb-3.5">Positioning</p>
+          <p className="label text-coral mb-3.5">Positioning</p>
           <h2 className="font-serif text-[26px] sm:text-[32px] mb-5">
             Where Distribution Factory Caribbean sits in the regional ecosystem
           </h2>
@@ -92,7 +92,7 @@ const About = () => (
     <section className="bg-navy-deep text-cream py-20 sm:py-28" data-testid="manufacturers-office">
       <div className="max-w-wrap mx-auto px-5 sm:px-8 grid lg:grid-cols-[1.1fr_0.9fr] gap-14 lg:gap-24 items-start">
         <div>
-          <p className="text-[12.5px] font-bold tracking-[0.18em] uppercase text-coral mb-6">
+          <p className="label text-coral mb-6">
             The Manufacturer's Caribbean Office
           </p>
           <h2 className="text-[38px] sm:text-[58px] leading-[1.05] text-cream mb-8">
@@ -153,7 +153,7 @@ const About = () => (
         <div className="grid sm:grid-cols-3 gap-8">
           {["Trade & Distribution", "Logistics & Operations", "Investment & Market Entry"].map((role) => (
             <div key={role} className="bg-white border border-parchment-line p-7">
-              <p className="text-[13px] font-semibold text-teal mb-2">Leadership function</p>
+              <p className="label text-teal mb-2">Leadership function</p>
               <h3 className="text-[17px]">{role}</h3>
             </div>
           ))}

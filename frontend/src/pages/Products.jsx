@@ -40,7 +40,7 @@ const Products = () => (
         </div>
 
         <div className="border-t border-parchment-line pt-14">
-          <p className="text-[14px] font-semibold text-coral mb-3.5">Featured Listings</p>
+          <p className="label text-coral mb-3.5">Featured Listings</p>
           <h2 className="font-serif text-[24px] sm:text-[30px] mb-8">Products moving through the network now</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.map((p) => (
@@ -58,7 +58,7 @@ const Products = () => (
                   />
                 </div>
                 <div className="p-6">
-                  <p className="text-[13px] font-semibold text-teal mb-1.5">{p.category}</p>
+                  <p className="label text-teal mb-1.5">{p.category}</p>
                   <h3 className="font-serif text-[19px] mb-1.5">{p.name}</h3>
                   <p className="text-[13.5px] text-ink-soft mb-3">
                     {p.brand}{p.packSize ? ` · ${p.packSize}` : ""}

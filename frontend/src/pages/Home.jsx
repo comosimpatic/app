@@ -99,7 +99,7 @@ const Home = () => (
             Distribution Factory Caribbean connects manufacturers, suppliers, businesses, logistics
             providers and investors with opportunities across Caribbean markets.
           </p>
-          <p className="text-[13px] font-semibold uppercase tracking-[0.14em] text-coral mb-9">
+          <p className="label text-coral mb-9">
             Trade &bull; Distribution &bull; Logistics &bull; Market Access &bull; Investment
           </p>
           <div className="flex flex-wrap gap-3.5">
@@ -132,7 +132,7 @@ const Home = () => (
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/35 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
-                <h3 className="font-sans text-[12.5px] sm:text-[13px] font-semibold uppercase tracking-[0.14em] text-coral mb-2">
+                <h3 className="label text-coral mb-2">
                   {w.title}
                 </h3>
                 <p className="text-[14px] sm:text-[15.5px] text-cream leading-snug">{w.desc}</p>
@@ -153,7 +153,7 @@ const Home = () => (
         DFX
       </span>
       <div className="relative max-w-wrap mx-auto px-5 sm:px-8 py-20 sm:py-28">
-        <p className="text-[12.5px] tracking-[0.18em] uppercase text-coral font-semibold mb-6">
+        <p className="label text-coral mb-6">
           A major project of Distribution Factory Caribbean
         </p>
         <h2 className="font-serif text-[46px] sm:text-[72px] leading-[1.04] mb-4">
@@ -169,7 +169,7 @@ const Home = () => (
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
           {dfxAudiences.map((a) => (
             <div key={a.who} className="border border-white/15 p-6">
-              <p className="text-[12px] tracking-[0.12em] uppercase text-teal-light font-semibold mb-2.5">{a.who}</p>
+              <p className="label text-teal-light mb-2.5">{a.who}</p>
               <p className="font-serif text-[19px] leading-snug">{a.line}</p>
             </div>
           ))}
@@ -234,7 +234,7 @@ const Home = () => (
     <section className="py-16 sm:py-24 border-t border-parchment-line">
       <div className="max-w-wrap mx-auto px-5 sm:px-8 grid lg:grid-cols-[1fr_1fr] gap-12 lg:gap-20 items-center">
         <div>
-          <p className="text-[14px] font-semibold text-coral mb-3.5">For Manufacturers</p>
+          <p className="label text-coral mb-3.5">For Manufacturers</p>
           <h2 className="font-serif text-[32px] sm:text-[44px] leading-[1.1] mb-5">
             You make it. We help move it.
           </h2>
@@ -247,7 +247,7 @@ const Home = () => (
           </Link>
         </div>
         <div className="border border-parchment-line p-8 sm:p-10">
-          <p className="text-[13px] font-semibold uppercase tracking-wide text-teal mb-5">
+          <p className="label text-teal mb-5">
             Distribution Factory Caribbean can help with
           </p>
           <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-3">
@@ -266,7 +266,7 @@ const Home = () => (
     <section className="bg-white py-16 sm:py-24 border-t border-parchment-line">
       <div className="max-w-wrap mx-auto px-5 sm:px-8 grid lg:grid-cols-[0.95fr_1.05fr] gap-12 lg:gap-16 items-center">
         <div>
-          <p className="text-[14px] font-semibold text-coral mb-3.5">Markets</p>
+          <p className="label text-coral mb-3.5">Markets</p>
           <h2 className="font-serif text-[30px] sm:text-[40px] leading-[1.12] mb-6">
             One Caribbean network. Multiple markets.
           </h2>
@@ -319,7 +319,7 @@ const Home = () => (
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-10 text-left">
           {finalActions.map((a) => (
             <div key={a.title} className="border border-white/25 bg-white/5 p-5">
-              <p className="text-[13px] font-semibold uppercase tracking-[0.14em] text-coral mb-2">{a.title}</p>
+              <p className="label text-coral mb-2">{a.title}</p>
               <p className="text-[14px] text-cream/85 leading-snug">{a.desc}</p>
             </div>
           ))}

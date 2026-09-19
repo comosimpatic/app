@@ -136,7 +136,7 @@ const BusinessModel = () => {
           <div className="grid lg:grid-cols-3 border border-parchment-line">
             {pathways.map((p, i) => (
               <div key={p.key} className={`p-9 ${i > 0 ? "border-t lg:border-t-0 lg:border-l border-parchment-line" : ""}`}>
-                <p className="text-[13px] font-semibold text-teal mb-2.5">{p.for}</p>
+                <p className="label text-teal mb-2.5">{p.for}</p>
                 <h3 className="font-serif text-[22px] mb-4">{p.title}</h3>
                 <ul className="mb-6 space-y-1.5">
                   {p.services.map((s) => (

@@ -8,7 +8,7 @@ const PageHero = ({ eyebrow, title, lede, image, imageAlt = "", imagePosition = 
         {scene !== "bare" && <SkyWaves />}
         <div className={"relative max-w-wrap mx-auto px-5 sm:px-8 pt-20 sm:pt-28 " + (scene === "bare" ? "pb-10 sm:pb-14" : "pb-40 sm:pb-52")}>
           <div className="max-w-[54ch]">
-            {eyebrow && <p className="text-[14px] text-coral font-bold mb-4">{eyebrow}</p>}
+            {eyebrow && <p className="label text-coral mb-4">{eyebrow}</p>}
             <h1 className="font-serif text-cream text-[40px] sm:text-[58px] lg:text-[68px] max-w-[16ch] mb-6 leading-[1.04]">
               {title}
             </h1>
@@ -36,7 +36,7 @@ const PageHero = ({ eyebrow, title, lede, image, imageAlt = "", imagePosition = 
         <div className="relative max-w-wrap mx-auto px-5 sm:px-8 pt-20 pb-24 sm:pt-28 sm:pb-32">
           <div className="max-w-[54ch]">
             {eyebrow && (
-              <p className="text-[14px] text-coral font-bold mb-4">{eyebrow}</p>
+              <p className="label text-coral mb-4">{eyebrow}</p>
             )}
             <h1 className="font-serif text-cream text-[40px] sm:text-[58px] lg:text-[68px] max-w-[16ch] mb-6 leading-[1.04]">
               {title}
@@ -53,7 +53,7 @@ const PageHero = ({ eyebrow, title, lede, image, imageAlt = "", imagePosition = 
     <section className="bg-white text-ink pt-16 pb-14 sm:pt-20 sm:pb-16 border-b border-parchment-line">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         {eyebrow && (
-          <p className="text-[14px] text-teal font-bold mb-4">{eyebrow}</p>
+          <p className="label text-teal mb-4">{eyebrow}</p>
         )}
         <h1 className="font-serif text-[38px] sm:text-[58px] max-w-[18ch] mb-6">{title}</h1>
         {lede && <p className="text-[18px] sm:text-[20px] text-ink-soft max-w-[58ch] font-medium">{lede}</p>}

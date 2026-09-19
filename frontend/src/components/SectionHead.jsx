@@ -4,7 +4,7 @@ import { cn } from "../lib/utils";
 const SectionHead = ({ kicker, title, lede, dark = false, className = "" }) => (
   <div className={cn("max-w-[760px] mb-14", className)}>
     {kicker && (
-      <p className={`text-[14px] font-semibold mb-3 ${dark ? "text-teal-light" : "text-coral"}`}>
+      <p className={`label mb-3 ${dark ? "text-teal-light" : "text-coral"}`}>
         {kicker}
       </p>
     )}

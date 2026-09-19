@@ -37,7 +37,7 @@ const ProductDetail = () => {
               />
             </div>
             <div>
-              <p className="text-[13px] font-semibold text-teal mb-2">{p.category}</p>
+              <p className="label text-teal mb-2">{p.category}</p>
               <h1 className="font-serif text-[30px] sm:text-[36px] mb-2">{p.name}</h1>
               {p.tagline && <p className="text-ink-soft text-[15px] mb-4">{p.tagline}</p>}
               <p className="text-ink-soft text-[15.5px] mb-8 max-w-[56ch]">{p.description}</p>

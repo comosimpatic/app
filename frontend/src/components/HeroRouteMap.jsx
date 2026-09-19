@@ -11,7 +11,7 @@ const HeroRouteMap = () => (
       aria-label="Route map connecting Caribbean trade markets"
     >
       <defs>
-        <style>{`.port-label{font-family:'IBM Plex Sans',sans-serif; font-size:11px; fill:rgba(74,90,102,0.8);}`}</style>
+        <style>{`.port-label{font-family:'Inter',sans-serif; font-size:11px; fill:rgba(74,90,102,0.8);}`}</style>
       </defs>
 
       {/* faint chart grid */}

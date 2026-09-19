@@ -46,7 +46,7 @@ const News = () => {
             {visible.map((item) => (
               <li key={item.title} className="py-6 border-b border-parchment-line flex flex-wrap items-baseline justify-between gap-2">
                 <div>
-                  <p className="text-[12.5px] font-semibold text-teal mb-1.5">{item.category}</p>
+                  <p className="label text-teal mb-1.5">{item.category}</p>
                   <h3 className="text-[18px] font-serif">{item.title}</h3>
                 </div>
                 <span className="text-[13px] text-ink-soft">{item.date}</span>

@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['"IBM Plex Sans"', 'sans-serif'],
-        sans: ['"IBM Plex Sans"', 'sans-serif'],
+        serif: ['"Inter"', 'sans-serif'],
+        sans: ['"Inter"', 'sans-serif'],
       },
       maxWidth: {
         wrap: '1240px',
@@ -28,8 +28,8 @@ module.exports = {
         'coral-dark': '#C1552F',
         parchment: '#EAF2FC',
         'parchment-line': '#D8E2F0',
-        ink: '#050B14',
-        'ink-soft': '#1C2935',
+        ink: '#000028',
+        'ink-soft': '#10194A',
         cream: '#FFFFFF',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',

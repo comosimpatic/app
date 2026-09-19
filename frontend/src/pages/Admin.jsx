@@ -85,7 +85,7 @@ const InquiriesTable = ({ inquiries, onLogout, onRefresh, loading }) => {
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <div className="flex flex-wrap items-start justify-between gap-6 mb-10">
           <div>
-            <p className="text-[13px] font-semibold text-coral mb-2">DFX Admin</p>
+            <p className="label text-coral mb-2">DFX Admin</p>
             <h1 className="font-serif text-[26px] sm:text-[32px]">Submitted inquiries</h1>
           </div>
           <div className="flex gap-3">

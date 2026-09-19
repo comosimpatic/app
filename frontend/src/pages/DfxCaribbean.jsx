@@ -45,7 +45,7 @@ const DfxCaribbean = () => (
         DFX
       </span>
       <div className="relative max-w-wrap mx-auto px-5 sm:px-8 pt-20 pb-20 sm:pt-28 sm:pb-24">
-        <p className="text-[12.5px] tracking-[0.18em] uppercase text-coral font-semibold mb-6">
+        <p className="label text-coral mb-6">
           A major project of Distribution Factory Caribbean
         </p>
         <h1 className="font-serif text-[48px] sm:text-[76px] leading-[1.04] mb-5">
@@ -83,7 +83,7 @@ const DfxCaribbean = () => (
               className="bg-white p-8 hover:bg-parchment transition-colors group"
               data-testid={`dfx-audience-${a.who.toLowerCase().replace(/[^a-z]+/g, "-")}`}
             >
-              <p className="text-[13px] font-semibold uppercase tracking-wide text-teal mb-3">{a.who}</p>
+              <p className="label text-teal mb-3">{a.who}</p>
               <p className="font-serif text-[22px] mb-5">{a.line}</p>
               <span className="text-[13px] font-semibold text-coral group-hover:underline">Learn more &rarr;</span>
             </Link>

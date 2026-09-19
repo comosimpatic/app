@@ -37,7 +37,7 @@ const CountryDetail = () => {
         <div className="max-w-wrap mx-auto px-5 sm:px-8 grid lg:grid-cols-[1.1fr_0.9fr] gap-14">
           <div className="space-y-10">
             <div>
-              <p className="text-[13px] font-semibold text-coral mb-2.5">Market Overview</p>
+              <p className="label text-coral mb-2.5">Market Overview</p>
               <p className="text-ink-soft text-[15.5px] max-w-[56ch]">
                 {market.name} is one of DFX's 15 core launch markets. DFX's regional platform gives
                 businesses operating here access to sourcing, distribution, logistics, market entry
@@ -63,7 +63,7 @@ const CountryDetail = () => {
           </div>
 
           <div className="bg-white border border-parchment-line p-8 h-fit">
-            <p className="text-[13px] font-semibold text-teal mb-2">DFX Local Contact</p>
+            <p className="label text-teal mb-2">DFX Local Contact</p>
             <h2 className="font-serif text-[21px] mb-5">Reach the {market.name} desk</h2>
             <InquiryForm pathway="general" submitLabel="Contact This Market" testIdPrefix="country-contact" />
           </div>
