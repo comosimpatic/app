@@ -13,8 +13,8 @@
   --parchment-line: #D8E2F0;
   --ink: #000028;
   --ink-soft: #10194A;
-  --petrol: #009999;
-  --petrol-dark: #007A7A;
+  --petrol: #0A5BC0; /* logo blue, used for buttons */
+  --petrol-dark: #084A9C;
   --cream: #FFFFFF;
 }
 
@@ -178,3 +178,5 @@ h4 { font-weight: 600; }
 .glass select.dfc-field option { color: #000028; background: #fff; }
 .glass [data-testid$="-success"] { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.4); }
 .glass [data-testid$="-success"] p { color: #fff; }
+.glass .btn-coral { background: #fff; color: #0A5BC0; }
+.glass .btn-coral:hover { background: #EAF2FC; }
