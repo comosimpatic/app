@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-route
 import { Toaster } from "sonner";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import PalmBand from "./components/PalmBand";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import BusinessModel from "./pages/BusinessModel";
@@ -70,6 +71,7 @@ function App() {
             <Route path="/legal/photo-credits" element={<PhotoCredits />} />
           </Routes>
         </main>
+        <PalmBand />
         <Footer />
         <Toaster position="bottom-right" richColors />
       </BrowserRouter>
