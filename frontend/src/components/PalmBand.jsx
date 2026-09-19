@@ -34,10 +34,10 @@ const Palm = ({ x, y, s = 1, flip = false, dur = 7, delay = 0 }) => (
   </g>
 );
 
-const Cluster = ({ className = "" }) => (
+export const Cluster = ({ className = "", sizeClass = "h-[135px] sm:h-[215px] lg:h-[245px]" }) => (
   <svg
     viewBox="0 0 300 340"
-    className={`absolute bottom-0 h-[135px] sm:h-[215px] lg:h-[245px] w-auto overflow-visible ${className}`}
+    className={`absolute bottom-0 ${sizeClass} w-auto overflow-visible ${className}`}
     aria-hidden="true"
   >
     <Palm x={95} y={345} s={1.05} dur={7.5} delay={0} />

@@ -1,4 +1,5 @@
 import React from "react";
+import { Cluster } from "./PalmBand";
 
 // Animated Caribbean sky + rolling waves, used as a full-bleed hero background.
 // Pure SVG + CSS (keyframes in index.css), no images.
@@ -14,7 +15,7 @@ const Layer = ({ className, height, fill, opacity = 1, bottom }) => (
   </div>
 );
 
-const SkyWaves = () => (
+const SkyWaves = ({ palms = false }) => (
   <div
     className="absolute inset-0 overflow-hidden"
     style={{ background: "linear-gradient(180deg, #0B2A5B 0%, #0A5BC0 55%, #4DA6FF 100%)" }}
@@ -26,6 +27,13 @@ const SkyWaves = () => (
     <div className="cloud absolute top-[14%] left-0 w-36 h-7 rounded-full bg-white/25 blur-md" style={{ animationDuration: "70s" }} />
     <div className="cloud absolute top-[38%] left-0 w-52 h-8 rounded-full bg-white/20 blur-md" style={{ animationDuration: "95s", animationDelay: "-40s" }} />
     <div className="cloud absolute top-[24%] left-0 w-28 h-6 rounded-full bg-white/20 blur-md" style={{ animationDuration: "120s", animationDelay: "-85s" }} />
+
+    {palms && (
+      <>
+        <Cluster sizeClass="h-[320px] sm:h-[520px] lg:h-[680px]" className="left-[-6%] sm:left-[1%]" />
+        <Cluster sizeClass="h-[320px] sm:h-[520px] lg:h-[680px]" className="right-[-6%] sm:right-[1%] -scale-x-100" />
+      </>
+    )}
 
     <Layer className="wave-a" height="clamp(70px, 12vw, 130px)" fill="#fff" opacity={0.22} bottom="34px" />
     <Layer className="wave-c" height="clamp(60px, 10vw, 110px)" fill="#fff" opacity={0.4} bottom="14px" />

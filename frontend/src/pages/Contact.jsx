@@ -1,4 +1,5 @@
 import React from "react";
+import { useSearchParams } from "react-router-dom";
 import PageHero from "../components/PageHero";
 import InquiryForm from "../components/InquiryForm";
 import Seo from "../components/Seo";
@@ -19,14 +20,18 @@ const routing = [
   { label: "Press", email: "press@dfxcaribbean.com" },
 ];
 
-const Contact = () => (
+const Contact = () => {
+  // ?v=1 shows the original version without the palm trees
+  const [params] = useSearchParams();
+  const trees = params.get("v") !== "1";
+  return (
   <>
     <Seo
       title="Contact DFX Caribbean"
       description="Reach DFX Caribbean's regional office directory or route your inquiry directly to the sell, buy, partner, invest or press desk."
     />
     <div className="relative overflow-hidden">
-    <SkyWaves />
+    <SkyWaves palms={trees} />
     <PageHero
       eyebrow="Contact"
       scene="bare"
@@ -78,6 +83,7 @@ const Contact = () => (
     </section>
     </div>
   </>
-);
+  );
+};
 
 export default Contact;
