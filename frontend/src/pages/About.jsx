@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { ArrowDown } from "lucide-react";
 import PageHero from "../components/PageHero";
 import SectionHead from "../components/SectionHead";
 import CtaBand from "../components/CtaBand";
@@ -9,6 +11,16 @@ const pillars = [
   { title: "Regional, not local", desc: "Distribution Factory Caribbean is built around the Caribbean as one commercial region — not a collection of markets to be entered one at a time." },
   { title: "Private-sector execution", desc: "where regional institutions set policy and facilitate dialogue, Distribution Factory Caribbean executes: it moves products, closes distribution deals and puts capital to work." },
   { title: "One relationship", desc: "A business works with Distribution Factory Caribbean once — and gains access to sourcing, distribution, logistics, market entry and investment across the network." },
+];
+
+const officeSteps = [
+  "Market Development",
+  "Sales Representation",
+  "Distributor Recruitment",
+  "Logistics Coordination",
+  "Regional Distribution",
+  "Customer Development",
+  "Market Expansion",
 ];
 
 const About = () => (
@@ -71,6 +83,49 @@ const About = () => (
             ))}
           </ul>
         </div>
+      </div>
+    </section>
+
+    <section className="bg-navy-deep text-cream py-20 sm:py-28" data-testid="manufacturers-office">
+      <div className="max-w-wrap mx-auto px-5 sm:px-8 grid lg:grid-cols-[1.1fr_0.9fr] gap-14 lg:gap-24 items-start">
+        <div>
+          <p className="text-[12.5px] font-bold tracking-[0.18em] uppercase text-coral mb-6">
+            The Manufacturer's Caribbean Office
+          </p>
+          <h2 className="text-[38px] sm:text-[58px] leading-[1.05] text-cream mb-8">
+            You manufacture. We help build the Caribbean market.
+          </h2>
+          <p className="text-[18px] sm:text-[20px] text-cream font-medium max-w-[46ch] mb-5">
+            A manufacturer does not necessarily need offices, employees and warehouses in every
+            Caribbean country to develop a regional presence.
+          </p>
+          <p className="text-[17px] text-cream/90 max-w-[46ch] mb-10">
+            Through Distribution Factory Caribbean, manufacturers can access a coordinated regional
+            commercial network encompassing:
+          </p>
+          <p className="text-[24px] sm:text-[30px] font-bold leading-tight text-teal-light mb-10 max-w-[20ch]">
+            One regional relationship. Multiple markets.
+          </p>
+          <div className="flex flex-wrap gap-3.5">
+            <Link to="/business-model#doing-business" className="btn btn-coral">Sell Into The Caribbean</Link>
+            <Link to="/services" className="btn btn-outline-light">Explore Our Services</Link>
+          </div>
+        </div>
+        <ol className="max-w-[420px] w-full lg:ml-auto">
+          {officeSteps.map((s, i) => (
+            <li key={s}>
+              <div className="border border-white/30 bg-white/5 px-6 py-4 text-[18px] font-bold flex items-baseline gap-4">
+                <span className="text-[13px] text-teal-light w-5 shrink-0">{i + 1}</span>
+                {s}
+              </div>
+              {i < officeSteps.length - 1 && (
+                <div className="flex justify-center py-1.5 text-teal-light">
+                  <ArrowDown size={18} />
+                </div>
+              )}
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
 
