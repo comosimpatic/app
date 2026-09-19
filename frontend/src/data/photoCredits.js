@@ -128,11 +128,4 @@ export const photoCredits = [
     license: "CC BY 4.0",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:Soufriere_town_and_the_Pitons,_Saint_Lucia.jpg",
   },
-  {
-    file: "/photos/page-contact.jpg",
-    title: "Bloody Bay, Negril, Jamaica",
-    author: "wardyboy400",
-    license: "CC BY 2.0",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Jamaica,_Negril,_Bloody_Bay_2013_(8488947867).jpg",
-  },
 ];

@@ -159,3 +159,4 @@ h4 { font-weight: 600; }
 @keyframes waveMove { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .cloud { animation: cloudDrift linear infinite; }
 @keyframes cloudDrift { from { transform: translateX(-20vw); } to { transform: translateX(110vw); } }
+.wave-c { animation: waveMove 21s linear infinite; }

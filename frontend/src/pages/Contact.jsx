@@ -26,9 +26,7 @@ const Contact = () => (
     />
     <PageHero
       eyebrow="Contact"
-      image="/photos/page-contact.jpg"
-      imageAlt="Turquoise water and white sand beach in Negril, Jamaica"
-      imagePosition="center"
+      scene
       title="Talk to DFX"
       lede="Send a general inquiry below, or reach the desk closest to your pathway."
     />

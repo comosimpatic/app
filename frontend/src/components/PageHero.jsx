@@ -1,6 +1,25 @@
 import React from "react";
+import SkyWaves from "./SkyWaves";
 
-const PageHero = ({ eyebrow, title, lede, image, imageAlt = "", imagePosition = "center", children }) => {
+const PageHero = ({ eyebrow, title, lede, image, imageAlt = "", imagePosition = "center", scene = false, children }) => {
+  if (scene) {
+    return (
+      <section className="relative overflow-hidden text-cream">
+        <SkyWaves />
+        <div className="relative max-w-wrap mx-auto px-5 sm:px-8 pt-20 pb-40 sm:pt-28 sm:pb-52">
+          <div className="max-w-[54ch]">
+            {eyebrow && <p className="text-[14px] text-coral font-bold mb-4">{eyebrow}</p>}
+            <h1 className="font-serif text-cream text-[40px] sm:text-[58px] lg:text-[68px] max-w-[16ch] mb-6 leading-[1.04]">
+              {title}
+            </h1>
+            {lede && <p className="text-[18px] sm:text-[20px] text-cream/90 max-w-[52ch] font-medium">{lede}</p>}
+            {children}
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   if (image) {
     return (
       <section className="relative overflow-hidden text-cream">
