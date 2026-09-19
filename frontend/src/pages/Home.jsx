@@ -1,56 +1,85 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Handshake, Package, Ship, MapPinned, Users, TrendingUp,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import SectionHead from "../components/SectionHead";
 import Seo from "../components/Seo";
-import { categories as productCategories } from "../data/products";
-import { categoryPhotos } from "../data/categoryPhotos";
-import { newsItems } from "../data/content";
+import HeroRouteMap from "../components/HeroRouteMap";
 
-const frictionPoints = [
-  "Finding reliable buyers",
-  "Entering new Caribbean markets",
-  "Distribution & warehousing",
-  "Freight & customs",
-  "Local commercial representation",
-  "Payments & market intelligence",
-  "Regulatory requirements",
-  "Regional partnerships",
+const whatWeDo = [
+  { title: "Market Access", desc: "Enter and expand into Caribbean markets.", photo: "/photos/food-beverage.jpg" },
+  { title: "Distribution", desc: "Build relationships with distributors, agents and buyers.", photo: "/photos/consumer-goods.jpg" },
+  { title: "Logistics", desc: "Coordinate the movement of products across markets.", photo: "/photos/industrial.jpg" },
+  { title: "Investment", desc: "Connect projects and opportunities with strategic partners and capital.", photo: "/photos/energy.jpg" },
 ];
 
-const functions = [
-  { code: "01", icon: Handshake, title: "Trade", desc: "Connecting buyers and sellers across Caribbean markets." },
-  { code: "02", icon: Package, title: "Distribution", desc: "Getting products into the right markets through local and regional distribution networks." },
-  { code: "03", icon: Ship, title: "Logistics", desc: "Coordinating freight, warehousing, consolidation, last-mile delivery and supply-chain services." },
-  { code: "04", icon: MapPinned, title: "Market Entry", desc: "Helping businesses establish commercial presence in new Caribbean territories." },
-  { code: "05", icon: Users, title: "Commercial Representation", desc: "Providing local market support, sales development and partner relationships." },
-  { code: "06", icon: TrendingUp, title: "Investment", desc: "Connecting investment capital with commercially viable Caribbean opportunities." },
+const dfxAudiences = [
+  { who: "For manufacturers", line: "Sell into the Caribbean." },
+  { who: "For buyers", line: "Source products and suppliers." },
+  { who: "For distributors", line: "Find new products and markets." },
+  { who: "For investors", line: "Discover Caribbean opportunities." },
+  { who: "For partners", line: "Build the network with us." },
 ];
 
-const modelSteps = [
-  { num: "01", title: "Source", desc: "Find products, suppliers and commercial opportunities." },
-  { num: "02", title: "Move", desc: "Coordinate logistics, warehousing, freight and distribution." },
-  { num: "03", title: "Sell", desc: "Connect products with distributors, retailers, businesses and consumers." },
-  { num: "04", title: "Invest", desc: "Identify and facilitate investment into businesses, infrastructure and regional opportunities." },
+const why = [
+  { title: "Connect", desc: "Find the right people and opportunities." },
+  { title: "Coordinate", desc: "Build the commercial and logistics pathway." },
+  { title: "Grow", desc: "Develop repeat business across the region." },
 ];
 
-const whyDfc = [
-  { title: "One Regional Network", desc: "Access multiple Caribbean markets through one commercial relationship." },
-  { title: "Local Market Knowledge", desc: "Regional partners who understand local commercial environments." },
-  { title: "Integrated Logistics", desc: "Trade and logistics connected, not treated as separate activities." },
-  { title: "Commercial Execution", desc: "DFX doesn't just provide information — it helps businesses execute." },
-  { title: "Scalable", desc: "Start in one market and expand across the region on your timeline." },
-  { title: "Investment Connected", desc: "Trade opportunities can become investment opportunities." },
+const services = [
+  { num: "01", title: "Market Entry", desc: "Helping manufacturers and brands establish a presence in Caribbean markets." },
+  { num: "02", title: "Sales & Distribution", desc: "Developing distributors, agents, buyers and sales channels." },
+  { num: "03", title: "Import, Export & Logistics", desc: "Coordinating the movement of products from supplier to market." },
+  { num: "04", title: "Regional Business Development", desc: "Identifying new markets, customers, partners and commercial opportunities." },
+  { num: "05", title: "Projects & Investment", desc: "Developing and connecting commercially viable Caribbean projects." },
+];
+
+const manufacturerHelp = [
+  "Market identification",
+  "Distributor recruitment",
+  "Sales representation",
+  "Product launches",
+  "Logistics",
+  "Regional expansion",
+];
+
+const marketGroups = [
+  "Eastern Caribbean",
+  "Barbados",
+  "Trinidad & Tobago",
+  "Jamaica",
+  "Guyana",
+  "CARICOM",
+  "Wider Caribbean",
+];
+
+const partners = [
+  "Manufacturers",
+  "Distributors",
+  "Importers",
+  "Retailers",
+  "Logistics providers",
+  "Country representatives",
+  "Investors",
+  "Project owners",
+];
+
+const finalActions = [
+  { title: "Sell", desc: "Bring your products to Caribbean markets." },
+  { title: "Source", desc: "Find products and suppliers." },
+  { title: "Distribute", desc: "Build your regional distribution business." },
+  { title: "Move", desc: "Coordinate logistics and fulfilment." },
+  { title: "Invest", desc: "Find and develop Caribbean opportunities." },
 ];
 
 const Home = () => (
   <>
     <Seo
-      title="Pan-Caribbean Trade, Distribution & Investment Platform"
-      description="DFX Caribbean connects suppliers, buyers, investors and logistics providers across 15 Caribbean markets — trade, distribution, logistics and investment through one regional platform."
+      title="Connecting the Caribbean to do more business"
+      description="Distribution Factory Caribbean connects manufacturers, suppliers, businesses, logistics providers and investors with opportunities across Caribbean markets — trade, distribution, logistics, market access and investment."
     />
+
+    {/* 1. Hero */}
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
         <img
@@ -61,222 +90,243 @@ const Home = () => (
         <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/85 via-navy-deep/55 to-navy-deep/20" />
       </div>
 
-      <div className="relative max-w-wrap mx-auto px-5 sm:px-8 pt-20 sm:pt-28 pb-12">
-        <div className="max-w-[52ch]">
-          <p className="text-[14px] text-coral font-semibold mb-5 uppercase tracking-wide">
-            Pan-Caribbean Trade &amp; Distribution Platform
-          </p>
-          <h1 className="font-serif text-cream text-[34px] sm:text-[46px] lg:text-[54px] max-w-[19ch] mb-6 leading-[1.15]">
-            Connecting Caribbean markets. Moving Caribbean business.
+      <div className="relative max-w-wrap mx-auto px-5 sm:px-8 pt-24 pb-28 sm:pt-32 sm:pb-36">
+        <div className="max-w-[54ch]">
+          <h1 className="font-serif text-cream text-[36px] sm:text-[50px] lg:text-[58px] max-w-[16ch] mb-6 leading-[1.12]">
+            Connecting the Caribbean to do more business.
           </h1>
-          <p className="text-[17.5px] text-cream/85 max-w-[46ch] mb-9">
-            DFX links suppliers, buyers, investors and logistics providers across the region — so
-            businesses can move from local opportunity to regional scale.
+          <p className="text-[17.5px] text-cream/85 max-w-[52ch] mb-6">
+            Distribution Factory Caribbean connects manufacturers, suppliers, businesses, logistics
+            providers and investors with opportunities across Caribbean markets.
           </p>
-          <div className="flex flex-wrap gap-3.5 mb-16">
-            <Link to="/business-model" className="btn btn-coral" data-testid="home-hero-cta-primary">
-              Do Business with DFX
+          <p className="text-[13px] font-semibold uppercase tracking-[0.14em] text-coral mb-9">
+            Trade &bull; Distribution &bull; Logistics &bull; Market Access &bull; Investment
+          </p>
+          <div className="flex flex-wrap gap-3.5">
+            <Link to="/business-model#doing-business" className="btn btn-coral" data-testid="home-hero-cta-primary">
+              Work With Us
             </Link>
-            <Link to="/network" className="btn btn-outline-light" data-testid="home-hero-cta-secondary">
-              Explore Our Network
+            <Link to="/dfx-caribbean" className="btn btn-outline-light" data-testid="home-hero-cta-secondary">
+              Explore DFX Caribbean
             </Link>
-          </div>
-        </div>
-
-        <div className="relative border-t border-cream/20 py-7 grid grid-cols-2 sm:grid-cols-4 gap-6">
-          <div>
-            <span className="font-serif text-[26px] text-coral block">15</span>
-            <span className="text-[13px] text-cream/70">Core Caribbean markets</span>
-          </div>
-          <div>
-            <span className="font-serif text-[26px] text-coral block">4</span>
-            <span className="text-[13px] text-cream/70">Pillars: Source, Move, Sell, Invest</span>
-          </div>
-          <div>
-            <span className="font-serif text-[26px] text-coral block">1</span>
-            <span className="text-[13px] text-cream/70">Regional commercial relationship</span>
-          </div>
-          <div>
-            <span className="font-serif text-[26px] text-coral block">3</span>
-            <span className="text-[13px] text-cream/70">Ways to do business with DFX</span>
           </div>
         </div>
       </div>
     </section>
 
+    {/* What we do */}
     <section className="py-16 sm:py-24">
-      <div className="max-w-wrap mx-auto px-5 sm:px-8 grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 items-start">
-        <div>
-          <p className="text-[14px] font-semibold text-coral mb-3.5">Why a Caribbean platform</p>
-          <h2 className="font-serif text-[24px] sm:text-[32px] mb-5">
-            The Caribbean is not 14 separate opportunities. It is one interconnected commercial region.
-          </h2>
-          <p className="text-ink-soft max-w-[46ch] mb-4">
-            The Caribbean groups a number of independent countries, two French departments and a
-            number of non-independent territories that touch the Caribbean Sea — which itself covers
-            about 1,063,000 square miles (2,754,000 square kilometers), making it one of the largest
-            regional seas in the world.
-          </p>
-          <p className="text-ink-soft max-w-[46ch]">
-            Businesses trying to move products, capital or services across this region usually solve
-            the same problem repeatedly, market by market. Distribution Factory Caribbean Inc. (DFX
-            Caribbean) brings those functions together through a single regional relationship.
-          </p>
-        </div>
-        <ul className="border-t border-parchment-line">
-          {frictionPoints.map((point, i) => (
-            <li
-              key={point}
-              className="flex justify-between py-3.5 border-b border-parchment-line text-[15px]"
-            >
-              <span>{point}</span>
-              <span className="text-ink-soft text-[13px] tabular-nums">{String(i + 1).padStart(2, "0")}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
-
-    <section className="bg-white py-16 sm:py-24 border-t border-parchment-line">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <SectionHead
-          kicker="What We Do"
-          title="Six functions, one platform"
-          lede="Distribution Factory Caribbean Inc. (DFX Caribbean) brings six functions under one platform — connecting the commercial functions that Caribbean trade depends on, rather than treating them as separate vendors."
+          kicker="What we do"
+          title="We connect business across the Caribbean."
+          lede="Distribution Factory Caribbean helps companies bring products to market, establish distribution, coordinate logistics, develop new territories and identify commercial opportunities."
         />
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 border-t border-parchment-line pt-10">
-          {functions.map((fn) => (
-            <div key={fn.code}>
-              <div className="w-11 h-11 rounded-full bg-teal/10 flex items-center justify-center mb-4">
-                <fn.icon size={20} strokeWidth={1.75} className="text-teal" />
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-10">
+          {whatWeDo.map((w) => (
+            <div key={w.title} className="relative aspect-[3/4] overflow-hidden group">
+              <img
+                src={w.photo}
+                alt=""
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/35 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
+                <h3 className="font-sans text-[12.5px] sm:text-[13px] font-semibold uppercase tracking-[0.14em] text-coral mb-2">
+                  {w.title}
+                </h3>
+                <p className="text-[14px] sm:text-[15.5px] text-cream leading-snug">{w.desc}</p>
               </div>
-              <h3 className="text-[17px] sm:text-[19px] mb-1.5">{fn.title}</h3>
-              <p className="text-[14px] sm:text-[15px] text-ink-soft">{fn.desc}</p>
             </div>
           ))}
         </div>
+        <Link to="/services" className="btn btn-teal">View Our Services</Link>
       </div>
     </section>
 
-    <section className="bg-white text-ink py-16 sm:py-24 border-t border-parchment-line">
-      <div className="max-w-wrap mx-auto px-5 sm:px-8">
-        <SectionHead
-          kicker="Our Business Model"
-          title="A regional commercial platform"
-          lede="DFX Caribbean operates across four interconnected pillars — from finding a product to putting capital behind it and developing markets."
-        />
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12 relative">
-          <div className="hidden lg:block absolute top-[38px] left-0 right-0 h-px bg-parchment-line" />
-          {modelSteps.map((step) => (
-            <div key={step.num} className="relative pt-20 pr-6">
-              <div className="absolute top-0 left-0 w-[70px] h-[70px] rounded-full border border-parchment-line flex items-center justify-center font-serif text-[14px] text-teal bg-white">
-                {step.num}
-              </div>
-              <h3 className="text-[20px] mb-2.5">{step.title}</h3>
-              <p className="text-[14.5px] text-ink-soft">{step.desc}</p>
+    {/* 2. The big DFX section */}
+    <section className="relative bg-navy-deep text-cream overflow-hidden">
+      <span
+        aria-hidden="true"
+        className="absolute -right-8 -bottom-24 font-serif text-[300px] sm:text-[460px] leading-none text-white/[0.04] select-none pointer-events-none"
+      >
+        DFX
+      </span>
+      <div className="relative max-w-wrap mx-auto px-5 sm:px-8 py-20 sm:py-28">
+        <p className="text-[12.5px] tracking-[0.18em] uppercase text-coral font-semibold mb-6">
+          A major project of Distribution Factory Caribbean
+        </p>
+        <h2 className="font-serif text-[46px] sm:text-[72px] leading-[1.04] mb-4">
+          DFX <span className="text-teal-light">Caribbean</span>
+        </h2>
+        <p className="font-serif text-[22px] sm:text-[30px] text-cream/90 max-w-[26ch] mb-6">
+          One Caribbean-wide approach to trade and investment.
+        </p>
+        <p className="text-[16.5px] text-cream/75 max-w-[60ch] mb-12">
+          DFX Caribbean is our regional commercial platform, connecting manufacturers, suppliers,
+          buyers, distributors, logistics providers and investors across Caribbean markets.
+        </p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
+          {dfxAudiences.map((a) => (
+            <div key={a.who} className="border border-white/15 p-6">
+              <p className="text-[12px] tracking-[0.12em] uppercase text-teal-light font-semibold mb-2.5">{a.who}</p>
+              <p className="font-serif text-[19px] leading-snug">{a.line}</p>
             </div>
           ))}
         </div>
-        <Link to="/business-model" className="inline-block mt-12 text-teal text-[14.5px] font-semibold border-b border-teal/50 hover:border-teal">
-          See the full business model &rarr;
+        <Link to="/dfx-caribbean" className="btn btn-coral" data-testid="home-dfx-cta">
+          Enter DFX Caribbean <ArrowRight size={16} className="ml-2" />
         </Link>
       </div>
     </section>
 
+    {/* 3. Why */}
     <section className="py-16 sm:py-24">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <SectionHead
-          kicker="Why Choose DFX Caribbean"
-          title="One relationship, a full region"
-          lede="DFX Caribbean understands and uses the Caribbean's identity as one relationship across a full region."
+          kicker="Why Distribution Factory Caribbean"
+          title="Regional reach. Local relationships. Commercial execution."
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">
-          {whyDfc.map((item) => (
-            <div key={item.title} className="border-t-2 border-teal pt-[18px]">
-              <h3 className="text-[17px] mb-2">{item.title}</h3>
-              <p className="text-[14.5px] text-ink-soft">{item.desc}</p>
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-20 items-start">
+          <div className="space-y-4 text-ink-soft text-[16px] max-w-[52ch]">
+            <p>
+              The Caribbean is made up of individual markets, but many commercial opportunities
+              extend beyond a single island.
+            </p>
+            <p>
+              Distribution Factory Caribbean brings together the relationships, services and
+              coordination required to help businesses operate across those markets.
+            </p>
+          </div>
+          <div className="grid gap-x-8 gap-y-6">
+            {why.map((w) => (
+              <div key={w.title} className="border-t-2 border-teal pt-4">
+                <h3 className="text-[18px] mb-1">{w.title}</h3>
+                <p className="text-[14.5px] text-ink-soft">{w.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* 4. Services */}
+    <section className="bg-white py-16 sm:py-24 border-t border-parchment-line">
+      <div className="max-w-wrap mx-auto px-5 sm:px-8">
+        <SectionHead kicker="Our Services" title="Five commercial service lines" />
+        <div className="border-t border-parchment-line mb-10">
+          {services.map((s) => (
+            <div
+              key={s.num}
+              className="grid grid-cols-[52px_1fr] sm:grid-cols-[80px_320px_1fr] gap-x-4 gap-y-1 items-baseline py-6 border-b border-parchment-line"
+            >
+              <span className="font-serif text-[14px] text-teal">{s.num}</span>
+              <h3 className="text-[18px] sm:text-[20px]">{s.title}</h3>
+              <p className="text-[14.5px] sm:text-[15px] text-ink-soft col-span-2 sm:col-span-1">{s.desc}</p>
             </div>
           ))}
         </div>
+        <Link to="/services" className="btn btn-teal">Explore Services</Link>
       </div>
     </section>
 
-    <section className="bg-white py-16 sm:py-24 border-t border-parchment-line">
-      <div className="max-w-wrap mx-auto px-5 sm:px-8">
-        <div className="flex flex-wrap items-start justify-between gap-6">
-          <SectionHead
-            kicker="Our Products"
-            title="Products moving through the DFX network"
-          />
-          <Link to="/products" className="text-teal text-[14.5px] font-semibold border-b border-teal/50 hover:border-teal shrink-0">
-            View the full catalogue &rarr;
+    {/* 5. Manufacturers */}
+    <section className="py-16 sm:py-24 border-t border-parchment-line">
+      <div className="max-w-wrap mx-auto px-5 sm:px-8 grid lg:grid-cols-[1fr_1fr] gap-12 lg:gap-20 items-center">
+        <div>
+          <p className="text-[14px] font-semibold text-coral mb-3.5">For Manufacturers</p>
+          <h2 className="font-serif text-[32px] sm:text-[44px] leading-[1.1] mb-5">
+            You make it. We help move it.
+          </h2>
+          <p className="text-ink-soft text-[16px] max-w-[46ch] mb-3">
+            Looking to enter or expand across the Caribbean?
+          </p>
+          <p className="font-serif text-[20px] mb-8">Your products. Our Caribbean network.</p>
+          <Link to="/business-model#doing-business" className="btn btn-coral" data-testid="home-manufacturers-cta">
+            Sell Into The Caribbean <ArrowRight size={16} className="ml-2" />
           </Link>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-          {productCategories
-            .filter((c) => categoryPhotos[c.slug])
-            .map((c) => (
-              <Link key={c.slug} to="/products" className="group">
-                <div className="aspect-[4/3] overflow-hidden border border-parchment-line mb-3">
-                  <img
-                    src={categoryPhotos[c.slug]}
-                    alt={c.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <h3 className="text-[14.5px] font-medium group-hover:text-teal transition-colors">{c.name}</h3>
-              </Link>
+        <div className="border border-parchment-line p-8 sm:p-10">
+          <p className="text-[13px] font-semibold uppercase tracking-wide text-teal mb-5">
+            Distribution Factory Caribbean can help with
+          </p>
+          <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-3">
+            {manufacturerHelp.map((m) => (
+              <li key={m} className="text-[15px] pl-5 relative">
+                <span className="absolute left-0 text-teal">&bull;</span>
+                {m}
+              </li>
             ))}
+          </ul>
         </div>
       </div>
     </section>
 
-    <section className="py-16 sm:py-24">
-      <div className="max-w-wrap mx-auto px-5 sm:px-8">
-        <div className="flex flex-wrap items-start justify-between gap-6">
-          <SectionHead
-            kicker="DFX Caribbean Pulse"
-            title="What's moving across the network"
-          />
-          <Link to="/news" className="text-teal text-[14.5px] font-semibold border-b border-teal/50 hover:border-teal shrink-0">
-            Read the full Pulse &rarr;
-          </Link>
+    {/* 6. Markets */}
+    <section className="bg-white py-16 sm:py-24 border-t border-parchment-line">
+      <div className="max-w-wrap mx-auto px-5 sm:px-8 grid lg:grid-cols-[0.95fr_1.05fr] gap-12 lg:gap-16 items-center">
+        <div>
+          <p className="text-[14px] font-semibold text-coral mb-3.5">Markets</p>
+          <h2 className="font-serif text-[30px] sm:text-[40px] leading-[1.12] mb-6">
+            One Caribbean network. Multiple markets.
+          </h2>
+          <ul className="flex flex-wrap gap-2.5 mb-7">
+            {marketGroups.map((m) => (
+              <li key={m} className="px-4 py-2 border border-parchment-line text-[14px] text-ink">
+                {m}
+              </li>
+            ))}
+          </ul>
+          <p className="text-ink-soft text-[15.5px] max-w-[46ch] mb-8">
+            Our model combines regional coordination with local market relationships.
+          </p>
+          <Link to="/network" className="btn btn-teal">Explore Our Markets</Link>
         </div>
-        <ul className="border-t border-parchment-line">
-          {newsItems.slice(0, 4).map((item) => (
-            <li key={item.title} className="py-5 border-b border-parchment-line flex flex-wrap items-baseline justify-between gap-2">
-              <div>
-                <p className="text-[12.5px] font-semibold text-teal mb-1.5">{item.category}</p>
-                <h3 className="text-[16.5px] font-serif">{item.title}</h3>
-              </div>
-              <span className="text-[13px] text-ink-soft">{item.date}</span>
-            </li>
+        <HeroRouteMap />
+      </div>
+    </section>
+
+    {/* 7. Partner network */}
+    <section className="py-16 sm:py-24 border-t border-parchment-line">
+      <div className="max-w-wrap mx-auto px-5 sm:px-8">
+        <SectionHead
+          kicker="Partner Network"
+          title="The network is the business."
+          lede="We are building relationships with:"
+        />
+        <ul className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-parchment-line border border-parchment-line mb-10">
+          {partners.map((p) => (
+            <li key={p} className="bg-white px-5 py-6 font-serif text-[18px]">{p}</li>
           ))}
         </ul>
+        <p className="font-serif text-[22px] mb-6">Become part of the network.</p>
+        <Link to="/business-model#doing-business" className="btn btn-coral" data-testid="home-partner-cta">
+          Become a Partner <ArrowRight size={16} className="ml-2" />
+        </Link>
       </div>
     </section>
 
-    <section className="relative py-24 sm:py-32 overflow-hidden">
+    {/* 8. Final call to action */}
+    <section className="relative py-20 sm:py-28 overflow-hidden">
       <div className="absolute inset-0">
-        <img
-          src="/photos/cta-coastline.jpg"
-          alt="Caribbean coastline"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-navy-deep/70" />
+        <img src="/photos/cta-coastline.jpg" alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-navy-deep/80" />
       </div>
       <div className="relative max-w-wrap mx-auto px-5 sm:px-8 text-center">
-        <h2 className="font-serif text-cream text-[26px] sm:text-[36px] max-w-[22ch] mx-auto mb-8">
-          Let's build a stronger Caribbean, together
+        <h2 className="font-serif text-cream text-[28px] sm:text-[42px] max-w-[22ch] mx-auto mb-10 leading-[1.15]">
+          What do you want to do in the Caribbean?
         </h2>
-        <div className="flex flex-wrap items-center justify-center gap-3.5">
-          <Link to="/network" className="btn btn-coral" data-testid="home-cta-network">
-            View Country Network
-          </Link>
-          <Link to="/contact" className="btn btn-outline-light" data-testid="home-cta-contact">
-            Contact DFX
-          </Link>
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-10 text-left">
+          {finalActions.map((a) => (
+            <div key={a.title} className="border border-white/25 bg-white/5 p-5">
+              <p className="text-[13px] font-semibold uppercase tracking-[0.14em] text-coral mb-2">{a.title}</p>
+              <p className="text-[14px] text-cream/85 leading-snug">{a.desc}</p>
+            </div>
+          ))}
         </div>
+        <Link to="/contact" className="btn btn-coral" data-testid="home-final-cta">
+          Start a Conversation
+        </Link>
       </div>
     </section>
   </>

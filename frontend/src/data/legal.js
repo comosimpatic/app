@@ -1,4 +1,4 @@
-// Template legal content for DFX Caribbean. Placeholder policies
+// Template legal content for Distribution Factory Caribbean. Placeholder policies
 // intended to be reviewed by qualified legal counsel before the business relies on
 // them — jurisdictions, entity names and specific terms should be confirmed first.
 
@@ -9,7 +9,7 @@ export const legalDocs = {
     title: "Privacy Policy",
     lastUpdated,
     intro:
-      "This Privacy Policy explains how DFX Caribbean (“DFX,” “we,” “us”) collects, uses and protects information submitted through this website, including inquiry forms, sourcing requests and investment information requests.",
+      "This Privacy Policy explains how Distribution Factory Caribbean (“we,” “us”), operator of the DFX Caribbean platform (“DFX”), collects, uses and protects information submitted through this website, including inquiry forms, sourcing requests and investment information requests.",
     sections: [
       {
         heading: "Information we collect",
@@ -50,7 +50,7 @@ export const legalDocs = {
     title: "Terms & Conditions",
     lastUpdated,
     intro:
-      "These Terms & Conditions govern your use of the DFX Caribbean website and the submission of inquiries, sourcing requests and other information through it.",
+      "These Terms & Conditions govern your use of the Distribution Factory Caribbean website and the submission of inquiries, sourcing requests and other information through it.",
     sections: [
       {
         heading: "Use of this website",
@@ -67,7 +67,7 @@ export const legalDocs = {
       {
         heading: "Intellectual property",
         paragraphs: [
-          "The content, design and branding of this website belong to DFX Caribbean or its licensors and may not be reproduced without permission, other than for personal, non-commercial reference.",
+          "The content, design and branding of this website belong to Distribution Factory Caribbean or its licensors and may not be reproduced without permission, other than for personal, non-commercial reference.",
         ],
       },
       {
@@ -89,7 +89,7 @@ export const legalDocs = {
     title: "Cookie Policy",
     lastUpdated,
     intro:
-      "This Cookie Policy explains how DFX Caribbean uses cookies and similar technologies on this website.",
+      "This Cookie Policy explains how Distribution Factory Caribbean uses cookies and similar technologies on this website.",
     sections: [
       {
         heading: "What cookies we use",
@@ -111,7 +111,7 @@ export const legalDocs = {
     title: "Supplier Terms",
     lastUpdated,
     intro:
-      "These Supplier Terms outline the general basis on which manufacturers and suppliers work with DFX Caribbean through the “Sell Through DFX” pathway. Specific onboarding agreements supersede these general terms.",
+      "These Supplier Terms outline the general basis on which manufacturers and suppliers work with Distribution Factory Caribbean through the “Sell Through DFX” pathway. Specific onboarding agreements supersede these general terms.",
     sections: [
       {
         heading: "Onboarding",
@@ -144,7 +144,7 @@ export const legalDocs = {
     title: "Partner Terms",
     lastUpdated,
     intro:
-      "These Partner Terms outline the general basis on which logistics companies, distributors, financial institutions and other organizations work with DFX Caribbean through the “Partner With DFX” pathway. Specific partnership agreements supersede these general terms.",
+      "These Partner Terms outline the general basis on which logistics companies, distributors, financial institutions and other organizations work with Distribution Factory Caribbean through the “Partner With DFX” pathway. Specific partnership agreements supersede these general terms.",
     sections: [
       {
         heading: "Partnership scope",

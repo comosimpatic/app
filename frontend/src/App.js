@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import BusinessModel from "./pages/BusinessModel";
 import Clients from "./pages/Clients";
+import Services from "./pages/Services";
+import DfxCaribbean from "./pages/DfxCaribbean";
 import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import TradeInvestment from "./pages/TradeInvestment";
@@ -22,10 +24,17 @@ import Admin from "./pages/Admin";
 import PhotoCredits from "./pages/PhotoCredits";
 
 const ScrollToTop = () => {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   useEffect(() => {
+    if (hash) {
+      const el = document.getElementById(hash.slice(1));
+      if (el) {
+        el.scrollIntoView();
+        return;
+      }
+    }
     window.scrollTo(0, 0);
-  }, [pathname]);
+  }, [pathname, hash]);
   return null;
 };
 
@@ -41,6 +50,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/business-model" element={<BusinessModel />} />
             <Route path="/clients" element={<Clients />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/dfx-caribbean" element={<DfxCaribbean />} />
             <Route path="/doing-business" element={<Navigate to="/business-model" replace />} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/:slug" element={<ProductDetail />} />

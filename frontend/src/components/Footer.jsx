@@ -8,45 +8,45 @@ const Footer = () => (
         <div>
           <img
             src="/logo.png"
-            alt="DFX Caribbean"
+            alt="Distribution Factory Caribbean"
             className="h-10 w-auto mb-3"
           />
           <p className="text-[14px] max-w-[32ch]">
-            A pan-Caribbean trade, distribution and investment platform.
+            Connecting the Caribbean to do more business. Home of the DFX Caribbean platform.
           </p>
         </div>
         <div>
           <h4 className="text-ink text-[14px] font-semibold mb-4">Company</h4>
           <ul className="space-y-2 text-[14px]">
-            <li><Link to="/about" className="hover:text-teal">About DFX</Link></li>
-            <li><Link to="/business-model" className="hover:text-teal">Business Model</Link></li>
-            <li><Link to="/clients" className="hover:text-teal">Clients</Link></li>
+            <li><Link to="/about" className="hover:text-teal">About</Link></li>
+            <li><Link to="/services" className="hover:text-teal">Services</Link></li>
+            <li><Link to="/network" className="hover:text-teal">Markets</Link></li>
             <li><Link to="/news" className="hover:text-teal">DFX Caribbean Pulse</Link></li>
             <li><Link to="/blog" className="hover:text-teal">Blog</Link></li>
           </ul>
         </div>
         <div>
-          <h4 className="text-ink text-[14px] font-semibold mb-4">Do Business</h4>
+          <h4 className="text-ink text-[14px] font-semibold mb-4">DFX Caribbean</h4>
           <ul className="space-y-2 text-[14px]">
-            <li><Link to="/business-model" className="hover:text-teal">Sell Through DFX</Link></li>
-            <li><Link to="/business-model" className="hover:text-teal">Buy Through DFX</Link></li>
-            <li><Link to="/business-model" className="hover:text-teal">Partner With DFX</Link></li>
-            <li><Link to="/trade-investment" className="hover:text-teal">Trade &amp; Investment</Link></li>
+            <li><Link to="/dfx-caribbean" className="hover:text-teal">Overview</Link></li>
+            <li><Link to="/business-model" className="hover:text-teal">Business Model</Link></li>
+            <li><Link to="/clients" className="hover:text-teal">Clients</Link></li>
             <li><Link to="/products" className="hover:text-teal">Products</Link></li>
+            <li><Link to="/trade-investment" className="hover:text-teal">Trade &amp; Investment</Link></li>
           </ul>
         </div>
         <div>
           <h4 className="text-ink text-[14px] font-semibold mb-4">Contact</h4>
           <ul className="space-y-2 text-[14px]">
             <li>info@dfxcaribbean.com</li>
-            <li><Link to="/network" className="hover:text-teal">Regional network</Link></li>
+            <li><Link to="/business-model#doing-business" className="hover:text-teal">Become a Partner</Link></li>
             <li><Link to="/trade-investment" className="hover:text-teal">Request Investment Information</Link></li>
-            <li><Link to="/contact" className="hover:text-teal">Contact DFX</Link></li>
+            <li><Link to="/contact" className="hover:text-teal">Contact Us</Link></li>
           </ul>
         </div>
       </div>
       <div className="border-t border-parchment-line pt-6 flex flex-wrap justify-between gap-x-6 gap-y-3 text-[12.5px]">
-        <span>&copy; {new Date().getFullYear()} DFX Caribbean. All rights reserved.</span>
+        <span>&copy; {new Date().getFullYear()} Distribution Factory Caribbean. All rights reserved.</span>
         <div className="flex flex-wrap gap-x-5 gap-y-2">
           <Link to="/legal/privacy-policy" className="hover:text-teal">Privacy Policy</Link>
           <Link to="/legal/terms-conditions" className="hover:text-teal">Terms &amp; Conditions</Link>

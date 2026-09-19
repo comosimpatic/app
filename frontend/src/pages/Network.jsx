@@ -9,11 +9,11 @@ import { coreMarkets, phase2Markets } from "../data/countries";
 const Network = () => (
   <>
     <Seo
-      title="Our Caribbean Network — 15 Core Markets"
+      title="Our Markets — 15 Core Caribbean Markets"
       description="DFX's regional network spans 15 core Caribbean markets, with a phase-2 expansion list covering the wider Caribbean. Explore market overviews, contacts and opportunities."
     />
     <PageHero
-      eyebrow="Our Caribbean Network"
+      eyebrow="Markets"
       title="15 core markets. One regional manifest."
       lede="DFX's network is structured like a shipping manifest — each market carries its own overview, products, suppliers, buyers, distribution, logistics and investment opportunities."
     />
