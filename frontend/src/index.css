@@ -4,13 +4,13 @@
 @tailwind utilities;
 
 :root {
-  --navy: #0F2438;
-  --navy-deep: #0A1A29;
-  --teal: #2C6E6B;
-  --teal-light: #4C948F;
+  --navy: #0B2A5B;
+  --navy-deep: #061A3D;
+  --teal: #0A5BC0;
+  --teal-light: #4DA6FF;
   --coral: #D9643A;
-  --parchment: #F1E9D8;
-  --parchment-line: #E2D6BC;
+  --parchment: #EAF2FC;
+  --parchment-line: #D8E2F0;
   --ink: #16232E;
   --ink-soft: #4A5A66;
   --cream: #FFFFFF;
@@ -78,7 +78,7 @@ img, svg {
 .btn-coral { background: var(--coral); color: var(--cream); }
 .btn-coral:hover { background: #C1552F; }
 .btn-teal { background: var(--teal); color: var(--cream); }
-.btn-teal:hover { background: #255A58; }
+.btn-teal:hover { background: #084A9C; }
 .btn-outline-light { border-color: rgba(251,249,244,0.4); color: var(--cream); }
 .btn-outline-light:hover { border-color: var(--cream); background: rgba(255,255,255,0.06); }
 .btn-outline-dark { border-color: rgba(22,35,46,0.3); color: var(--ink); }

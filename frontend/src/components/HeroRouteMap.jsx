@@ -25,11 +25,11 @@ const HeroRouteMap = () => (
       </g>
 
       {/* route lines */}
-      <path className="route-path" d="M40,300 C90,260 120,220 150,190 C180,160 210,140 230,120" stroke="#4C948F" strokeWidth="1.4" fill="none" strokeLinecap="round" />
-      <path className="route-path" style={{ animationDelay: ".3s" }} d="M230,120 C260,150 280,180 300,200 C330,225 360,235 400,250" stroke="#4C948F" strokeWidth="1.4" fill="none" strokeLinecap="round" />
-      <path className="route-path" style={{ animationDelay: ".6s" }} d="M150,190 C160,230 165,270 180,300 C195,325 210,335 235,340" stroke="#4C948F" strokeWidth="1" fill="none" strokeLinecap="round" opacity="0.6" />
-      <path className="route-path" style={{ animationDelay: ".9s" }} d="M230,120 C220,90 215,65 220,40" stroke="#4C948F" strokeWidth="1" fill="none" strokeLinecap="round" opacity="0.6" />
-      <path className="route-path" style={{ animationDelay: ".5s" }} d="M300,200 C320,175 335,150 345,120" stroke="#4C948F" strokeWidth="1" fill="none" strokeLinecap="round" opacity="0.5" />
+      <path className="route-path" d="M40,300 C90,260 120,220 150,190 C180,160 210,140 230,120" stroke="#0075E3" strokeWidth="1.4" fill="none" strokeLinecap="round" />
+      <path className="route-path" style={{ animationDelay: ".3s" }} d="M230,120 C260,150 280,180 300,200 C330,225 360,235 400,250" stroke="#0075E3" strokeWidth="1.4" fill="none" strokeLinecap="round" />
+      <path className="route-path" style={{ animationDelay: ".6s" }} d="M150,190 C160,230 165,270 180,300 C195,325 210,335 235,340" stroke="#0075E3" strokeWidth="1" fill="none" strokeLinecap="round" opacity="0.6" />
+      <path className="route-path" style={{ animationDelay: ".9s" }} d="M230,120 C220,90 215,65 220,40" stroke="#0075E3" strokeWidth="1" fill="none" strokeLinecap="round" opacity="0.6" />
+      <path className="route-path" style={{ animationDelay: ".5s" }} d="M300,200 C320,175 335,150 345,120" stroke="#0075E3" strokeWidth="1" fill="none" strokeLinecap="round" opacity="0.5" />
 
       {/* nodes */}
       <g className="route-dot" style={{ animationDelay: ".2s" }}>
@@ -37,31 +37,31 @@ const HeroRouteMap = () => (
         <text className="port-label" x="50" y="304">Miami</text>
       </g>
       <g className="route-dot" style={{ animationDelay: "1s" }}>
-        <circle cx="150" cy="190" r="4" fill="#2C6E6B" />
+        <circle cx="150" cy="190" r="4" fill="#0154BD" />
         <text className="port-label" x="158" y="188">Jamaica</text>
       </g>
       <g className="route-dot" style={{ animationDelay: "1.2s" }}>
-        <circle cx="230" cy="120" r="4" fill="#2C6E6B" />
+        <circle cx="230" cy="120" r="4" fill="#0154BD" />
         <text className="port-label" x="238" y="118">Puerto Rico</text>
       </g>
       <g className="route-dot" style={{ animationDelay: "1.4s" }}>
-        <circle cx="220" cy="40" r="4" fill="#2C6E6B" />
+        <circle cx="220" cy="40" r="4" fill="#0154BD" />
         <text className="port-label" x="228" y="38">Bahamas</text>
       </g>
       <g className="route-dot" style={{ animationDelay: "1.6s" }}>
-        <circle cx="345" cy="120" r="4" fill="#2C6E6B" />
+        <circle cx="345" cy="120" r="4" fill="#0154BD" />
         <text className="port-label" x="322" y="105">Antigua</text>
       </g>
       <g className="route-dot" style={{ animationDelay: "1.8s" }}>
-        <circle cx="300" cy="200" r="4" fill="#2C6E6B" />
+        <circle cx="300" cy="200" r="4" fill="#0154BD" />
         <text className="port-label" x="308" y="198">Barbados</text>
       </g>
       <g className="route-dot" style={{ animationDelay: "2s" }}>
-        <circle cx="400" cy="250" r="4" fill="#2C6E6B" />
+        <circle cx="400" cy="250" r="4" fill="#0154BD" />
         <text className="port-label" x="352" y="266">Trinidad &amp; Tobago</text>
       </g>
       <g className="route-dot" style={{ animationDelay: "2.2s" }}>
-        <circle cx="235" cy="340" r="4" fill="#2C6E6B" />
+        <circle cx="235" cy="340" r="4" fill="#0154BD" />
         <text className="port-label" x="243" y="345">Guyana</text>
       </g>
     </svg>
