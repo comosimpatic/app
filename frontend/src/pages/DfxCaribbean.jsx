@@ -11,7 +11,7 @@ const audiences = [
   { who: "For Buyers", line: "Find products and suppliers.", to: "/products" },
   { who: "For Distributors", line: "Access new brands and territories.", to: "/products" },
   { who: "For Logistics Partners", line: "Move regional commerce.", to: "/business-model#doing-business" },
-  { who: "For Investors", line: "Find Caribbean projects and opportunities.", to: "/trade-investment" },
+  { who: "For Investors", line: "Find Caribbean projects and opportunities.", to: "/investment" },
   { who: "For Market Representatives", line: "Become part of the DFX network.", to: "/business-model#doing-business" },
 ];
 
@@ -27,7 +27,7 @@ const platformPages = [
   { title: "Business Model", desc: "How DFX Caribbean works — four pillars, and three ways to do business with us.", to: "/business-model" },
   { title: "Clients", desc: "Who we serve across the Caribbean, from manufacturers to investors.", to: "/clients" },
   { title: "Products", desc: "Products moving through the DFX network now.", to: "/products" },
-  { title: "Trade & Investment", desc: "Live Caribbean projects and investment opportunities.", to: "/trade-investment" },
+  { title: "Trade", desc: "Trade opportunities by market, and ways to sell into or source from the Caribbean.", to: "/trade" },
 ];
 
 const DfxCaribbean = () => (

@@ -12,7 +12,8 @@ import Services from "./pages/Services";
 import DfxCaribbean from "./pages/DfxCaribbean";
 import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
-import TradeInvestment from "./pages/TradeInvestment";
+import Trade from "./pages/Trade";
+import Investment from "./pages/Investment";
 import Network from "./pages/Network";
 import CountryDetail from "./pages/CountryDetail";
 import News from "./pages/News";
@@ -55,7 +56,9 @@ function App() {
             <Route path="/doing-business" element={<Navigate to="/business-model" replace />} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/:slug" element={<ProductDetail />} />
-            <Route path="/trade-investment" element={<TradeInvestment />} />
+            <Route path="/trade" element={<Trade />} />
+            <Route path="/investment" element={<Investment />} />
+            <Route path="/trade-investment" element={<Navigate to="/investment" replace />} />
             <Route path="/network" element={<Network />} />
             <Route path="/network/:slug" element={<CountryDetail />} />
             <Route path="/news" element={<News />} />

@@ -9,9 +9,9 @@ const segments = [
   { title: "Importers & Distributors", need: "Find products and new supply relationships.", link: "/business-model" },
   { title: "Retailers", need: "Access regional and international products.", link: "/products" },
   { title: "Hotels & Hospitality", need: "Source food, beverage, amenities and equipment.", link: "/products" },
-  { title: "Government & Public Sector", need: "Support procurement and regional commercial initiatives.", link: "/trade-investment" },
+  { title: "Government & Public Sector", need: "Support procurement and regional commercial initiatives.", link: "/trade" },
   { title: "SMEs & Entrepreneurs", need: "Turn local products into regional businesses.", link: "/business-model" },
-  { title: "Investors", need: "Discover businesses and projects requiring capital.", link: "/trade-investment" },
+  { title: "Investors", need: "Discover businesses and projects requiring capital.", link: "/investment" },
   { title: "International Companies", need: "Use DFX as a gateway into Caribbean markets.", link: "/network" },
 ];
 

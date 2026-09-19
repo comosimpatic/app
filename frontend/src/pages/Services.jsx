@@ -34,7 +34,7 @@ const services = [
     title: "Projects & Investment",
     desc: "Developing and connecting commercially viable Caribbean projects.",
     points: ["Project identification and development", "Investor and partner introductions", "Structuring support", "A pipeline of live opportunities"],
-    link: { to: "/trade-investment", label: "See current investment projects" },
+    link: { to: "/investment", label: "See current investment projects" },
   },
 ];
 

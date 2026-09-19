@@ -20,6 +20,7 @@ const Footer = () => (
           <ul className="space-y-2 text-[14px]">
             <li><Link to="/about" className="hover:text-teal">About</Link></li>
             <li><Link to="/services" className="hover:text-teal">Services</Link></li>
+            <li><Link to="/investment" className="hover:text-teal">Investment</Link></li>
             <li><Link to="/network" className="hover:text-teal">Markets</Link></li>
             <li><Link to="/news" className="hover:text-teal">DFX Caribbean Pulse</Link></li>
             <li><Link to="/blog" className="hover:text-teal">Blog</Link></li>
@@ -32,7 +33,7 @@ const Footer = () => (
             <li><Link to="/business-model" className="hover:text-teal">Business Model</Link></li>
             <li><Link to="/clients" className="hover:text-teal">Clients</Link></li>
             <li><Link to="/products" className="hover:text-teal">Products</Link></li>
-            <li><Link to="/trade-investment" className="hover:text-teal">Trade &amp; Investment</Link></li>
+            <li><Link to="/trade" className="hover:text-teal">Trade</Link></li>
           </ul>
         </div>
         <div>
@@ -40,7 +41,7 @@ const Footer = () => (
           <ul className="space-y-2 text-[14px]">
             <li>info@dfxcaribbean.com</li>
             <li><Link to="/business-model#doing-business" className="hover:text-teal">Become a Partner</Link></li>
-            <li><Link to="/trade-investment" className="hover:text-teal">Request Investment Information</Link></li>
+            <li><Link to="/investment" className="hover:text-teal">Request Investment Information</Link></li>
             <li><Link to="/contact" className="hover:text-teal">Contact Us</Link></li>
           </ul>
         </div>

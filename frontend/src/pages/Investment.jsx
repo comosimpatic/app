@@ -1,51 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import PageHero from "../components/PageHero";
 import SectionHead from "../components/SectionHead";
 import InquiryForm from "../components/InquiryForm";
 import Seo from "../components/Seo";
 import { investmentOpportunities, regionalProjects } from "../data/content";
-import { coreMarkets } from "../data/countries";
 
-const TradeInvestment = () => (
+const Investment = () => (
   <>
     <Seo
-      title="Caribbean Trade & Investment Opportunities"
-      description="Explore Caribbean trade opportunities, investment opportunities and regional infrastructure projects tracked across DFX's network of 15 core markets."
+      title="Caribbean Investment Opportunities"
+      description="Explore Caribbean investment opportunities and regional infrastructure projects from Distribution Factory Caribbean — logistics, medicinal cannabis, renewable energy and agro processing."
     />
     <PageHero
-      eyebrow="Trade & Investment"
-      title="Where Caribbean trade meets Caribbean capital"
-      lede="Market opportunities, investment opportunities and regional projects — tracked in one place across the DFX network."
+      eyebrow="Investment"
+      title="Find and develop Caribbean opportunities"
+      lede="Commercially viable Caribbean projects seeking strategic partners and capital, tracked across the region."
     />
 
     <section className="py-16 sm:py-24">
       <div className="max-w-wrap mx-auto px-5 sm:px-8">
         <SectionHead
-          kicker="Market Opportunities"
-          title="Opportunities by market"
-          lede="Every core market carries its own overview, products, suppliers, buyers and investment opportunities."
-        />
-        <div className="flex flex-wrap gap-2.5">
-          {coreMarkets.map((m) => (
-            <Link
-              key={m.slug}
-              to={`/network/${m.slug}`}
-              className="px-4 py-2 border border-parchment-line text-[13.5px] font-medium hover:border-teal hover:text-teal transition-colors"
-            >
-              {m.name}
-            </Link>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <section className="bg-white py-16 sm:py-24 border-t border-parchment-line">
-      <div className="max-w-wrap mx-auto px-5 sm:px-8">
-        <SectionHead
           kicker="Investment Portal"
           title="Investment opportunities"
-          lede="Businesses and projects across the network currently seeking capital. Full data-room access is available on request."
+          lede="Businesses and projects currently seeking capital. Full data-room access is available on request."
         />
         <div className="grid sm:grid-cols-2 gap-6 mb-6">
           {investmentOpportunities.map((op) => (
@@ -76,13 +53,13 @@ const TradeInvestment = () => (
       </div>
     </section>
 
-    <section className="py-16 sm:py-24">
+    <section className="bg-white py-16 sm:py-24 border-t border-parchment-line">
       <div className="max-w-wrap mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14">
         <div>
           <SectionHead
             kicker="Regional Projects"
             title="Infrastructure, energy & agriculture"
-            lede="Regional-scale projects DFX is tracking or involved in across core markets."
+            lede="Regional-scale projects we are tracking or involved in across core markets."
             className="mb-8"
           />
           <ul className="border-t border-parchment-line">
@@ -93,16 +70,11 @@ const TradeInvestment = () => (
               </li>
             ))}
           </ul>
-          <p className="text-[13.5px] text-ink-soft mt-8">
-            <span className="font-semibold text-ink">Trade Intelligence: </span>
-            Reports on tariffs, regulations and market conditions are in development as part of DFX's
-            phase 2 trade intelligence offering.
-          </p>
         </div>
         <div className="bg-white border border-parchment-line p-8">
           <h2 className="font-serif text-[22px] mb-2">Request Investment Information</h2>
           <p className="text-ink-soft text-[14.5px] mb-6">
-            Tell us about your investment interest and a member of the DFX investment team will follow up.
+            Tell us about your investment interest and a member of the investment team will follow up.
           </p>
           <InquiryForm pathway="invest" submitLabel="Request Investment Information" testIdPrefix="invest" />
         </div>
@@ -111,4 +83,4 @@ const TradeInvestment = () => (
   </>
 );
 
-export default TradeInvestment;
+export default Investment;
