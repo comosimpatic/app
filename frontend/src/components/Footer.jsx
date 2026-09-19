@@ -5,7 +5,7 @@ import PalmScene from "./PalmBand";
 const link = "hover:text-teal-light transition-colors";
 
 const Footer = () => (
-  <footer className="relative overflow-hidden text-white font-bold pt-52 sm:pt-64 pb-8" id="footer">
+  <footer className="relative overflow-hidden text-white font-bold pt-36 sm:pt-48 pb-8" id="footer">
     <PalmScene />
     <div className="relative max-w-wrap mx-auto px-5 sm:px-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10 mb-12">

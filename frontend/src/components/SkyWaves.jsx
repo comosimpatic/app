@@ -20,8 +20,8 @@ const SkyWaves = ({ waves = true, fadeBottom = false }) => (
     style={{
       background: "linear-gradient(180deg, #0B2A5B 0%, #0A5BC0 55%, #4DA6FF 100%)",
       ...(fadeBottom && {
-        WebkitMaskImage: "linear-gradient(to bottom, #000 78%, transparent 100%)",
-        maskImage: "linear-gradient(to bottom, #000 78%, transparent 100%)",
+        WebkitMaskImage: "linear-gradient(to bottom, #000 88%, transparent 100%)",
+        maskImage: "linear-gradient(to bottom, #000 88%, transparent 100%)",
       }),
     }}
     aria-hidden="true"
