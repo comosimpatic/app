@@ -1,5 +1,4 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 
 // Decorative Caribbean band shown above the footer: swaying white coconut palms,
 // drifting clouds and rolling waves. Pure SVG + CSS (see index.css), no images.
@@ -49,9 +48,6 @@ const WAVE =
   "M0 40 Q 180 0 360 40 T 720 40 T 1080 40 T 1440 40 T 1800 40 T 2160 40 T 2520 40 T 2880 40 V 80 H 0 Z";
 
 const PalmBand = () => {
-  const { pathname } = useLocation();
-  // The Contact page already carries the sky-and-waves scene behind its form.
-  if (pathname === "/contact") return null;
   return (
   <section
     className="relative overflow-hidden h-[230px] sm:h-[320px] select-none"
