@@ -2,6 +2,7 @@ import React from "react";
 import PageHero from "../components/PageHero";
 import InquiryForm from "../components/InquiryForm";
 import Seo from "../components/Seo";
+import SkyWaves from "../components/SkyWaves";
 
 const offices = [
   { city: "Miami, USA", role: "Regional trade gateway" },
@@ -24,16 +25,18 @@ const Contact = () => (
       title="Contact DFX Caribbean"
       description="Reach DFX Caribbean's regional office directory or route your inquiry directly to the sell, buy, partner, invest or press desk."
     />
+    <div className="relative overflow-hidden">
+    <SkyWaves />
     <PageHero
       eyebrow="Contact"
-      scene
+      scene="bare"
       title="Talk to DFX"
       lede="Send a general inquiry below, or reach the desk closest to your pathway."
     />
 
-    <section className="py-16 sm:py-24">
-      <div className="max-w-wrap mx-auto px-5 sm:px-8 grid lg:grid-cols-[1fr_0.8fr] gap-14">
-        <div>
+    <section className="relative pb-44 sm:pb-56">
+      <div className="max-w-wrap mx-auto px-5 sm:px-8 grid lg:grid-cols-[1fr_0.8fr] gap-8 lg:gap-10">
+        <div className="bg-white p-6 sm:p-9 shadow-2xl">
           <h2 className="font-serif text-[24px] mb-6">General inquiry</h2>
           <InquiryForm
             pathwayOptions={["general", "sell", "buy", "partner", "invest", "press"]}
@@ -42,7 +45,7 @@ const Contact = () => (
           />
         </div>
 
-        <div className="space-y-12">
+        <div className="space-y-10 bg-white p-6 sm:p-9 shadow-2xl self-start">
           <div>
             <h3 className="text-[15px] font-semibold uppercase tracking-wide text-ink-soft mb-4">
               Regional Office Directory
@@ -73,6 +76,7 @@ const Contact = () => (
         </div>
       </div>
     </section>
+    </div>
   </>
 );
 
