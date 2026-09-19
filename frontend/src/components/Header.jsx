@@ -35,7 +35,7 @@ const Header = () => {
   }, [location.pathname]);
 
   const linkClass = (active) =>
-    `text-[13.5px] font-medium transition-colors ${active ? "text-ink" : "text-ink-soft hover:text-ink"}`;
+    `text-[16px] font-bold transition-colors ${active ? "text-teal" : "text-ink hover:text-teal"}`;
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-parchment-line">
@@ -48,7 +48,7 @@ const Header = () => {
           />
         </Link>
 
-        <ul className="hidden xl:flex items-center gap-6">
+        <ul className="hidden xl:flex items-center gap-5 2xl:gap-8">
           {NAV_ITEMS.map((item) =>
             item.children ? (
               <li key={item.to} className="relative group">
@@ -60,7 +60,7 @@ const Header = () => {
                   )}`}
                 >
                   {item.label}
-                  <ChevronDown size={14} className="mt-px" />
+                  <ChevronDown size={16} strokeWidth={2.5} className="mt-px" />
                 </Link>
                 <div className="absolute left-1/2 -translate-x-1/2 top-full pt-4 hidden group-hover:block group-focus-within:block">
                   <ul className="bg-white border border-parchment-line shadow-lg min-w-[220px] py-2">
@@ -71,8 +71,8 @@ const Header = () => {
                           end
                           data-testid={`nav-sub-${slug(c.label)}`}
                           className={({ isActive }) =>
-                            `block px-5 py-2.5 text-[13.5px] font-medium transition-colors hover:bg-parchment ${
-                              isActive ? "text-teal" : "text-ink-soft hover:text-ink"
+                            `block px-5 py-3 text-[15px] font-bold transition-colors hover:bg-parchment ${
+                              isActive ? "text-teal" : "text-ink hover:text-teal"
                             }`
                           }
                         >
@@ -99,8 +99,9 @@ const Header = () => {
         </ul>
 
         <div className="hidden xl:flex items-center shrink-0">
-          <Link to="/contact" className="btn btn-coral" data-testid="nav-cta">
-            Start a Business Conversation
+          <Link to="/contact" className="btn btn-coral !font-bold !text-[15px]" data-testid="nav-cta">
+            <span className="2xl:hidden">Start a Conversation</span>
+            <span className="hidden 2xl:inline">Start a Business Conversation</span>
           </Link>
         </div>
 
@@ -119,14 +120,14 @@ const Header = () => {
           <ul className="flex flex-col gap-4">
             {NAV_ITEMS.map((item) => (
               <li key={item.to}>
-                <Link to={item.to} className="text-ink text-[15px] font-medium">
+                <Link to={item.to} className="text-ink text-[18px] font-bold">
                   {item.label}
                 </Link>
                 {item.children && (
                   <ul className="mt-3 ml-1 pl-4 border-l border-parchment-line flex flex-col gap-3">
                     {item.children.map((c) => (
                       <li key={c.to}>
-                        <Link to={c.to} className="text-ink-soft text-[14.5px]">
+                        <Link to={c.to} className="text-ink text-[16px] font-semibold">
                           {c.label}
                         </Link>
                       </li>
