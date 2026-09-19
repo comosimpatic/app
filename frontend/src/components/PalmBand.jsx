@@ -50,19 +50,28 @@ const WAVE =
 const PalmBand = () => {
   return (
   <section
-    className="relative overflow-hidden h-[230px] sm:h-[320px] select-none"
-    style={{ background: "linear-gradient(180deg, #0B2A5B 0%, #0A5BC0 55%, #4DA6FF 100%)" }}
+    className="relative overflow-hidden h-[260px] sm:h-[380px] select-none"
     aria-hidden="true"
     data-testid="palm-band"
   >
+    {/* sky: fades in from the page background so the band blends in */}
+    <div
+      className="absolute inset-0"
+      style={{
+        background: "linear-gradient(180deg, #0B2A5B 0%, #0A5BC0 55%, #4DA6FF 100%)",
+        WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, #000 42%)",
+        maskImage: "linear-gradient(to bottom, transparent 0%, #000 42%)",
+      }}
+    />
+
     {/* sun glow */}
     <div className="absolute left-1/2 -translate-x-1/2 bottom-[18px] w-[260px] h-[260px] sm:w-[360px] sm:h-[360px] rounded-full bg-white/15 blur-2xl" />
 
     {/* drifting clouds */}
-    <div className="cloud absolute top-6 left-0 w-28 h-6 rounded-full bg-white/25 blur-md" style={{ animationDuration: "70s" }} />
-    <div className="cloud absolute top-16 left-0 w-40 h-7 rounded-full bg-white/20 blur-md" style={{ animationDuration: "95s", animationDelay: "-40s" }} />
+    <div className="cloud absolute top-[48%] left-0 w-28 h-6 rounded-full bg-white/25 blur-md" style={{ animationDuration: "70s" }} />
+    <div className="cloud absolute top-[64%] left-0 w-40 h-7 rounded-full bg-white/20 blur-md" style={{ animationDuration: "95s", animationDelay: "-40s" }} />
 
-    <p className="absolute top-6 sm:top-9 inset-x-0 text-center px-6 font-serif text-white text-[19px] sm:text-[28px] leading-tight">
+    <p className="absolute top-[44%] inset-x-0 text-center px-6 font-serif text-white text-[19px] sm:text-[28px] leading-tight">
       Connecting the Caribbean to do more business.
     </p>
 

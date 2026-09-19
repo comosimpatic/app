@@ -26,7 +26,7 @@ const Contact = () => (
       description="Reach DFX Caribbean's regional office directory or route your inquiry directly to the sell, buy, partner, invest or press desk."
     />
     <div className="relative overflow-hidden">
-    <SkyWaves />
+    <SkyWaves waves={false} fadeBottom />
     <PageHero
       eyebrow="Contact"
       scene="bare"
