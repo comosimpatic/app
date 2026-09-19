@@ -28,6 +28,7 @@ body {
   color: var(--ink);
   background: var(--cream);
   line-height: 1.55;
+  font-weight: 500;
 }
 
 h1, h2, h3 {
