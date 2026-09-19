@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['Fraunces', 'serif'],
+        serif: ['"IBM Plex Sans"', 'sans-serif'],
         sans: ['"IBM Plex Sans"', 'sans-serif'],
       },
       maxWidth: {
@@ -28,8 +28,8 @@ module.exports = {
         'coral-dark': '#C1552F',
         parchment: '#EAF2FC',
         'parchment-line': '#D8E2F0',
-        ink: '#16232E',
-        'ink-soft': '#4A5A66',
+        ink: '#0B1622',
+        'ink-soft': '#34424F',
         cream: '#FFFFFF',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',

@@ -92,7 +92,7 @@ const Home = () => (
 
       <div className="relative max-w-wrap mx-auto px-5 sm:px-8 pt-24 pb-28 sm:pt-32 sm:pb-36">
         <div className="max-w-[54ch]">
-          <h1 className="font-serif text-cream text-[36px] sm:text-[50px] lg:text-[58px] max-w-[16ch] mb-6 leading-[1.12]">
+          <h1 className="font-serif text-cream text-[42px] sm:text-[60px] lg:text-[76px] max-w-[15ch] mb-6 leading-[1.04]">
             Connecting the Caribbean to do more business.
           </h1>
           <p className="text-[17.5px] text-cream/85 max-w-[52ch] mb-6">
