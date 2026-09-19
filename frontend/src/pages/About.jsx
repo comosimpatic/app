@@ -31,6 +31,9 @@ const About = () => (
     />
     <PageHero
       eyebrow="About Us"
+      image="/photos/page-about.jpg"
+      imageAlt="Colourful waterfront buildings along the Handelskade in Willemstad, Curaçao"
+      imagePosition="center"
       title="A private-sector execution layer for Caribbean trade"
       lede="Distribution Factory Caribbean was developed to assist Caribbean businesses, which spend too much time solving the same regional problems market by market."
     />

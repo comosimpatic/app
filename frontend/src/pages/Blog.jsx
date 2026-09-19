@@ -12,6 +12,9 @@ const Blog = () => (
     />
     <PageHero
       eyebrow="Blog"
+      image="/photos/page-blog.jpg"
+      imageAlt="Town of Soufrière beneath the Pitons, Saint Lucia"
+      imagePosition="center 30%"
       title="The Caribbean Business Exchange"
       lede="Practical writing on regional expansion, distribution and doing business across the Caribbean."
     />

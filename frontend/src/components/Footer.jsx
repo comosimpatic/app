@@ -9,7 +9,7 @@ const Footer = () => (
           <img
             src="/logo.png"
             alt="Distribution Factory Caribbean"
-            className="h-10 w-auto mb-3"
+            className="h-16 w-auto mb-4"
           />
           <p className="text-[15px] font-bold max-w-[32ch]">
             Connecting the Caribbean to do more business. Home of the DFX Caribbean platform.

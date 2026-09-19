@@ -39,12 +39,12 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-parchment-line">
-      <nav className="flex items-center justify-between gap-6 px-5 sm:px-8 py-4 max-w-[1340px] mx-auto">
+      <nav className="flex items-center justify-between gap-6 px-5 sm:px-8 py-3 max-w-[1340px] mx-auto">
         <Link to="/" className="flex items-center shrink-0" data-testid="nav-logo">
           <img
             src="/logo.png"
             alt="Distribution Factory Caribbean"
-            className="h-11 sm:h-14 w-auto"
+            className="h-[52px] sm:h-[68px] xl:h-[78px] w-auto"
           />
         </Link>
 

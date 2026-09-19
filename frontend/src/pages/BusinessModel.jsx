@@ -69,6 +69,9 @@ const BusinessModel = () => {
       />
       <PageHero
         eyebrow="Our Business Model"
+      image="/photos/page-business-model.jpg"
+      imageAlt="Pedestrian bridge leading to the colourful Willemstad waterfront"
+      imagePosition="center"
         title="Source. Move. Sell. Invest."
         lede="DFX Caribbean operates across four interconnected pillars — from finding a product to putting capital behind it and developing markets — so a single relationship can cover the full commercial journey."
       />

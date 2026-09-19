@@ -23,6 +23,9 @@ const Clients = () => (
     />
     <PageHero
       eyebrow="Clients"
+      image="/photos/page-clients.jpg"
+      imageAlt="Colourful Caribbean waterfront in Willemstad, Curaçao"
+      imagePosition="center"
       title="Built for every side of Caribbean trade"
       lede="Whatever side of a transaction you sit on, DFX gives you one regional relationship instead of fourteen local ones."
     />

@@ -13,6 +13,9 @@ const Investment = () => (
     />
     <PageHero
       eyebrow="Investment"
+      image="/photos/page-investment.jpg"
+      imageAlt="Palm-lined beach at sunset in Bavaro, Dominican Republic"
+      imagePosition="center"
       title="Find and develop Caribbean opportunities"
       lede="Commercially viable Caribbean projects seeking strategic partners and capital, tracked across the region."
     />

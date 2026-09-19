@@ -14,6 +14,9 @@ const Network = () => (
     />
     <PageHero
       eyebrow="Markets"
+      image="/photos/page-network.jpg"
+      imageAlt="Aerial view of Bahamas islands and turquoise shallows"
+      imagePosition="center"
       title="15 core markets. One regional manifest."
       lede="DFX's network is structured like a shipping manifest — each market carries its own overview, products, suppliers, buyers, distribution, logistics and investment opportunities."
     />

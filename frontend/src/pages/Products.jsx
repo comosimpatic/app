@@ -14,6 +14,9 @@ const Products = () => (
     />
     <PageHero
       eyebrow="Products"
+      image="/photos/food-beverage.jpg"
+      imageAlt="Fresh banana and coconut fruit stall"
+      imagePosition="center"
       title="The DFX product catalogue"
       lede="Products moving through the DFX network today, organized by category. Each listing links to sourcing, distribution and quote requests."
     />

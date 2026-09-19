@@ -16,6 +16,9 @@ const News = () => {
       />
       <PageHero
         eyebrow="DFX Caribbean Pulse"
+      image="/photos/page-news.jpg"
+      imageAlt="Colourful rooftops and palm trees in Willemstad, Curaçao"
+      imagePosition="center"
         title="Company news and Caribbean trade insight"
         lede="Updates from across the DFX network, plus analysis on trade, logistics, investment and market expansion."
       />

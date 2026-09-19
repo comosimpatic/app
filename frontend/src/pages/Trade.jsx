@@ -19,6 +19,9 @@ const Trade = () => (
     />
     <PageHero
       eyebrow="Trade"
+      image="/photos/page-trade.jpg"
+      imageAlt="Container ship at a port terminal at sunset"
+      imagePosition="center"
       title="Caribbean trade, market by market"
       lede="Trade opportunities across the DFX network — sell into the region or source what your business needs."
     />

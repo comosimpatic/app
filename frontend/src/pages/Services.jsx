@@ -41,6 +41,9 @@ const Services = () => (
     />
     <PageHero
       eyebrow="Our Services"
+      image="/photos/page-services.jpg"
+      imageAlt="Container ship loading at a port with quayside cranes"
+      imagePosition="center"
       title="Five commercial service lines"
       lede="Everything Distribution Factory Caribbean does, organized around how businesses actually move: get in, sell, move product, grow, and invest."
     />
