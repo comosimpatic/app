@@ -14,15 +14,11 @@ const Layer = ({ className, height, fill, opacity = 1, bottom }) => (
   </div>
 );
 
-const SkyWaves = ({ waves = true, fadeBottom = false }) => (
+const SkyWaves = ({ waves = true }) => (
   <div
     className="absolute inset-0 overflow-hidden"
     style={{
       background: "linear-gradient(180deg, #0B2A5B 0%, #0A5BC0 55%, #4DA6FF 100%)",
-      ...(fadeBottom && {
-        WebkitMaskImage: "linear-gradient(to bottom, #000 88%, transparent 100%)",
-        maskImage: "linear-gradient(to bottom, #000 88%, transparent 100%)",
-      }),
     }}
     aria-hidden="true"
     data-testid="sky-waves"

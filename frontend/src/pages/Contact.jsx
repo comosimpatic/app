@@ -26,7 +26,7 @@ const Contact = () => (
       description="Reach DFX Caribbean's regional office directory or route your inquiry directly to the sell, buy, partner, invest or press desk."
     />
     <div className="relative overflow-hidden">
-    <SkyWaves waves={false} fadeBottom />
+    <SkyWaves waves={false} />
     <PageHero
       eyebrow="Contact"
       scene="bare"
@@ -34,7 +34,7 @@ const Contact = () => (
       lede="Send a general inquiry below, or reach the desk closest to your pathway."
     />
 
-    <section className="relative pb-32 sm:pb-40">
+    <section className="relative pb-20 sm:pb-24">
       <div className="max-w-wrap mx-auto px-5 sm:px-8 grid lg:grid-cols-[1fr_0.8fr] gap-8 lg:gap-10">
         <div className="glass bg-navy-deep/25 backdrop-blur-md border border-white/30 p-6 sm:p-9 shadow-xl">
           <h2 className="font-serif text-[24px] mb-6">General inquiry</h2>
