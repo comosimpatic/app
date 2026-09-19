@@ -36,7 +36,7 @@ const Palm = ({ x, y, s = 1, flip = false, dur = 7, delay = 0 }) => (
 const Cluster = ({ className = "" }) => (
   <svg
     viewBox="0 0 300 340"
-    className={`absolute bottom-0 h-[150px] sm:h-[250px] lg:h-[280px] w-auto overflow-visible ${className}`}
+    className={`absolute bottom-0 h-[135px] sm:h-[215px] lg:h-[245px] w-auto overflow-visible ${className}`}
     aria-hidden="true"
   >
     <Palm x={95} y={345} s={1.05} dur={7.5} delay={0} />
@@ -49,7 +49,7 @@ const WAVE =
 
 const PalmBand = () => (
   <section
-    className="relative overflow-hidden h-[220px] sm:h-[300px] select-none"
+    className="relative overflow-hidden h-[230px] sm:h-[320px] select-none"
     style={{ background: "linear-gradient(180deg, #0B2A5B 0%, #0A5BC0 55%, #4DA6FF 100%)" }}
     aria-hidden="true"
     data-testid="palm-band"
@@ -58,8 +58,8 @@ const PalmBand = () => (
     <div className="absolute left-1/2 -translate-x-1/2 bottom-[18px] w-[260px] h-[260px] sm:w-[360px] sm:h-[360px] rounded-full bg-white/15 blur-2xl" />
 
     {/* drifting clouds */}
-    <div className="cloud absolute top-6 left-0 w-28 h-6 rounded-full bg-white/25 blur-[2px]" style={{ animationDuration: "70s" }} />
-    <div className="cloud absolute top-16 left-0 w-40 h-7 rounded-full bg-white/20 blur-[2px]" style={{ animationDuration: "95s", animationDelay: "-40s" }} />
+    <div className="cloud absolute top-6 left-0 w-28 h-6 rounded-full bg-white/25 blur-md" style={{ animationDuration: "70s" }} />
+    <div className="cloud absolute top-16 left-0 w-40 h-7 rounded-full bg-white/20 blur-md" style={{ animationDuration: "95s", animationDelay: "-40s" }} />
 
     <p className="absolute top-6 sm:top-9 inset-x-0 text-center px-6 font-serif text-white text-[19px] sm:text-[28px] leading-tight">
       Connecting the Caribbean to do more business.
