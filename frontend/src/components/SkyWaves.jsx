@@ -30,8 +30,8 @@ const SkyWaves = ({ palms = false }) => (
 
     {palms && (
       <>
-        <Cluster sizeClass="h-[320px] sm:h-[520px] lg:h-[680px]" className="left-[-6%] sm:left-[1%]" />
-        <Cluster sizeClass="h-[320px] sm:h-[520px] lg:h-[680px]" className="right-[-6%] sm:right-[1%] -scale-x-100" />
+        <Cluster sizeClass="h-[320px] sm:h-[520px] lg:h-[680px]" className="left-[-6%] sm:left-[1%] opacity-55" />
+        <Cluster sizeClass="h-[320px] sm:h-[520px] lg:h-[680px]" className="right-[-6%] sm:right-[1%] -scale-x-100 opacity-55" />
       </>
     )}
 
