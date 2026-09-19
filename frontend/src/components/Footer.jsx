@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => (
-  <footer className="bg-white text-ink-soft pt-16 pb-8 border-t border-parchment-line" id="footer">
+  <footer className="bg-white text-ink font-bold pt-16 pb-8 border-t border-parchment-line" id="footer">
     <div className="max-w-wrap mx-auto px-5 sm:px-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10 mb-12">
         <div>
@@ -11,13 +11,13 @@ const Footer = () => (
             alt="Distribution Factory Caribbean"
             className="h-10 w-auto mb-3"
           />
-          <p className="text-[14px] max-w-[32ch]">
+          <p className="text-[15px] font-bold max-w-[32ch]">
             Connecting the Caribbean to do more business. Home of the DFX Caribbean platform.
           </p>
         </div>
         <div>
-          <h4 className="text-ink text-[14px] font-semibold mb-4">Company</h4>
-          <ul className="space-y-2 text-[14px]">
+          <h4 className="text-ink text-[15px] font-bold mb-4">Company</h4>
+          <ul className="space-y-2.5 text-[15px] font-bold">
             <li><Link to="/about" className="hover:text-teal">About</Link></li>
             <li><Link to="/services" className="hover:text-teal">Services</Link></li>
             <li><Link to="/investment" className="hover:text-teal">Investment</Link></li>
@@ -27,8 +27,8 @@ const Footer = () => (
           </ul>
         </div>
         <div>
-          <h4 className="text-ink text-[14px] font-semibold mb-4">DFX Caribbean</h4>
-          <ul className="space-y-2 text-[14px]">
+          <h4 className="text-ink text-[15px] font-bold mb-4">DFX Caribbean</h4>
+          <ul className="space-y-2.5 text-[15px] font-bold">
             <li><Link to="/dfx-caribbean" className="hover:text-teal">Overview</Link></li>
             <li><Link to="/business-model" className="hover:text-teal">Business Model</Link></li>
             <li><Link to="/clients" className="hover:text-teal">Clients</Link></li>
@@ -37,8 +37,8 @@ const Footer = () => (
           </ul>
         </div>
         <div>
-          <h4 className="text-ink text-[14px] font-semibold mb-4">Contact</h4>
-          <ul className="space-y-2 text-[14px]">
+          <h4 className="text-ink text-[15px] font-bold mb-4">Contact</h4>
+          <ul className="space-y-2.5 text-[15px] font-bold">
             <li>info@dfxcaribbean.com</li>
             <li><Link to="/business-model#doing-business" className="hover:text-teal">Become a Partner</Link></li>
             <li><Link to="/investment" className="hover:text-teal">Request Investment Information</Link></li>
@@ -46,7 +46,7 @@ const Footer = () => (
           </ul>
         </div>
       </div>
-      <div className="border-t border-parchment-line pt-6 flex flex-wrap justify-between gap-x-6 gap-y-3 text-[12.5px]">
+      <div className="border-t border-parchment-line pt-6 flex flex-wrap justify-between gap-x-6 gap-y-3 text-[13.5px] font-bold">
         <span>&copy; {new Date().getFullYear()} Distribution Factory Caribbean. All rights reserved.</span>
         <div className="flex flex-wrap gap-x-5 gap-y-2">
           <Link to="/legal/privacy-policy" className="hover:text-teal">Privacy Policy</Link>
