@@ -154,10 +154,6 @@ img, svg {
 h4 { font-weight: 600; }
 
 /* ---------- Palm band (above footer) ---------- */
-.palm-sway { animation: palmSway 7s ease-in-out infinite alternate; transform-origin: 0 0; }
-.palm-fronds { animation: frondSway 5s ease-in-out infinite alternate; transform-origin: 0 0; }
-@keyframes palmSway { from { transform: rotate(-1.8deg); } to { transform: rotate(1.8deg); } }
-@keyframes frondSway { from { transform: rotate(-3.5deg); } to { transform: rotate(3.5deg); } }
 .wave-a { animation: waveMove 16s linear infinite; }
 .wave-b { animation: waveMove 11s linear infinite reverse; }
 @keyframes waveMove { from { transform: translateX(0); } to { transform: translateX(-50%); } }
