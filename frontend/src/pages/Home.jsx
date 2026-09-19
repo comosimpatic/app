@@ -307,8 +307,8 @@ const Home = () => (
     </section>
 
     {/* 8. Final call to action */}
-    <section className="relative py-20 sm:py-28 overflow-hidden">
-      <div className="absolute inset-0">
+    <section className="relative pt-20 pb-44 sm:pt-28 sm:pb-56 overflow-hidden">
+      <div className="absolute inset-0" style={{ WebkitMaskImage: "linear-gradient(to bottom, #000 68%, transparent 100%)", maskImage: "linear-gradient(to bottom, #000 68%, transparent 100%)" }}>
         <img src="/photos/cta-coastline.jpg" alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-navy-deep/80" />
       </div>
