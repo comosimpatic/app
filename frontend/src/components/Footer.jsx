@@ -1,12 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import PalmScene from "./PalmBand";
 
 const link = "hover:text-teal-light transition-colors";
 
-const Footer = () => (
+const Footer = () => {
+  const { pathname } = useLocation();
+  return (
   <footer className="relative overflow-hidden text-white font-bold pt-36 sm:pt-48 pb-8" id="footer">
-    <PalmScene />
+    {/* the Contact page keeps a tree-free scene */}
+    <PalmScene palms={pathname !== "/contact"} />
     <div className="relative max-w-wrap mx-auto px-5 sm:px-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10 mb-12">
         <div>
@@ -65,6 +68,7 @@ const Footer = () => (
       </div>
     </div>
   </footer>
-);
+  );
+};
 
 export default Footer;

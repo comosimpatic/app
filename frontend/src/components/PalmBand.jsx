@@ -57,7 +57,7 @@ const WaveLayer = ({ className, height, opacity, bottom }) => (
 );
 
 // Absolutely-positioned background: place inside a `relative overflow-hidden` parent.
-const PalmScene = () => (
+const PalmScene = ({ palms = true }) => (
   <div className="absolute inset-0 select-none pointer-events-none" aria-hidden="true" data-testid="palm-scene">
     {/* sky: fades in from the page background so the scene blends in */}
     <div
@@ -74,8 +74,12 @@ const PalmScene = () => (
     <div className="cloud absolute top-[34%] left-0 w-28 h-6 rounded-full bg-white/20 blur-md" style={{ animationDuration: "70s" }} />
     <div className="cloud absolute top-[52%] left-0 w-40 h-7 rounded-full bg-white/15 blur-md" style={{ animationDuration: "95s", animationDelay: "-40s" }} />
 
-    <Cluster sizeClass="h-[240px] sm:h-[340px] lg:h-[400px]" className="left-[-8%] sm:left-[2%] opacity-30" />
-    <Cluster sizeClass="h-[240px] sm:h-[340px] lg:h-[400px]" className="right-[-8%] sm:right-[2%] -scale-x-100 opacity-30" />
+    {palms && (
+      <>
+      <Cluster sizeClass="h-[240px] sm:h-[340px] lg:h-[400px]" className="left-[-8%] sm:left-[2%] opacity-30" />
+      <Cluster sizeClass="h-[240px] sm:h-[340px] lg:h-[400px]" className="right-[-8%] sm:right-[2%] -scale-x-100 opacity-30" />
+      </>
+    )}
 
     <WaveLayer className="wave-a" height="clamp(44px, 7vw, 80px)" opacity={0.1} bottom="24px" />
     <WaveLayer className="wave-b" height="clamp(38px, 6vw, 66px)" opacity={0.16} bottom="-8px" />
