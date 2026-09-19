@@ -167,3 +167,14 @@ h4 { font-weight: 600; }
 
 /* Small uppercase kicker/label style */
 .label { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+
+/* Glass panels: transparent boxes with light text, used over the Contact sky */
+.glass, .glass h2, .glass h3 { color: #fff; }
+.glass .text-ink-soft, .glass label { color: rgba(255,255,255,0.85); }
+.glass .border-parchment-line { border-color: rgba(255,255,255,0.3); }
+.glass .dfc-field { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.45); color: #fff; }
+.glass .dfc-field::placeholder { color: rgba(255,255,255,0.6); opacity: 1; }
+.glass .dfc-field:focus { border-color: #fff; background: rgba(255,255,255,0.18); }
+.glass select.dfc-field option { color: #000028; background: #fff; }
+.glass [data-testid$="-success"] { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.4); }
+.glass [data-testid$="-success"] p { color: #fff; }

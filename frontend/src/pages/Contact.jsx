@@ -36,7 +36,7 @@ const Contact = () => (
 
     <section className="relative pb-44 sm:pb-56">
       <div className="max-w-wrap mx-auto px-5 sm:px-8 grid lg:grid-cols-[1fr_0.8fr] gap-8 lg:gap-10">
-        <div className="bg-white p-6 sm:p-9 shadow-2xl">
+        <div className="glass bg-navy-deep/25 backdrop-blur-md border border-white/30 p-6 sm:p-9 shadow-xl">
           <h2 className="font-serif text-[24px] mb-6">General inquiry</h2>
           <InquiryForm
             pathwayOptions={["general", "sell", "buy", "partner", "invest", "press"]}
@@ -45,7 +45,7 @@ const Contact = () => (
           />
         </div>
 
-        <div className="space-y-10 bg-white p-6 sm:p-9 shadow-2xl self-start">
+        <div className="space-y-10 glass bg-navy-deep/25 backdrop-blur-md border border-white/30 p-6 sm:p-9 shadow-xl self-start">
           <div>
             <h3 className="text-[15px] font-semibold uppercase tracking-wide text-ink-soft mb-4">
               Regional Office Directory
