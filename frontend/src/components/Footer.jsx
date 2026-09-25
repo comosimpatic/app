@@ -45,7 +45,11 @@ const Footer = () => (
         <div>
           <h4 className="text-white text-[15px] font-bold mb-4">Contact</h4>
           <ul className="space-y-2.5 text-[15px] font-bold">
-            <li>info@dfxcaribbean.com</li>
+            <li>
+              <a href="https://www.distributionfactorycaribbean.com" className={link}>
+                www.distributionfactorycaribbean.com
+              </a>
+            </li>
             <li><Link to="/business-model#doing-business" className={link}>Become a Partner</Link></li>
             <li><Link to="/investment" className={link}>Request Investment Information</Link></li>
             <li><Link to="/contact" className={link}>Contact Us</Link></li>
