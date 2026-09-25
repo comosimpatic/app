@@ -1,4 +1,4 @@
-from fastapi import FastAPI, APIRouter, Depends, HTTPException
+from fastapi import FastAPI, APIRouter, Depends, HTTPException, BackgroundTasks
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
@@ -6,6 +6,8 @@ from motor.motor_asyncio import AsyncIOMotorClient
 import os
 import secrets
 import logging
+import smtplib
+from email.message import EmailMessage
 from pathlib import Path
 from pydantic import BaseModel, Field, ConfigDict, EmailStr
 from typing import List, Literal, Optional
@@ -70,6 +72,47 @@ async def get_status_checks():
     return status_checks
 
 
+# ---------- Email notifications ----------
+# Sends a plain-text notification for every inquiry via Gmail SMTP, using an
+# App Password (not the account's normal password). All three env vars must
+# be set on the backend Railway service, or notification sending is skipped
+# (the inquiry is still saved either way — email is a best-effort extra).
+SMTP_USER = os.environ.get('SMTP_USER')  # the Gmail address that sends the mail
+SMTP_PASSWORD = os.environ.get('SMTP_PASSWORD')  # 16-char Gmail App Password
+NOTIFY_EMAIL = os.environ.get('NOTIFY_EMAIL', SMTP_USER)  # inbox that receives it
+
+email_logger = logging.getLogger('inquiry_email')
+
+
+def send_inquiry_email(inquiry: "Inquiry") -> None:
+    if not (SMTP_USER and SMTP_PASSWORD and NOTIFY_EMAIL):
+        email_logger.info("Email notification skipped: SMTP_USER/SMTP_PASSWORD/NOTIFY_EMAIL not set")
+        return
+
+    msg = EmailMessage()
+    msg['Subject'] = f"New {inquiry.pathway} inquiry from {inquiry.name} — DFX Caribbean"
+    msg['From'] = SMTP_USER
+    msg['To'] = NOTIFY_EMAIL
+    msg['Reply-To'] = inquiry.email
+    msg.set_content(
+        f"Pathway: {inquiry.pathway}\n"
+        f"Name: {inquiry.name}\n"
+        f"Email: {inquiry.email}\n"
+        f"Company: {inquiry.company or '-'}\n"
+        f"Country: {inquiry.country or '-'}\n"
+        f"Submitted: {inquiry.created_at.isoformat()}\n\n"
+        f"Message:\n{inquiry.message}\n"
+    )
+
+    try:
+        with smtplib.SMTP_SSL('smtp.gmail.com', 465, timeout=10) as smtp:
+            smtp.login(SMTP_USER, SMTP_PASSWORD)
+            smtp.send_message(msg)
+    except Exception:
+        # Never let a mail-delivery problem fail the form submission itself.
+        email_logger.exception("Failed to send inquiry notification email")
+
+
 # ---------- Inquiries (Doing Business / Contact / Trade & Investment forms) ----------
 
 InquiryPathway = Literal["sell", "buy", "partner", "invest", "press", "general"]
@@ -95,11 +138,14 @@ class InquiryCreate(BaseModel):
     message: str
 
 @api_router.post("/inquiries", response_model=Inquiry)
-async def create_inquiry(input: InquiryCreate):
+async def create_inquiry(input: InquiryCreate, background_tasks: BackgroundTasks):
     inquiry = Inquiry(**input.model_dump())
     doc = inquiry.model_dump()
     doc['created_at'] = doc['created_at'].isoformat()
     await db.inquiries.insert_one(doc)
+    # Still saved to the database (visible in /admin) even if email sending
+    # below is unconfigured or fails — see send_inquiry_email.
+    background_tasks.add_task(send_inquiry_email, inquiry)
     return inquiry
 
 
