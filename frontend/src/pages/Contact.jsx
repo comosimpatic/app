@@ -11,13 +11,7 @@ const offices = [
   { city: "Port of Spain, Trinidad & Tobago", role: "Southern Caribbean desk" },
 ];
 
-const routing = [
-  { label: "Sell", email: "sell@dfxcaribbean.com" },
-  { label: "Buy", email: "buy@dfxcaribbean.com" },
-  { label: "Partner", email: "partner@dfxcaribbean.com" },
-  { label: "Invest", email: "invest@dfxcaribbean.com" },
-  { label: "Press", email: "press@dfxcaribbean.com" },
-];
+const CONTACT_EMAIL = "distributionfactorysvg@gmail.com";
 
 const Contact = () => (
   <>
@@ -62,16 +56,11 @@ const Contact = () => (
 
           <div>
             <h3 className="text-[15px] font-semibold uppercase tracking-wide text-ink-soft mb-4">
-              Pathway-Specific Routing
+              Email Us Directly
             </h3>
-            <ul className="space-y-2 text-[14.5px]">
-              {routing.map((r) => (
-                <li key={r.label} className="flex justify-between">
-                  <span className="text-ink-soft">{r.label}</span>
-                  <span>{r.email}</span>
-                </li>
-              ))}
-            </ul>
+            <a href={`mailto:${CONTACT_EMAIL}`} className="text-[14.5px] font-semibold text-teal hover:underline">
+              {CONTACT_EMAIL}
+            </a>
           </div>
         </div>
       </div>
